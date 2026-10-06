@@ -84,12 +84,13 @@ choices stop the match without retrying or substituting a move.
 
 ## Live run
 
-The [ten-game comparison](benchmarks/2026-10-06-standard/README.md) starts every
-game from the standard board, alternates colors, and allows 1,000 plies.
-Clef won three, Jev won one, and six were drawn; none reached the limit.
-The report includes PGNs, measured latency and cost, and independent rules
-validation. Three Clef wins repeated the same game, which limits the evidence
-for a general strength ranking.
+The [twenty-game comparison](benchmarks/README.md) combines the original ten
+games with ten additional games. Every game starts from the standard board,
+alternates player colors between games, and allows 1,000 plies. Clef won eight,
+Jev won one, and eleven were drawn; none reached the limit. Both batches remain
+available with their PGNs, latency, costs, and independent rules validation.
+Stockfish analysis covers all twenty games. All eight Clef wins repeated the
+same game, which limits the evidence for a general strength ranking.
 
 On 6 October 2026, a run from the initial position ended with Clef winning
 after 15 plies:

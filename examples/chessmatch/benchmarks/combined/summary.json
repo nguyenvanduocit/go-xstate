@@ -1,0 +1,491 @@
+{
+  "games": 20,
+  "total_plies": 1485,
+  "total_reported_cost_usd": 0.180545,
+  "unique_move_sequences": 12,
+  "duplicate_groups": [
+    [
+      "01-standard-pair-1-clef-white",
+      "03-standard-pair-2-clef-white",
+      "09-standard-pair-5-clef-white",
+      "11-standard-pair-6-clef-white",
+      "13-standard-pair-7-clef-white",
+      "15-standard-pair-8-clef-white",
+      "17-standard-pair-9-clef-white",
+      "19-standard-pair-10-clef-white"
+    ],
+    [
+      "12-standard-pair-6-jev-white",
+      "16-standard-pair-8-jev-white"
+    ]
+  ],
+  "terminations": {
+    "Checkmate": 9,
+    "InsufficientMaterial": 7,
+    "FivefoldRepetition": 4
+  },
+  "models": {
+    "cloudflare/clef": {
+      "wins": 8,
+      "losses": 1,
+      "draws": 11,
+      "score": 13.5,
+      "unfinished": 0,
+      "decisions": 744,
+      "median_latency_ms": 728.0,
+      "mean_latency_ms": 801.5,
+      "accepted_cost_usd_rounded": 0.152073,
+      "mean_cost_usd_rounded": 0.0002044,
+      "quality": {
+        "moves": 744,
+        "mean_expected_score_loss_pp": 7.767,
+        "mean_capped_cp_loss": 131.72,
+        "large_errors": 104,
+        "large_errors_per_100_moves": 13.98,
+        "mate_in_one_opportunities": 8,
+        "missed_mate_in_one": 0,
+        "lost_advantage_moves": 47
+      },
+      "distinct_game_results": {
+        "wins": 1,
+        "losses": 1,
+        "draws": 10
+      },
+      "quality_distinct_games": {
+        "moves": 627,
+        "mean_expected_score_loss_pp": 7.882,
+        "mean_capped_cp_loss": 133.64,
+        "large_errors": 90,
+        "large_errors_per_100_moves": 14.35,
+        "mate_in_one_opportunities": 1,
+        "missed_mate_in_one": 0,
+        "lost_advantage_moves": 43
+      },
+      "quality_by_phase": {
+        "opening": {
+          "moves": 184,
+          "mean_expected_score_loss_pp": 9.16,
+          "mean_capped_cp_loss": 143.77,
+          "large_errors": 36,
+          "large_errors_per_100_moves": 19.57,
+          "mate_in_one_opportunities": 8,
+          "missed_mate_in_one": 0,
+          "lost_advantage_moves": 8
+        },
+        "middlegame": {
+          "moves": 59,
+          "mean_expected_score_loss_pp": 5.224,
+          "mean_capped_cp_loss": 104.98,
+          "large_errors": 6,
+          "large_errors_per_100_moves": 10.17,
+          "mate_in_one_opportunities": 0,
+          "missed_mate_in_one": 0,
+          "lost_advantage_moves": 4
+        },
+        "endgame": {
+          "moves": 501,
+          "mean_expected_score_loss_pp": 7.555,
+          "mean_capped_cp_loss": 130.44,
+          "large_errors": 62,
+          "large_errors_per_100_moves": 12.38,
+          "mate_in_one_opportunities": 0,
+          "missed_mate_in_one": 0,
+          "lost_advantage_moves": 35
+        }
+      }
+    },
+    "typesafe/jev-1.13": {
+      "wins": 1,
+      "losses": 8,
+      "draws": 11,
+      "score": 6.5,
+      "unfinished": 0,
+      "decisions": 741,
+      "median_latency_ms": 400,
+      "mean_latency_ms": 426.1,
+      "accepted_cost_usd_rounded": 0.028485,
+      "mean_cost_usd_rounded": 3.844e-05,
+      "quality": {
+        "moves": 741,
+        "mean_expected_score_loss_pp": 8.314,
+        "mean_capped_cp_loss": 142.74,
+        "large_errors": 102,
+        "large_errors_per_100_moves": 13.77,
+        "mate_in_one_opportunities": 1,
+        "missed_mate_in_one": 0,
+        "lost_advantage_moves": 56
+      },
+      "distinct_game_results": {
+        "wins": 1,
+        "losses": 1,
+        "draws": 10
+      },
+      "quality_distinct_games": {
+        "moves": 630,
+        "mean_expected_score_loss_pp": 7.933,
+        "mean_capped_cp_loss": 134.79,
+        "large_errors": 87,
+        "large_errors_per_100_moves": 13.81,
+        "mate_in_one_opportunities": 1,
+        "missed_mate_in_one": 0,
+        "lost_advantage_moves": 45
+      },
+      "quality_by_phase": {
+        "opening": {
+          "moves": 176,
+          "mean_expected_score_loss_pp": 10.703,
+          "mean_capped_cp_loss": 184.59,
+          "large_errors": 30,
+          "large_errors_per_100_moves": 17.05,
+          "mate_in_one_opportunities": 0,
+          "missed_mate_in_one": 0,
+          "lost_advantage_moves": 10
+        },
+        "middlegame": {
+          "moves": 57,
+          "mean_expected_score_loss_pp": 18.577,
+          "mean_capped_cp_loss": 281.72,
+          "large_errors": 11,
+          "large_errors_per_100_moves": 19.3,
+          "mate_in_one_opportunities": 0,
+          "missed_mate_in_one": 0,
+          "lost_advantage_moves": 8
+        },
+        "endgame": {
+          "moves": 508,
+          "mean_expected_score_loss_pp": 6.335,
+          "mean_capped_cp_loss": 112.65,
+          "large_errors": 61,
+          "large_errors_per_100_moves": 12.01,
+          "mate_in_one_opportunities": 1,
+          "missed_mate_in_one": 0,
+          "lost_advantage_moves": 38
+        }
+      }
+    }
+  },
+  "batches": {
+    "2026-10-06-standard": {
+      "games": 10,
+      "total_plies": 839,
+      "total_reported_cost_usd": 0.098732,
+      "unique_move_sequences": 8,
+      "duplicate_groups": [
+        [
+          "01-standard-pair-1-clef-white",
+          "03-standard-pair-2-clef-white",
+          "09-standard-pair-5-clef-white"
+        ]
+      ],
+      "terminations": {
+        "Checkmate": 4,
+        "InsufficientMaterial": 3,
+        "FivefoldRepetition": 3
+      },
+      "models": {
+        "cloudflare/clef": {
+          "wins": 3,
+          "losses": 1,
+          "draws": 6,
+          "score": 6.0,
+          "unfinished": 0,
+          "decisions": 421,
+          "median_latency_ms": 708,
+          "mean_latency_ms": 787.0,
+          "accepted_cost_usd_rounded": 0.082586,
+          "mean_cost_usd_rounded": 0.00019617,
+          "quality": {
+            "moves": 421,
+            "mean_expected_score_loss_pp": 7.694,
+            "mean_capped_cp_loss": 134.71,
+            "large_errors": 59,
+            "large_errors_per_100_moves": 14.01,
+            "mate_in_one_opportunities": 3,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 27
+          },
+          "distinct_game_results": {
+            "wins": 1,
+            "losses": 1,
+            "draws": 6
+          },
+          "quality_distinct_games": {
+            "moves": 405,
+            "mean_expected_score_loss_pp": 7.712,
+            "mean_capped_cp_loss": 135.4,
+            "large_errors": 57,
+            "large_errors_per_100_moves": 14.07,
+            "mate_in_one_opportunities": 1,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 27
+          },
+          "quality_by_phase": {
+            "opening": {
+              "moves": 94,
+              "mean_expected_score_loss_pp": 8.963,
+              "mean_capped_cp_loss": 144.17,
+              "large_errors": 18,
+              "large_errors_per_100_moves": 19.15,
+              "mate_in_one_opportunities": 3,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 4
+            },
+            "middlegame": {
+              "moves": 32,
+              "mean_expected_score_loss_pp": 9.631,
+              "mean_capped_cp_loss": 146.28,
+              "large_errors": 6,
+              "large_errors_per_100_moves": 18.75,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 4
+            },
+            "endgame": {
+              "moves": 295,
+              "mean_expected_score_loss_pp": 7.079,
+              "mean_capped_cp_loss": 130.45,
+              "large_errors": 35,
+              "large_errors_per_100_moves": 11.86,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 19
+            }
+          }
+        },
+        "typesafe/jev-1.13": {
+          "wins": 1,
+          "losses": 3,
+          "draws": 6,
+          "score": 4.0,
+          "unfinished": 0,
+          "decisions": 418,
+          "median_latency_ms": 399.0,
+          "mean_latency_ms": 421.6,
+          "accepted_cost_usd_rounded": 0.016148,
+          "mean_cost_usd_rounded": 3.863e-05,
+          "quality": {
+            "moves": 418,
+            "mean_expected_score_loss_pp": 7.997,
+            "mean_capped_cp_loss": 142.42,
+            "large_errors": 55,
+            "large_errors_per_100_moves": 13.16,
+            "mate_in_one_opportunities": 1,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 30
+          },
+          "distinct_game_results": {
+            "wins": 1,
+            "losses": 1,
+            "draws": 6
+          },
+          "quality_distinct_games": {
+            "moves": 404,
+            "mean_expected_score_loss_pp": 7.759,
+            "mean_capped_cp_loss": 137.94,
+            "large_errors": 53,
+            "large_errors_per_100_moves": 13.12,
+            "mate_in_one_opportunities": 1,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 28
+          },
+          "quality_by_phase": {
+            "opening": {
+              "moves": 91,
+              "mean_expected_score_loss_pp": 10.349,
+              "mean_capped_cp_loss": 179.78,
+              "large_errors": 15,
+              "large_errors_per_100_moves": 16.48,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 5
+            },
+            "middlegame": {
+              "moves": 30,
+              "mean_expected_score_loss_pp": 21.963,
+              "mean_capped_cp_loss": 302.27,
+              "large_errors": 7,
+              "large_errors_per_100_moves": 23.33,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 4
+            },
+            "endgame": {
+              "moves": 297,
+              "mean_expected_score_loss_pp": 5.865,
+              "mean_capped_cp_loss": 114.82,
+              "large_errors": 33,
+              "large_errors_per_100_moves": 11.11,
+              "mate_in_one_opportunities": 1,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 21
+            }
+          }
+        }
+      }
+    },
+    "2026-10-07-standard": {
+      "games": 10,
+      "total_plies": 646,
+      "total_reported_cost_usd": 0.081813,
+      "unique_move_sequences": 5,
+      "duplicate_groups": [
+        [
+          "11-standard-pair-6-clef-white",
+          "13-standard-pair-7-clef-white",
+          "15-standard-pair-8-clef-white",
+          "17-standard-pair-9-clef-white",
+          "19-standard-pair-10-clef-white"
+        ],
+        [
+          "12-standard-pair-6-jev-white",
+          "16-standard-pair-8-jev-white"
+        ]
+      ],
+      "terminations": {
+        "Checkmate": 5,
+        "InsufficientMaterial": 4,
+        "FivefoldRepetition": 1
+      },
+      "models": {
+        "cloudflare/clef": {
+          "wins": 5,
+          "losses": 0,
+          "draws": 5,
+          "score": 7.5,
+          "unfinished": 0,
+          "decisions": 323,
+          "median_latency_ms": 749,
+          "mean_latency_ms": 820.4,
+          "accepted_cost_usd_rounded": 0.069487,
+          "mean_cost_usd_rounded": 0.00021513,
+          "quality": {
+            "moves": 323,
+            "mean_expected_score_loss_pp": 7.861,
+            "mean_capped_cp_loss": 127.82,
+            "large_errors": 45,
+            "large_errors_per_100_moves": 13.93,
+            "mate_in_one_opportunities": 5,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 20
+          },
+          "distinct_game_results": {
+            "wins": 1,
+            "losses": 0,
+            "draws": 4
+          },
+          "quality_distinct_games": {
+            "moves": 230,
+            "mean_expected_score_loss_pp": 8.159,
+            "mean_capped_cp_loss": 130,
+            "large_errors": 34,
+            "large_errors_per_100_moves": 14.78,
+            "mate_in_one_opportunities": 1,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 16
+          },
+          "quality_by_phase": {
+            "opening": {
+              "moves": 90,
+              "mean_expected_score_loss_pp": 9.364,
+              "mean_capped_cp_loss": 143.36,
+              "large_errors": 18,
+              "large_errors_per_100_moves": 20.0,
+              "mate_in_one_opportunities": 5,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 4
+            },
+            "middlegame": {
+              "moves": 27,
+              "mean_expected_score_loss_pp": 0,
+              "mean_capped_cp_loss": 56.04,
+              "large_errors": 0,
+              "large_errors_per_100_moves": 0.0,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 0
+            },
+            "endgame": {
+              "moves": 206,
+              "mean_expected_score_loss_pp": 8.235,
+              "mean_capped_cp_loss": 130.44,
+              "large_errors": 27,
+              "large_errors_per_100_moves": 13.11,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 16
+            }
+          }
+        },
+        "typesafe/jev-1.13": {
+          "wins": 0,
+          "losses": 5,
+          "draws": 5,
+          "score": 2.5,
+          "unfinished": 0,
+          "decisions": 323,
+          "median_latency_ms": 406,
+          "mean_latency_ms": 431.9,
+          "accepted_cost_usd_rounded": 0.012337,
+          "mean_cost_usd_rounded": 3.82e-05,
+          "quality": {
+            "moves": 323,
+            "mean_expected_score_loss_pp": 8.725,
+            "mean_capped_cp_loss": 143.16,
+            "large_errors": 47,
+            "large_errors_per_100_moves": 14.55,
+            "mate_in_one_opportunities": 0,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 26
+          },
+          "distinct_game_results": {
+            "wins": 0,
+            "losses": 1,
+            "draws": 4
+          },
+          "quality_distinct_games": {
+            "moves": 233,
+            "mean_expected_score_loss_pp": 8.443,
+            "mean_capped_cp_loss": 133.43,
+            "large_errors": 35,
+            "large_errors_per_100_moves": 15.02,
+            "mate_in_one_opportunities": 0,
+            "missed_mate_in_one": 0,
+            "lost_advantage_moves": 18
+          },
+          "quality_by_phase": {
+            "opening": {
+              "moves": 85,
+              "mean_expected_score_loss_pp": 11.082,
+              "mean_capped_cp_loss": 189.74,
+              "large_errors": 15,
+              "large_errors_per_100_moves": 17.65,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 5
+            },
+            "middlegame": {
+              "moves": 27,
+              "mean_expected_score_loss_pp": 14.815,
+              "mean_capped_cp_loss": 258.89,
+              "large_errors": 4,
+              "large_errors_per_100_moves": 14.81,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 4
+            },
+            "endgame": {
+              "moves": 211,
+              "mean_expected_score_loss_pp": 6.995,
+              "mean_capped_cp_loss": 109.59,
+              "large_errors": 28,
+              "large_errors_per_100_moves": 13.27,
+              "mate_in_one_opportunities": 0,
+              "missed_mate_in_one": 0,
+              "lost_advantage_moves": 17
+            }
+          }
+        }
+      }
+    }
+  }
+}

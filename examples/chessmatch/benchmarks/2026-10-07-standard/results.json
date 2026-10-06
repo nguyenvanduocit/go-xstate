@@ -1,0 +1,6622 @@
+[
+  {
+    "game_id": "11-standard-pair-6-clef-white",
+    "opening": "standard-pair-6",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "cloudflare/clef",
+    "black": "typesafe/jev-1.13",
+    "exit_code": 0,
+    "duration_s": 9.09,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.14,
+        "cost_usd_rounded": 0.000218,
+        "latency_ms": 1238
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.3,
+        "cost_usd_rounded": 4.3e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.076,
+        "cost_usd_rounded": 0.000272,
+        "latency_ms": 647
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe4",
+        "uci": "d5e4",
+        "confidence": 0.7,
+        "cost_usd_rounded": 5.2e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nf3",
+        "uci": "g1f3",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000346,
+        "latency_ms": 769
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "exf3",
+        "uci": "e4f3",
+        "confidence": 0.36,
+        "cost_usd_rounded": 5.6e-05,
+        "latency_ms": 390
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxf3",
+        "uci": "d1f3",
+        "confidence": 0.288,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 627
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxd4",
+        "uci": "d8d4",
+        "confidence": 0.37,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.013,
+        "cost_usd_rounded": 0.000403,
+        "latency_ms": 821
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxc3+",
+        "uci": "d4c3",
+        "confidence": 0.56,
+        "cost_usd_rounded": 7.4e-05,
+        "latency_ms": 519
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxc3",
+        "uci": "f3c3",
+        "confidence": 0.389,
+        "cost_usd_rounded": 0.000118,
+        "latency_ms": 547
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Bh3",
+        "uci": "c8h3",
+        "confidence": 0.09,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxh3",
+        "uci": "c3h3",
+        "confidence": 0.285,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 880
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.16,
+        "cost_usd_rounded": 4.4e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qc8#",
+        "uci": "h3c8",
+        "confidence": 0.085,
+        "cost_usd_rounded": 0.000382,
+        "latency_ms": 660
+      }
+    ],
+    "result": "1-0",
+    "reason": "Checkmate",
+    "plies": 15,
+    "cost_usd": 0.002808,
+    "winner": "cloudflare/clef"
+  },
+  {
+    "game_id": "12-standard-pair-6-jev-white",
+    "opening": "standard-pair-6",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "typesafe/jev-1.13",
+    "black": "cloudflare/clef",
+    "exit_code": 0,
+    "duration_s": 77.556,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.9,
+        "cost_usd_rounded": 4.2e-05,
+        "latency_ms": 589
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.139,
+        "cost_usd_rounded": 0.000219,
+        "latency_ms": 1160
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exd5",
+        "uci": "e4d5",
+        "confidence": 0.6,
+        "cost_usd_rounded": 5.5e-05,
+        "latency_ms": 376
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxd5",
+        "uci": "d8d5",
+        "confidence": 0.427,
+        "cost_usd_rounded": 0.000279,
+        "latency_ms": 1472
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bb5+",
+        "uci": "f1b5",
+        "confidence": 0.26,
+        "cost_usd_rounded": 5.3e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxb5",
+        "uci": "d5b5",
+        "confidence": 0.828,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 618
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.15,
+        "cost_usd_rounded": 4.7e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe5+",
+        "uci": "b5e5",
+        "confidence": 0.023,
+        "cost_usd_rounded": 0.000404,
+        "latency_ms": 740
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne4",
+        "uci": "c3e4",
+        "confidence": 0.32,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 400
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe4+",
+        "uci": "e5e4",
+        "confidence": 0.065,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 657
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne2",
+        "uci": "g1e2",
+        "confidence": 0.07,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe2+",
+        "uci": "e4e2",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000411,
+        "latency_ms": 766
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe2",
+        "uci": "e1e2",
+        "confidence": 0.13,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 430
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 909
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.06,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 459
+      },
+      {
+        "ply": 16,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "e5",
+        "uci": "e7e5",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.000291,
+        "latency_ms": 619
+      },
+      {
+        "ply": 17,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe5",
+        "uci": "d4e5",
+        "confidence": 0.17,
+        "cost_usd_rounded": 6e-05,
+        "latency_ms": 376
+      },
+      {
+        "ply": 18,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nc6",
+        "uci": "b8c6",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 900
+      },
+      {
+        "ply": 19,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exf6",
+        "uci": "e5f6",
+        "confidence": 0.16,
+        "cost_usd_rounded": 6.5e-05,
+        "latency_ms": 589
+      },
+      {
+        "ply": 20,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "gxf6",
+        "uci": "g7f6",
+        "confidence": 0.484,
+        "cost_usd_rounded": 0.000283,
+        "latency_ms": 887
+      },
+      {
+        "ply": 21,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qd7+",
+        "uci": "d1d7",
+        "confidence": 0.16,
+        "cost_usd_rounded": 6.3e-05,
+        "latency_ms": 401
+      },
+      {
+        "ply": 22,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd7",
+        "uci": "e8d7",
+        "confidence": 0.07,
+        "cost_usd_rounded": 9.6e-05,
+        "latency_ms": 496
+      },
+      {
+        "ply": 23,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rd1+",
+        "uci": "h1d1",
+        "confidence": 0.26,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 24,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nd4+",
+        "uci": "c6d4",
+        "confidence": 0.059,
+        "cost_usd_rounded": 0.000116,
+        "latency_ms": 540
+      },
+      {
+        "ply": 25,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd4+",
+        "uci": "d1d4",
+        "confidence": 0.55,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 26,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd6",
+        "uci": "f8d6",
+        "confidence": 0.014,
+        "cost_usd_rounded": 0.000117,
+        "latency_ms": 572
+      },
+      {
+        "ply": 27,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd6+",
+        "uci": "d4d6",
+        "confidence": 0.69,
+        "cost_usd_rounded": 6.2e-05,
+        "latency_ms": 374
+      },
+      {
+        "ply": 28,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd6",
+        "uci": "d7d6",
+        "confidence": 0.401,
+        "cost_usd_rounded": 0.000109,
+        "latency_ms": 1000
+      },
+      {
+        "ply": 29,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bf4+",
+        "uci": "c1f4",
+        "confidence": 0.16,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 419
+      },
+      {
+        "ply": 30,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke7",
+        "uci": "d6e7",
+        "confidence": 0.006,
+        "cost_usd_rounded": 0.000124,
+        "latency_ms": 419
+      },
+      {
+        "ply": 31,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bxc7",
+        "uci": "f4c7",
+        "confidence": 0.23,
+        "cost_usd_rounded": 5.9e-05,
+        "latency_ms": 405
+      },
+      {
+        "ply": 32,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bg4+",
+        "uci": "c8g4",
+        "confidence": 0.023,
+        "cost_usd_rounded": 0.00023,
+        "latency_ms": 871
+      },
+      {
+        "ply": 33,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd3",
+        "uci": "e2d3",
+        "confidence": 0.1,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 386
+      },
+      {
+        "ply": 34,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bf5+",
+        "uci": "g4f5",
+        "confidence": 0.033,
+        "cost_usd_rounded": 0.000311,
+        "latency_ms": 859
+      },
+      {
+        "ply": 35,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd4",
+        "uci": "d3d4",
+        "confidence": 0.11,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 36,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rhd8+",
+        "uci": "h8d8",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000303,
+        "latency_ms": 567
+      },
+      {
+        "ply": 37,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bxd8+",
+        "uci": "c7d8",
+        "confidence": 0.69,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 1148
+      },
+      {
+        "ply": 38,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd8",
+        "uci": "e7d8",
+        "confidence": 0.373,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 669
+      },
+      {
+        "ply": 39,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rd1",
+        "uci": "a1d1",
+        "confidence": 0.13,
+        "cost_usd_rounded": 4.8e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 40,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc7",
+        "uci": "d8c7",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000238,
+        "latency_ms": 906
+      },
+      {
+        "ply": 41,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.15,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 417
+      },
+      {
+        "ply": 42,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "b6+",
+        "uci": "b7b6",
+        "confidence": 0.015,
+        "cost_usd_rounded": 0.000252,
+        "latency_ms": 1018
+      },
+      {
+        "ply": 43,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd5",
+        "uci": "c5d5",
+        "confidence": 0.18,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 486
+      },
+      {
+        "ply": 44,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd8+",
+        "uci": "a8d8",
+        "confidence": 0.038,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 968
+      },
+      {
+        "ply": 45,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "d5c4",
+        "confidence": 1.0,
+        "cost_usd_rounded": 2.4e-05,
+        "latency_ms": 380
+      },
+      {
+        "ply": 46,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rxd1",
+        "uci": "d8d1",
+        "confidence": 0.303,
+        "cost_usd_rounded": 0.000312,
+        "latency_ms": 1026
+      },
+      {
+        "ply": 47,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb5",
+        "uci": "c4b5",
+        "confidence": 0.3,
+        "cost_usd_rounded": 3.9e-05,
+        "latency_ms": 358
+      },
+      {
+        "ply": 48,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd7+",
+        "uci": "f5d7",
+        "confidence": 0.03,
+        "cost_usd_rounded": 0.000318,
+        "latency_ms": 1186
+      },
+      {
+        "ply": 49,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "b5c4",
+        "confidence": 0.18,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 50,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bb5+",
+        "uci": "d7b5",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000318,
+        "latency_ms": 1009
+      },
+      {
+        "ply": 51,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxb5",
+        "uci": "c4b5",
+        "confidence": 0.77,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 539
+      },
+      {
+        "ply": 52,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd5+",
+        "uci": "d1d5",
+        "confidence": 0.027,
+        "cost_usd_rounded": 0.000259,
+        "latency_ms": 1609
+      },
+      {
+        "ply": 53,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "b5c4",
+        "confidence": 0.23,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 647
+      },
+      {
+        "ply": 54,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd4+",
+        "uci": "d5d4",
+        "confidence": 0.04,
+        "cost_usd_rounded": 0.000274,
+        "latency_ms": 809
+      },
+      {
+        "ply": 55,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxd4",
+        "uci": "c4d4",
+        "confidence": 0.55,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 56,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd6",
+        "uci": "c7d6",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000171,
+        "latency_ms": 786
+      },
+      {
+        "ply": 57,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "d4c4",
+        "confidence": 0.1,
+        "cost_usd_rounded": 4e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 58,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "b5+",
+        "uci": "b6b5",
+        "confidence": 0.052,
+        "cost_usd_rounded": 0.000163,
+        "latency_ms": 688
+      },
+      {
+        "ply": 59,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxb5",
+        "uci": "c4b5",
+        "confidence": 0.55,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 60,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "a6+",
+        "uci": "a7a6",
+        "confidence": 0.039,
+        "cost_usd_rounded": 0.000155,
+        "latency_ms": 998
+      },
+      {
+        "ply": 61,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxa6",
+        "uci": "b5a6",
+        "confidence": 0.43,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 62,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d6c5",
+        "confidence": 0.008,
+        "cost_usd_rounded": 0.000155,
+        "latency_ms": 837
+      },
+      {
+        "ply": 63,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "b4+",
+        "uci": "b2b4",
+        "confidence": 0.18,
+        "cost_usd_rounded": 3.8e-05,
+        "latency_ms": 368
+      },
+      {
+        "ply": 64,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxb4",
+        "uci": "c5b4",
+        "confidence": 0.378,
+        "cost_usd_rounded": 0.00012,
+        "latency_ms": 698
+      },
+      {
+        "ply": 65,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "c3+",
+        "uci": "c2c3",
+        "confidence": 0.26,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 596
+      },
+      {
+        "ply": 66,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxc3",
+        "uci": "b4c3",
+        "confidence": 0.516,
+        "cost_usd_rounded": 0.000112,
+        "latency_ms": 739
+      },
+      {
+        "ply": 67,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb5",
+        "uci": "a6b5",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 448
+      },
+      {
+        "ply": 68,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c3d4",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 667
+      },
+      {
+        "ply": 69,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "b5c6",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 70,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "d4e5",
+        "confidence": 0.022,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 748
+      },
+      {
+        "ply": 71,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "f4+",
+        "uci": "f2f4",
+        "confidence": 0.25,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 468
+      },
+      {
+        "ply": 72,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxf4",
+        "uci": "e5f4",
+        "confidence": 0.188,
+        "cost_usd_rounded": 0.000112,
+        "latency_ms": 1268
+      },
+      {
+        "ply": 73,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g3+",
+        "uci": "g2g3",
+        "confidence": 0.15,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 568
+      },
+      {
+        "ply": 74,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "f4e5",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 728
+      },
+      {
+        "ply": 75,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g4",
+        "uci": "g3g4",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 425
+      },
+      {
+        "ply": 76,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kf4",
+        "uci": "e5f4",
+        "confidence": 0.017,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 586
+      },
+      {
+        "ply": 77,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd5",
+        "uci": "c6d5",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 508
+      },
+      {
+        "ply": 78,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxg4",
+        "uci": "f4g4",
+        "confidence": 0.08,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 475
+      },
+      {
+        "ply": 79,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "h3+",
+        "uci": "h2h3",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 540
+      },
+      {
+        "ply": 80,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxh3",
+        "uci": "g4h3",
+        "confidence": 0.105,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 804
+      },
+      {
+        "ply": 81,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke4",
+        "uci": "d5e4",
+        "confidence": 0.08,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 457
+      },
+      {
+        "ply": 82,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f5+",
+        "uci": "f6f5",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.00013,
+        "latency_ms": 488
+      },
+      {
+        "ply": 83,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf5",
+        "uci": "e4f5",
+        "confidence": 0.47,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 84,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kg2",
+        "uci": "h3g2",
+        "confidence": 0.01,
+        "cost_usd_rounded": 0.000123,
+        "latency_ms": 700
+      },
+      {
+        "ply": 85,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "f5f6",
+        "confidence": 0.07,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 86,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kf3",
+        "uci": "g2f3",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000145,
+        "latency_ms": 849
+      },
+      {
+        "ply": 87,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf7",
+        "uci": "f6f7",
+        "confidence": 0.26,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 385
+      },
+      {
+        "ply": 88,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke4",
+        "uci": "f3e4",
+        "confidence": 0.007,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 526
+      },
+      {
+        "ply": 89,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a4",
+        "uci": "a2a4",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.1e-05,
+        "latency_ms": 518
+      },
+      {
+        "ply": 90,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd3",
+        "uci": "e4d3",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 757
+      },
+      {
+        "ply": 91,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a5",
+        "uci": "a4a5",
+        "confidence": 0.16,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 958
+      },
+      {
+        "ply": 92,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "d3d4",
+        "confidence": 0.028,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 818
+      },
+      {
+        "ply": 93,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a6",
+        "uci": "a5a6",
+        "confidence": 0.29,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 94,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "d4e5",
+        "confidence": 0.006,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 596
+      },
+      {
+        "ply": 95,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a7",
+        "uci": "a6a7",
+        "confidence": 0.45,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 399
+      },
+      {
+        "ply": 96,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd6",
+        "uci": "e5d6",
+        "confidence": 0.011,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 1157
+      },
+      {
+        "ply": 97,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a8=Q",
+        "uci": "a7a8q",
+        "confidence": 0.72,
+        "cost_usd_rounded": 3.1e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 98,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d6c5",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000115,
+        "latency_ms": 628
+      },
+      {
+        "ply": 99,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qc6+",
+        "uci": "a8c6",
+        "confidence": 0.19,
+        "cost_usd_rounded": 5.2e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 100,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxc6",
+        "uci": "c5c6",
+        "confidence": 0.898,
+        "cost_usd_rounded": 9.5e-05,
+        "latency_ms": 1098
+      },
+      {
+        "ply": 101,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke7",
+        "uci": "f7e7",
+        "confidence": 0.09,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 368
+      },
+      {
+        "ply": 102,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h5",
+        "uci": "h7h5",
+        "confidence": 0.004,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 556
+      },
+      {
+        "ply": 103,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "e7f6",
+        "confidence": 0.13,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 368
+      },
+      {
+        "ply": 104,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h4",
+        "uci": "h5h4",
+        "confidence": 0.037,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 557
+      },
+      {
+        "ply": 105,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg5",
+        "uci": "f6g5",
+        "confidence": 0.14,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 106,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h3",
+        "uci": "h4h3",
+        "confidence": 0.07,
+        "cost_usd_rounded": 0.000136,
+        "latency_ms": 785
+      },
+      {
+        "ply": 107,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf4",
+        "uci": "g5f4",
+        "confidence": 0.08,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 108,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h2",
+        "uci": "h3h2",
+        "confidence": 0.087,
+        "cost_usd_rounded": 0.000136,
+        "latency_ms": 825
+      },
+      {
+        "ply": 109,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg3",
+        "uci": "f4g3",
+        "confidence": 0.28,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 376
+      },
+      {
+        "ply": 110,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h1=Q",
+        "uci": "h2h1q",
+        "confidence": 0.115,
+        "cost_usd_rounded": 0.000161,
+        "latency_ms": 609
+      },
+      {
+        "ply": 111,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf4",
+        "uci": "g3f4",
+        "confidence": 0.03,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 376
+      },
+      {
+        "ply": 112,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh4+",
+        "uci": "h1h4",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.000264,
+        "latency_ms": 783
+      },
+      {
+        "ply": 113,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke5",
+        "uci": "f4e5",
+        "confidence": 0.08,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 347
+      },
+      {
+        "ply": 114,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh5+",
+        "uci": "h4h5",
+        "confidence": 0.024,
+        "cost_usd_rounded": 0.000273,
+        "latency_ms": 2077
+      },
+      {
+        "ply": 115,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "e5f6",
+        "confidence": 0.18,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 116,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh6+",
+        "uci": "h5h6",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000288,
+        "latency_ms": 586
+      },
+      {
+        "ply": 117,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke5",
+        "uci": "f6e5",
+        "confidence": 0.09,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 118,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh8+",
+        "uci": "h6h8",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000252,
+        "latency_ms": 766
+      },
+      {
+        "ply": 119,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke6",
+        "uci": "e5e6",
+        "confidence": 0.27,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 447
+      },
+      {
+        "ply": 120,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe8+",
+        "uci": "h8e8",
+        "confidence": 0.029,
+        "cost_usd_rounded": 0.000266,
+        "latency_ms": 586
+      },
+      {
+        "ply": 121,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "e6f6",
+        "confidence": 0.09,
+        "cost_usd_rounded": 2.4e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 122,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe6+",
+        "uci": "e8e6",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000267,
+        "latency_ms": 788
+      },
+      {
+        "ply": 123,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe6",
+        "uci": "f6e6",
+        "confidence": 0.73,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 356
+      }
+    ],
+    "result": "1/2-1/2",
+    "reason": "InsufficientMaterial",
+    "plies": 123,
+    "cost_usd": 0.014368,
+    "winner": null
+  },
+  {
+    "game_id": "13-standard-pair-7-clef-white",
+    "opening": "standard-pair-7",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "cloudflare/clef",
+    "black": "typesafe/jev-1.13",
+    "exit_code": 0,
+    "duration_s": 10.794,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.14,
+        "cost_usd_rounded": 0.000218,
+        "latency_ms": 606
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.32,
+        "cost_usd_rounded": 4.3e-05,
+        "latency_ms": 357
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.076,
+        "cost_usd_rounded": 0.000272,
+        "latency_ms": 860
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe4",
+        "uci": "d5e4",
+        "confidence": 0.65,
+        "cost_usd_rounded": 5.2e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nf3",
+        "uci": "g1f3",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000346,
+        "latency_ms": 818
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "exf3",
+        "uci": "e4f3",
+        "confidence": 0.4,
+        "cost_usd_rounded": 5.6e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxf3",
+        "uci": "d1f3",
+        "confidence": 0.288,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 967
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxd4",
+        "uci": "d8d4",
+        "confidence": 0.4,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 382
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.013,
+        "cost_usd_rounded": 0.000403,
+        "latency_ms": 997
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxc3+",
+        "uci": "d4c3",
+        "confidence": 0.56,
+        "cost_usd_rounded": 7.4e-05,
+        "latency_ms": 467
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxc3",
+        "uci": "f3c3",
+        "confidence": 0.39,
+        "cost_usd_rounded": 0.000118,
+        "latency_ms": 1140
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Bh3",
+        "uci": "c8h3",
+        "confidence": 0.07,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxh3",
+        "uci": "c3h3",
+        "confidence": 0.285,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 1200
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.15,
+        "cost_usd_rounded": 4.4e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qc8#",
+        "uci": "h3c8",
+        "confidence": 0.085,
+        "cost_usd_rounded": 0.000382,
+        "latency_ms": 1388
+      }
+    ],
+    "result": "1-0",
+    "reason": "Checkmate",
+    "plies": 15,
+    "cost_usd": 0.002808,
+    "winner": "cloudflare/clef"
+  },
+  {
+    "game_id": "14-standard-pair-7-jev-white",
+    "opening": "standard-pair-7",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "typesafe/jev-1.13",
+    "black": "cloudflare/clef",
+    "exit_code": 0,
+    "duration_s": 67.583,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.87,
+        "cost_usd_rounded": 4.2e-05,
+        "latency_ms": 619
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.139,
+        "cost_usd_rounded": 0.000219,
+        "latency_ms": 628
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exd5",
+        "uci": "e4d5",
+        "confidence": 0.57,
+        "cost_usd_rounded": 5.5e-05,
+        "latency_ms": 390
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxd5",
+        "uci": "d8d5",
+        "confidence": 0.434,
+        "cost_usd_rounded": 0.000279,
+        "latency_ms": 872
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bb5+",
+        "uci": "f1b5",
+        "confidence": 0.26,
+        "cost_usd_rounded": 5.3e-05,
+        "latency_ms": 463
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxb5",
+        "uci": "d5b5",
+        "confidence": 0.828,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 700
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.17,
+        "cost_usd_rounded": 4.7e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe5+",
+        "uci": "b5e5",
+        "confidence": 0.022,
+        "cost_usd_rounded": 0.000404,
+        "latency_ms": 918
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne4",
+        "uci": "c3e4",
+        "confidence": 0.35,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 399
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe4+",
+        "uci": "e5e4",
+        "confidence": 0.065,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 648
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne2",
+        "uci": "g1e2",
+        "confidence": 0.02,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 538
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe2+",
+        "uci": "e4e2",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000411,
+        "latency_ms": 1819
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe2",
+        "uci": "e1e2",
+        "confidence": 0.17,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 489
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 740
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.07,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 16,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "e5",
+        "uci": "e7e5",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.000291,
+        "latency_ms": 609
+      },
+      {
+        "ply": 17,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe5",
+        "uci": "d4e5",
+        "confidence": 0.19,
+        "cost_usd_rounded": 6e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 18,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nc6",
+        "uci": "b8c6",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 928
+      },
+      {
+        "ply": 19,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exf6",
+        "uci": "e5f6",
+        "confidence": 0.16,
+        "cost_usd_rounded": 6.5e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 20,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "gxf6",
+        "uci": "g7f6",
+        "confidence": 0.484,
+        "cost_usd_rounded": 0.000283,
+        "latency_ms": 1159
+      },
+      {
+        "ply": 21,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qd7+",
+        "uci": "d1d7",
+        "confidence": 0.17,
+        "cost_usd_rounded": 6.3e-05,
+        "latency_ms": 448
+      },
+      {
+        "ply": 22,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd7",
+        "uci": "e8d7",
+        "confidence": 0.07,
+        "cost_usd_rounded": 9.6e-05,
+        "latency_ms": 609
+      },
+      {
+        "ply": 23,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rd1+",
+        "uci": "h1d1",
+        "confidence": 0.24,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 436
+      },
+      {
+        "ply": 24,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nd4+",
+        "uci": "c6d4",
+        "confidence": 0.059,
+        "cost_usd_rounded": 0.000116,
+        "latency_ms": 630
+      },
+      {
+        "ply": 25,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd4+",
+        "uci": "d1d4",
+        "confidence": 0.54,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 380
+      },
+      {
+        "ply": 26,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd6",
+        "uci": "f8d6",
+        "confidence": 0.015,
+        "cost_usd_rounded": 0.000117,
+        "latency_ms": 737
+      },
+      {
+        "ply": 27,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd6+",
+        "uci": "d4d6",
+        "confidence": 0.7,
+        "cost_usd_rounded": 6.2e-05,
+        "latency_ms": 487
+      },
+      {
+        "ply": 28,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd6",
+        "uci": "d7d6",
+        "confidence": 0.4,
+        "cost_usd_rounded": 0.000109,
+        "latency_ms": 629
+      },
+      {
+        "ply": 29,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bf4+",
+        "uci": "c1f4",
+        "confidence": 0.2,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 30,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke7",
+        "uci": "d6e7",
+        "confidence": 0.006,
+        "cost_usd_rounded": 0.000124,
+        "latency_ms": 427
+      },
+      {
+        "ply": 31,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bxc7",
+        "uci": "f4c7",
+        "confidence": 0.27,
+        "cost_usd_rounded": 5.9e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 32,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bg4+",
+        "uci": "c8g4",
+        "confidence": 0.023,
+        "cost_usd_rounded": 0.00023,
+        "latency_ms": 438
+      },
+      {
+        "ply": 33,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd3",
+        "uci": "e2d3",
+        "confidence": 0.13,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 34,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bf5+",
+        "uci": "g4f5",
+        "confidence": 0.033,
+        "cost_usd_rounded": 0.000311,
+        "latency_ms": 837
+      },
+      {
+        "ply": 35,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd4",
+        "uci": "d3d4",
+        "confidence": 0.1,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 36,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rhd8+",
+        "uci": "h8d8",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000303,
+        "latency_ms": 940
+      },
+      {
+        "ply": 37,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bxd8+",
+        "uci": "c7d8",
+        "confidence": 0.68,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 448
+      },
+      {
+        "ply": 38,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd8",
+        "uci": "e7d8",
+        "confidence": 0.374,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 686
+      },
+      {
+        "ply": 39,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rd1",
+        "uci": "a1d1",
+        "confidence": 0.12,
+        "cost_usd_rounded": 4.8e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 40,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc7",
+        "uci": "d8c7",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000238,
+        "latency_ms": 758
+      },
+      {
+        "ply": 41,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.13,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 375
+      },
+      {
+        "ply": 42,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "b6+",
+        "uci": "b7b6",
+        "confidence": 0.014,
+        "cost_usd_rounded": 0.000252,
+        "latency_ms": 1040
+      },
+      {
+        "ply": 43,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd5",
+        "uci": "c5d5",
+        "confidence": 0.19,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 44,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd8+",
+        "uci": "a8d8",
+        "confidence": 0.038,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 408
+      },
+      {
+        "ply": 45,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "d5c4",
+        "confidence": 1.0,
+        "cost_usd_rounded": 2.4e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 46,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rxd1",
+        "uci": "d8d1",
+        "confidence": 0.299,
+        "cost_usd_rounded": 0.000312,
+        "latency_ms": 1017
+      },
+      {
+        "ply": 47,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb5",
+        "uci": "c4b5",
+        "confidence": 0.26,
+        "cost_usd_rounded": 3.9e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 48,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd7+",
+        "uci": "f5d7",
+        "confidence": 0.03,
+        "cost_usd_rounded": 0.000318,
+        "latency_ms": 678
+      },
+      {
+        "ply": 49,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "b5c4",
+        "confidence": 0.18,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 467
+      },
+      {
+        "ply": 50,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bb5+",
+        "uci": "d7b5",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000318,
+        "latency_ms": 1018
+      },
+      {
+        "ply": 51,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxb5",
+        "uci": "c4b5",
+        "confidence": 0.75,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 458
+      },
+      {
+        "ply": 52,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd5+",
+        "uci": "d1d5",
+        "confidence": 0.028,
+        "cost_usd_rounded": 0.000259,
+        "latency_ms": 608
+      },
+      {
+        "ply": 53,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "b5c4",
+        "confidence": 0.23,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 399
+      },
+      {
+        "ply": 54,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd4+",
+        "uci": "d5d4",
+        "confidence": 0.04,
+        "cost_usd_rounded": 0.000274,
+        "latency_ms": 915
+      },
+      {
+        "ply": 55,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxd4",
+        "uci": "c4d4",
+        "confidence": 0.6,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 530
+      },
+      {
+        "ply": 56,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd6",
+        "uci": "c7d6",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000171,
+        "latency_ms": 829
+      },
+      {
+        "ply": 57,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "d4c4",
+        "confidence": 0.11,
+        "cost_usd_rounded": 4e-05,
+        "latency_ms": 395
+      },
+      {
+        "ply": 58,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "b5+",
+        "uci": "b6b5",
+        "confidence": 0.052,
+        "cost_usd_rounded": 0.000163,
+        "latency_ms": 609
+      },
+      {
+        "ply": 59,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxb5",
+        "uci": "c4b5",
+        "confidence": 0.5,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 356
+      },
+      {
+        "ply": 60,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "a6+",
+        "uci": "a7a6",
+        "confidence": 0.039,
+        "cost_usd_rounded": 0.000155,
+        "latency_ms": 718
+      },
+      {
+        "ply": 61,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxa6",
+        "uci": "b5a6",
+        "confidence": 0.47,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 62,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d6c5",
+        "confidence": 0.008,
+        "cost_usd_rounded": 0.000155,
+        "latency_ms": 1016
+      },
+      {
+        "ply": 63,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "b4+",
+        "uci": "b2b4",
+        "confidence": 0.21,
+        "cost_usd_rounded": 3.8e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 64,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxb4",
+        "uci": "c5b4",
+        "confidence": 0.378,
+        "cost_usd_rounded": 0.00012,
+        "latency_ms": 788
+      },
+      {
+        "ply": 65,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "c3+",
+        "uci": "c2c3",
+        "confidence": 0.29,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 66,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxc3",
+        "uci": "b4c3",
+        "confidence": 0.516,
+        "cost_usd_rounded": 0.000112,
+        "latency_ms": 607
+      },
+      {
+        "ply": 67,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb5",
+        "uci": "a6b5",
+        "confidence": 0.11,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 68,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c3d4",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 877
+      },
+      {
+        "ply": 69,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "b5c6",
+        "confidence": 0.1,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 70,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "d4e5",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 595
+      },
+      {
+        "ply": 71,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "f4+",
+        "uci": "f2f4",
+        "confidence": 0.25,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 368
+      },
+      {
+        "ply": 72,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxf4",
+        "uci": "e5f4",
+        "confidence": 0.188,
+        "cost_usd_rounded": 0.000112,
+        "latency_ms": 768
+      },
+      {
+        "ply": 73,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g3+",
+        "uci": "g2g3",
+        "confidence": 0.15,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 446
+      },
+      {
+        "ply": 74,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "f4e5",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 637
+      },
+      {
+        "ply": 75,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g4",
+        "uci": "g3g4",
+        "confidence": 0.11,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 390
+      },
+      {
+        "ply": 76,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kf4",
+        "uci": "e5f4",
+        "confidence": 0.017,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 807
+      },
+      {
+        "ply": 77,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd5",
+        "uci": "c6d5",
+        "confidence": 0.15,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 542
+      },
+      {
+        "ply": 78,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxg4",
+        "uci": "f4g4",
+        "confidence": 0.079,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 844
+      },
+      {
+        "ply": 79,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "h3+",
+        "uci": "h2h3",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 386
+      },
+      {
+        "ply": 80,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxh3",
+        "uci": "g4h3",
+        "confidence": 0.105,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 586
+      },
+      {
+        "ply": 81,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke4",
+        "uci": "d5e4",
+        "confidence": 0.08,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 82,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f5+",
+        "uci": "f6f5",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.00013,
+        "latency_ms": 746
+      },
+      {
+        "ply": 83,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf5",
+        "uci": "e4f5",
+        "confidence": 0.49,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 84,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kg2",
+        "uci": "h3g2",
+        "confidence": 0.01,
+        "cost_usd_rounded": 0.000123,
+        "latency_ms": 886
+      },
+      {
+        "ply": 85,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg4",
+        "uci": "f5g4",
+        "confidence": 0.07,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 86,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h5+",
+        "uci": "h7h5",
+        "confidence": 0.093,
+        "cost_usd_rounded": 0.000138,
+        "latency_ms": 1586
+      },
+      {
+        "ply": 87,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxh5",
+        "uci": "g4h5",
+        "confidence": 0.54,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 439
+      },
+      {
+        "ply": 88,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kh3",
+        "uci": "g2h3",
+        "confidence": 0.018,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 506
+      },
+      {
+        "ply": 89,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a4",
+        "uci": "a2a4",
+        "confidence": 0.06,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 90,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kg3",
+        "uci": "h3g3",
+        "confidence": 0.044,
+        "cost_usd_rounded": 0.000108,
+        "latency_ms": 677
+      },
+      {
+        "ply": 91,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a5",
+        "uci": "a4a5",
+        "confidence": 0.21,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 419
+      },
+      {
+        "ply": 92,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kf4",
+        "uci": "g3f4",
+        "confidence": 0.018,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 565
+      },
+      {
+        "ply": 93,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a6",
+        "uci": "a5a6",
+        "confidence": 0.4,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 94,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f5",
+        "uci": "f7f5",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 648
+      },
+      {
+        "ply": 95,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a7",
+        "uci": "a6a7",
+        "confidence": 0.29,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 448
+      },
+      {
+        "ply": 96,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "f4e5",
+        "confidence": 0.016,
+        "cost_usd_rounded": 0.000107,
+        "latency_ms": 517
+      },
+      {
+        "ply": 97,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a8=Q",
+        "uci": "a7a8q",
+        "confidence": 0.64,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 427
+      },
+      {
+        "ply": 98,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "e5d4",
+        "confidence": 0.004,
+        "cost_usd_rounded": 0.000115,
+        "latency_ms": 748
+      },
+      {
+        "ply": 99,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qd5+",
+        "uci": "a8d5",
+        "confidence": 0.21,
+        "cost_usd_rounded": 4.9e-05,
+        "latency_ms": 488
+      },
+      {
+        "ply": 100,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd5",
+        "uci": "d4d5",
+        "confidence": 0.914,
+        "cost_usd_rounded": 9.5e-05,
+        "latency_ms": 636
+      },
+      {
+        "ply": 101,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg6",
+        "uci": "h5g6",
+        "confidence": 0.29,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 102,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f4",
+        "uci": "f5f4",
+        "confidence": 0.011,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 997
+      },
+      {
+        "ply": 103,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf5",
+        "uci": "g6f5",
+        "confidence": 0.3,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 104,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f3",
+        "uci": "f4f3",
+        "confidence": 0.056,
+        "cost_usd_rounded": 0.000116,
+        "latency_ms": 939
+      },
+      {
+        "ply": 105,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf4",
+        "uci": "f5f4",
+        "confidence": 0.13,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 365
+      },
+      {
+        "ply": 106,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f2",
+        "uci": "f3f2",
+        "confidence": 0.157,
+        "cost_usd_rounded": 0.000123,
+        "latency_ms": 1048
+      },
+      {
+        "ply": 107,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf3",
+        "uci": "f4f3",
+        "confidence": 0.17,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 406
+      },
+      {
+        "ply": 108,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f1=Q+",
+        "uci": "f2f1q",
+        "confidence": 0.07,
+        "cost_usd_rounded": 0.000154,
+        "latency_ms": 1307
+      },
+      {
+        "ply": 109,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg4",
+        "uci": "f3g4",
+        "confidence": 0.07,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 110,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qf4+",
+        "uci": "f1f4",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000288,
+        "latency_ms": 1006
+      },
+      {
+        "ply": 111,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf4",
+        "uci": "g4f4",
+        "confidence": 0.68,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 378
+      }
+    ],
+    "result": "1/2-1/2",
+    "reason": "InsufficientMaterial",
+    "plies": 111,
+    "cost_usd": 0.012589,
+    "winner": null
+  },
+  {
+    "game_id": "15-standard-pair-8-clef-white",
+    "opening": "standard-pair-8",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "cloudflare/clef",
+    "black": "typesafe/jev-1.13",
+    "exit_code": 0,
+    "duration_s": 11.165,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.14,
+        "cost_usd_rounded": 0.000218,
+        "latency_ms": 2067
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.3,
+        "cost_usd_rounded": 4.3e-05,
+        "latency_ms": 410
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.076,
+        "cost_usd_rounded": 0.000272,
+        "latency_ms": 1086
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe4",
+        "uci": "d5e4",
+        "confidence": 0.66,
+        "cost_usd_rounded": 5.2e-05,
+        "latency_ms": 581
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nf3",
+        "uci": "g1f3",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000346,
+        "latency_ms": 607
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "exf3",
+        "uci": "e4f3",
+        "confidence": 0.39,
+        "cost_usd_rounded": 5.6e-05,
+        "latency_ms": 380
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxf3",
+        "uci": "d1f3",
+        "confidence": 0.288,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 1399
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxd4",
+        "uci": "d8d4",
+        "confidence": 0.4,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.013,
+        "cost_usd_rounded": 0.000403,
+        "latency_ms": 848
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxc3+",
+        "uci": "d4c3",
+        "confidence": 0.53,
+        "cost_usd_rounded": 7.4e-05,
+        "latency_ms": 380
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxc3",
+        "uci": "f3c3",
+        "confidence": 0.39,
+        "cost_usd_rounded": 0.000118,
+        "latency_ms": 787
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Bh3",
+        "uci": "c8h3",
+        "confidence": 0.08,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxh3",
+        "uci": "c3h3",
+        "confidence": 0.282,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 717
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.15,
+        "cost_usd_rounded": 4.4e-05,
+        "latency_ms": 399
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qc8#",
+        "uci": "h3c8",
+        "confidence": 0.087,
+        "cost_usd_rounded": 0.000382,
+        "latency_ms": 700
+      }
+    ],
+    "result": "1-0",
+    "reason": "Checkmate",
+    "plies": 15,
+    "cost_usd": 0.002808,
+    "winner": "cloudflare/clef"
+  },
+  {
+    "game_id": "16-standard-pair-8-jev-white",
+    "opening": "standard-pair-8",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "typesafe/jev-1.13",
+    "black": "cloudflare/clef",
+    "exit_code": 0,
+    "duration_s": 79.39,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.85,
+        "cost_usd_rounded": 4.2e-05,
+        "latency_ms": 528
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.139,
+        "cost_usd_rounded": 0.000219,
+        "latency_ms": 816
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exd5",
+        "uci": "e4d5",
+        "confidence": 0.62,
+        "cost_usd_rounded": 5.5e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxd5",
+        "uci": "d8d5",
+        "confidence": 0.427,
+        "cost_usd_rounded": 0.000279,
+        "latency_ms": 619
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bb5+",
+        "uci": "f1b5",
+        "confidence": 0.26,
+        "cost_usd_rounded": 5.3e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxb5",
+        "uci": "d5b5",
+        "confidence": 0.828,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 519
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.17,
+        "cost_usd_rounded": 4.7e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe5+",
+        "uci": "b5e5",
+        "confidence": 0.023,
+        "cost_usd_rounded": 0.000404,
+        "latency_ms": 789
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne4",
+        "uci": "c3e4",
+        "confidence": 0.36,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 477
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe4+",
+        "uci": "e5e4",
+        "confidence": 0.065,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 758
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne2",
+        "uci": "g1e2",
+        "confidence": 0.05,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 370
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe2+",
+        "uci": "e4e2",
+        "confidence": 0.022,
+        "cost_usd_rounded": 0.000411,
+        "latency_ms": 807
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe2",
+        "uci": "e1e2",
+        "confidence": 0.1,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 949
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.07,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 420
+      },
+      {
+        "ply": 16,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "e5",
+        "uci": "e7e5",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.000291,
+        "latency_ms": 629
+      },
+      {
+        "ply": 17,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe5",
+        "uci": "d4e5",
+        "confidence": 0.2,
+        "cost_usd_rounded": 6e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 18,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nc6",
+        "uci": "b8c6",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 1427
+      },
+      {
+        "ply": 19,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exf6",
+        "uci": "e5f6",
+        "confidence": 0.16,
+        "cost_usd_rounded": 6.5e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 20,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "gxf6",
+        "uci": "g7f6",
+        "confidence": 0.492,
+        "cost_usd_rounded": 0.000283,
+        "latency_ms": 798
+      },
+      {
+        "ply": 21,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qd7+",
+        "uci": "d1d7",
+        "confidence": 0.16,
+        "cost_usd_rounded": 6.3e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 22,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd7",
+        "uci": "e8d7",
+        "confidence": 0.07,
+        "cost_usd_rounded": 9.6e-05,
+        "latency_ms": 2070
+      },
+      {
+        "ply": 23,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rd1+",
+        "uci": "h1d1",
+        "confidence": 0.27,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 376
+      },
+      {
+        "ply": 24,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nd4+",
+        "uci": "c6d4",
+        "confidence": 0.059,
+        "cost_usd_rounded": 0.000116,
+        "latency_ms": 518
+      },
+      {
+        "ply": 25,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd4+",
+        "uci": "d1d4",
+        "confidence": 0.58,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 530
+      },
+      {
+        "ply": 26,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd6",
+        "uci": "f8d6",
+        "confidence": 0.015,
+        "cost_usd_rounded": 0.000117,
+        "latency_ms": 1218
+      },
+      {
+        "ply": 27,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd6+",
+        "uci": "d4d6",
+        "confidence": 0.69,
+        "cost_usd_rounded": 6.2e-05,
+        "latency_ms": 417
+      },
+      {
+        "ply": 28,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd6",
+        "uci": "d7d6",
+        "confidence": 0.4,
+        "cost_usd_rounded": 0.000109,
+        "latency_ms": 779
+      },
+      {
+        "ply": 29,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bf4+",
+        "uci": "c1f4",
+        "confidence": 0.16,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 30,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke7",
+        "uci": "d6e7",
+        "confidence": 0.006,
+        "cost_usd_rounded": 0.000124,
+        "latency_ms": 681
+      },
+      {
+        "ply": 31,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bxc7",
+        "uci": "f4c7",
+        "confidence": 0.26,
+        "cost_usd_rounded": 5.9e-05,
+        "latency_ms": 416
+      },
+      {
+        "ply": 32,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bg4+",
+        "uci": "c8g4",
+        "confidence": 0.023,
+        "cost_usd_rounded": 0.00023,
+        "latency_ms": 768
+      },
+      {
+        "ply": 33,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd3",
+        "uci": "e2d3",
+        "confidence": 0.13,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 367
+      },
+      {
+        "ply": 34,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bf5+",
+        "uci": "g4f5",
+        "confidence": 0.033,
+        "cost_usd_rounded": 0.000311,
+        "latency_ms": 728
+      },
+      {
+        "ply": 35,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd4",
+        "uci": "d3d4",
+        "confidence": 0.09,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 417
+      },
+      {
+        "ply": 36,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rhd8+",
+        "uci": "h8d8",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000303,
+        "latency_ms": 768
+      },
+      {
+        "ply": 37,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bxd8+",
+        "uci": "c7d8",
+        "confidence": 0.7,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 38,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd8",
+        "uci": "e7d8",
+        "confidence": 0.373,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 679
+      },
+      {
+        "ply": 39,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rd1",
+        "uci": "a1d1",
+        "confidence": 0.14,
+        "cost_usd_rounded": 4.8e-05,
+        "latency_ms": 539
+      },
+      {
+        "ply": 40,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc7",
+        "uci": "d8c7",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000238,
+        "latency_ms": 948
+      },
+      {
+        "ply": 41,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.15,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 42,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "b6+",
+        "uci": "b7b6",
+        "confidence": 0.015,
+        "cost_usd_rounded": 0.000252,
+        "latency_ms": 559
+      },
+      {
+        "ply": 43,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd5",
+        "uci": "c5d5",
+        "confidence": 0.2,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 44,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd8+",
+        "uci": "a8d8",
+        "confidence": 0.038,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 758
+      },
+      {
+        "ply": 45,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "d5c4",
+        "confidence": 1.0,
+        "cost_usd_rounded": 2.4e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 46,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rxd1",
+        "uci": "d8d1",
+        "confidence": 0.303,
+        "cost_usd_rounded": 0.000312,
+        "latency_ms": 947
+      },
+      {
+        "ply": 47,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb5",
+        "uci": "c4b5",
+        "confidence": 0.26,
+        "cost_usd_rounded": 3.9e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 48,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd7+",
+        "uci": "f5d7",
+        "confidence": 0.03,
+        "cost_usd_rounded": 0.000318,
+        "latency_ms": 726
+      },
+      {
+        "ply": 49,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "b5c4",
+        "confidence": 0.17,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 521
+      },
+      {
+        "ply": 50,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bb5+",
+        "uci": "d7b5",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000318,
+        "latency_ms": 666
+      },
+      {
+        "ply": 51,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxb5",
+        "uci": "c4b5",
+        "confidence": 0.78,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 52,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd5+",
+        "uci": "d1d5",
+        "confidence": 0.027,
+        "cost_usd_rounded": 0.000259,
+        "latency_ms": 669
+      },
+      {
+        "ply": 53,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "b5c4",
+        "confidence": 0.22,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 396
+      },
+      {
+        "ply": 54,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd4+",
+        "uci": "d5d4",
+        "confidence": 0.04,
+        "cost_usd_rounded": 0.000274,
+        "latency_ms": 828
+      },
+      {
+        "ply": 55,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxd4",
+        "uci": "c4d4",
+        "confidence": 0.55,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 56,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd6",
+        "uci": "c7d6",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000171,
+        "latency_ms": 636
+      },
+      {
+        "ply": 57,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "d4c4",
+        "confidence": 0.12,
+        "cost_usd_rounded": 4e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 58,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "b5+",
+        "uci": "b6b5",
+        "confidence": 0.052,
+        "cost_usd_rounded": 0.000163,
+        "latency_ms": 1197
+      },
+      {
+        "ply": 59,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxb5",
+        "uci": "c4b5",
+        "confidence": 0.57,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 60,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "a6+",
+        "uci": "a7a6",
+        "confidence": 0.039,
+        "cost_usd_rounded": 0.000155,
+        "latency_ms": 816
+      },
+      {
+        "ply": 61,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxa6",
+        "uci": "b5a6",
+        "confidence": 0.39,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 62,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d6c5",
+        "confidence": 0.008,
+        "cost_usd_rounded": 0.000155,
+        "latency_ms": 656
+      },
+      {
+        "ply": 63,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "b4+",
+        "uci": "b2b4",
+        "confidence": 0.19,
+        "cost_usd_rounded": 3.8e-05,
+        "latency_ms": 498
+      },
+      {
+        "ply": 64,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxb4",
+        "uci": "c5b4",
+        "confidence": 0.386,
+        "cost_usd_rounded": 0.00012,
+        "latency_ms": 767
+      },
+      {
+        "ply": 65,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "c3+",
+        "uci": "c2c3",
+        "confidence": 0.28,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 428
+      },
+      {
+        "ply": 66,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxc3",
+        "uci": "b4c3",
+        "confidence": 0.507,
+        "cost_usd_rounded": 0.000112,
+        "latency_ms": 700
+      },
+      {
+        "ply": 67,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb5",
+        "uci": "a6b5",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 68,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c3d4",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 2509
+      },
+      {
+        "ply": 69,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "b5c6",
+        "confidence": 0.1,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 70,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "d4e5",
+        "confidence": 0.022,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 1070
+      },
+      {
+        "ply": 71,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "f4+",
+        "uci": "f2f4",
+        "confidence": 0.3,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 72,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxf4",
+        "uci": "e5f4",
+        "confidence": 0.186,
+        "cost_usd_rounded": 0.000112,
+        "latency_ms": 398
+      },
+      {
+        "ply": 73,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g3+",
+        "uci": "g2g3",
+        "confidence": 0.16,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 383
+      },
+      {
+        "ply": 74,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "f4e5",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 664
+      },
+      {
+        "ply": 75,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g4",
+        "uci": "g3g4",
+        "confidence": 0.11,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 76,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kf4",
+        "uci": "e5f4",
+        "confidence": 0.017,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 846
+      },
+      {
+        "ply": 77,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd5",
+        "uci": "c6d5",
+        "confidence": 0.16,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 481
+      },
+      {
+        "ply": 78,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxg4",
+        "uci": "f4g4",
+        "confidence": 0.08,
+        "cost_usd_rounded": 0.000125,
+        "latency_ms": 747
+      },
+      {
+        "ply": 79,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "h3+",
+        "uci": "h2h3",
+        "confidence": 0.11,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 80,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxh3",
+        "uci": "g4h3",
+        "confidence": 0.105,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 1078
+      },
+      {
+        "ply": 81,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke4",
+        "uci": "d5e4",
+        "confidence": 0.08,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 480
+      },
+      {
+        "ply": 82,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f5+",
+        "uci": "f6f5",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.00013,
+        "latency_ms": 1138
+      },
+      {
+        "ply": 83,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf5",
+        "uci": "e4f5",
+        "confidence": 0.46,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 438
+      },
+      {
+        "ply": 84,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kg2",
+        "uci": "h3g2",
+        "confidence": 0.01,
+        "cost_usd_rounded": 0.000123,
+        "latency_ms": 998
+      },
+      {
+        "ply": 85,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "f5f6",
+        "confidence": 0.06,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 518
+      },
+      {
+        "ply": 86,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kf3",
+        "uci": "g2f3",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000145,
+        "latency_ms": 637
+      },
+      {
+        "ply": 87,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf7",
+        "uci": "f6f7",
+        "confidence": 0.25,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 380
+      },
+      {
+        "ply": 88,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke4",
+        "uci": "f3e4",
+        "confidence": 0.007,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 1237
+      },
+      {
+        "ply": 89,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a4",
+        "uci": "a2a4",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3.1e-05,
+        "latency_ms": 359
+      },
+      {
+        "ply": 90,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd3",
+        "uci": "e4d3",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 568
+      },
+      {
+        "ply": 91,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a5",
+        "uci": "a4a5",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 380
+      },
+      {
+        "ply": 92,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "d3d4",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 418
+      },
+      {
+        "ply": 93,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a6",
+        "uci": "a5a6",
+        "confidence": 0.3,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 94,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "d4e5",
+        "confidence": 0.006,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 608
+      },
+      {
+        "ply": 95,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a7",
+        "uci": "a6a7",
+        "confidence": 0.45,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 518
+      },
+      {
+        "ply": 96,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd6",
+        "uci": "e5d6",
+        "confidence": 0.011,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 1088
+      },
+      {
+        "ply": 97,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "a8=Q",
+        "uci": "a7a8q",
+        "confidence": 0.71,
+        "cost_usd_rounded": 3.1e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 98,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d6c5",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000115,
+        "latency_ms": 1107
+      },
+      {
+        "ply": 99,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qc6+",
+        "uci": "a8c6",
+        "confidence": 0.21,
+        "cost_usd_rounded": 5.2e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 100,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxc6",
+        "uci": "c5c6",
+        "confidence": 0.898,
+        "cost_usd_rounded": 9.5e-05,
+        "latency_ms": 869
+      },
+      {
+        "ply": 101,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke7",
+        "uci": "f7e7",
+        "confidence": 0.09,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 451
+      },
+      {
+        "ply": 102,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h5",
+        "uci": "h7h5",
+        "confidence": 0.004,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 1145
+      },
+      {
+        "ply": 103,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "e7f6",
+        "confidence": 0.1,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 368
+      },
+      {
+        "ply": 104,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h4",
+        "uci": "h5h4",
+        "confidence": 0.037,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 667
+      },
+      {
+        "ply": 105,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg5",
+        "uci": "f6g5",
+        "confidence": 0.15,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 439
+      },
+      {
+        "ply": 106,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h3",
+        "uci": "h4h3",
+        "confidence": 0.069,
+        "cost_usd_rounded": 0.000136,
+        "latency_ms": 678
+      },
+      {
+        "ply": 107,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf4",
+        "uci": "g5f4",
+        "confidence": 0.07,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 366
+      },
+      {
+        "ply": 108,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h2",
+        "uci": "h3h2",
+        "confidence": 0.087,
+        "cost_usd_rounded": 0.000136,
+        "latency_ms": 758
+      },
+      {
+        "ply": 109,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg3",
+        "uci": "f4g3",
+        "confidence": 0.26,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 430
+      },
+      {
+        "ply": 110,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h1=Q",
+        "uci": "h2h1q",
+        "confidence": 0.113,
+        "cost_usd_rounded": 0.000161,
+        "latency_ms": 988
+      },
+      {
+        "ply": 111,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf4",
+        "uci": "g3f4",
+        "confidence": 0.01,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 112,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh4+",
+        "uci": "h1h4",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.000264,
+        "latency_ms": 508
+      },
+      {
+        "ply": 113,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke5",
+        "uci": "f4e5",
+        "confidence": 0.05,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 114,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh5+",
+        "uci": "h4h5",
+        "confidence": 0.024,
+        "cost_usd_rounded": 0.000273,
+        "latency_ms": 987
+      },
+      {
+        "ply": 115,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "e5f6",
+        "confidence": 0.18,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 469
+      },
+      {
+        "ply": 116,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh6+",
+        "uci": "h5h6",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000288,
+        "latency_ms": 556
+      },
+      {
+        "ply": 117,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke5",
+        "uci": "f6e5",
+        "confidence": 0.06,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 368
+      },
+      {
+        "ply": 118,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh8+",
+        "uci": "h6h8",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000252,
+        "latency_ms": 1299
+      },
+      {
+        "ply": 119,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke6",
+        "uci": "e5e6",
+        "confidence": 0.28,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 120,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe8+",
+        "uci": "h8e8",
+        "confidence": 0.029,
+        "cost_usd_rounded": 0.000266,
+        "latency_ms": 1118
+      },
+      {
+        "ply": 121,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "e6f6",
+        "confidence": 0.08,
+        "cost_usd_rounded": 2.4e-05,
+        "latency_ms": 1377
+      },
+      {
+        "ply": 122,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe6+",
+        "uci": "e8e6",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000267,
+        "latency_ms": 629
+      },
+      {
+        "ply": 123,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe6",
+        "uci": "f6e6",
+        "confidence": 0.63,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 396
+      }
+    ],
+    "result": "1/2-1/2",
+    "reason": "InsufficientMaterial",
+    "plies": 123,
+    "cost_usd": 0.014368,
+    "winner": null
+  },
+  {
+    "game_id": "17-standard-pair-9-clef-white",
+    "opening": "standard-pair-9",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "cloudflare/clef",
+    "black": "typesafe/jev-1.13",
+    "exit_code": 0,
+    "duration_s": 10.264,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.14,
+        "cost_usd_rounded": 0.000218,
+        "latency_ms": 661
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.31,
+        "cost_usd_rounded": 4.3e-05,
+        "latency_ms": 433
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.076,
+        "cost_usd_rounded": 0.000272,
+        "latency_ms": 602
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe4",
+        "uci": "d5e4",
+        "confidence": 0.68,
+        "cost_usd_rounded": 5.2e-05,
+        "latency_ms": 414
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nf3",
+        "uci": "g1f3",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000346,
+        "latency_ms": 1181
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "exf3",
+        "uci": "e4f3",
+        "confidence": 0.35,
+        "cost_usd_rounded": 5.6e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxf3",
+        "uci": "d1f3",
+        "confidence": 0.288,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 959
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxd4",
+        "uci": "d8d4",
+        "confidence": 0.44,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 549
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.013,
+        "cost_usd_rounded": 0.000403,
+        "latency_ms": 728
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxc3+",
+        "uci": "d4c3",
+        "confidence": 0.58,
+        "cost_usd_rounded": 7.4e-05,
+        "latency_ms": 419
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxc3",
+        "uci": "f3c3",
+        "confidence": 0.39,
+        "cost_usd_rounded": 0.000118,
+        "latency_ms": 889
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Bh3",
+        "uci": "c8h3",
+        "confidence": 0.08,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxh3",
+        "uci": "c3h3",
+        "confidence": 0.282,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 870
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.16,
+        "cost_usd_rounded": 4.4e-05,
+        "latency_ms": 981
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qc8#",
+        "uci": "h3c8",
+        "confidence": 0.087,
+        "cost_usd_rounded": 0.000382,
+        "latency_ms": 752
+      }
+    ],
+    "result": "1-0",
+    "reason": "Checkmate",
+    "plies": 15,
+    "cost_usd": 0.002808,
+    "winner": "cloudflare/clef"
+  },
+  {
+    "game_id": "18-standard-pair-9-jev-white",
+    "opening": "standard-pair-9",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "typesafe/jev-1.13",
+    "black": "cloudflare/clef",
+    "exit_code": 0,
+    "duration_s": 48.186,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.85,
+        "cost_usd_rounded": 4.2e-05,
+        "latency_ms": 520
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.139,
+        "cost_usd_rounded": 0.000219,
+        "latency_ms": 750
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exd5",
+        "uci": "e4d5",
+        "confidence": 0.6,
+        "cost_usd_rounded": 5.5e-05,
+        "latency_ms": 429
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxd5",
+        "uci": "d8d5",
+        "confidence": 0.427,
+        "cost_usd_rounded": 0.000279,
+        "latency_ms": 739
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bb5+",
+        "uci": "f1b5",
+        "confidence": 0.23,
+        "cost_usd_rounded": 5.3e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxb5",
+        "uci": "d5b5",
+        "confidence": 0.828,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 589
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.17,
+        "cost_usd_rounded": 4.7e-05,
+        "latency_ms": 427
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe5+",
+        "uci": "b5e5",
+        "confidence": 0.023,
+        "cost_usd_rounded": 0.000404,
+        "latency_ms": 711
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne4",
+        "uci": "c3e4",
+        "confidence": 0.34,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe4+",
+        "uci": "e5e4",
+        "confidence": 0.065,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 1830
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne2",
+        "uci": "g1e2",
+        "confidence": 0.05,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 456
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe2+",
+        "uci": "e4e2",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000411,
+        "latency_ms": 710
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe2",
+        "uci": "e1e2",
+        "confidence": 0.03,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 757
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.07,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 483
+      },
+      {
+        "ply": 16,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "e5",
+        "uci": "e7e5",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.000291,
+        "latency_ms": 887
+      },
+      {
+        "ply": 17,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe5",
+        "uci": "d4e5",
+        "confidence": 0.21,
+        "cost_usd_rounded": 6e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 18,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nc6",
+        "uci": "b8c6",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 1263
+      },
+      {
+        "ply": 19,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exf6",
+        "uci": "e5f6",
+        "confidence": 0.14,
+        "cost_usd_rounded": 6.5e-05,
+        "latency_ms": 506
+      },
+      {
+        "ply": 20,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "gxf6",
+        "uci": "g7f6",
+        "confidence": 0.492,
+        "cost_usd_rounded": 0.000283,
+        "latency_ms": 607
+      },
+      {
+        "ply": 21,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qd7+",
+        "uci": "d1d7",
+        "confidence": 0.18,
+        "cost_usd_rounded": 6.3e-05,
+        "latency_ms": 399
+      },
+      {
+        "ply": 22,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd7",
+        "uci": "e8d7",
+        "confidence": 0.07,
+        "cost_usd_rounded": 9.6e-05,
+        "latency_ms": 650
+      },
+      {
+        "ply": 23,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rd1+",
+        "uci": "h1d1",
+        "confidence": 0.24,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 450
+      },
+      {
+        "ply": 24,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nd4+",
+        "uci": "c6d4",
+        "confidence": 0.058,
+        "cost_usd_rounded": 0.000116,
+        "latency_ms": 657
+      },
+      {
+        "ply": 25,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd4+",
+        "uci": "d1d4",
+        "confidence": 0.58,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 450
+      },
+      {
+        "ply": 26,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd6",
+        "uci": "f8d6",
+        "confidence": 0.015,
+        "cost_usd_rounded": 0.000117,
+        "latency_ms": 609
+      },
+      {
+        "ply": 27,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxd6+",
+        "uci": "d4d6",
+        "confidence": 0.68,
+        "cost_usd_rounded": 6.2e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 28,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd6",
+        "uci": "d7d6",
+        "confidence": 0.4,
+        "cost_usd_rounded": 0.000109,
+        "latency_ms": 1428
+      },
+      {
+        "ply": 29,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bf4+",
+        "uci": "c1f4",
+        "confidence": 0.18,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 30,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke6",
+        "uci": "d6e6",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000124,
+        "latency_ms": 760
+      },
+      {
+        "ply": 31,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bxc7",
+        "uci": "f4c7",
+        "confidence": 0.22,
+        "cost_usd_rounded": 5.9e-05,
+        "latency_ms": 437
+      },
+      {
+        "ply": 32,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd7",
+        "uci": "c8d7",
+        "confidence": 0.022,
+        "cost_usd_rounded": 0.000201,
+        "latency_ms": 577
+      },
+      {
+        "ply": 33,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Re1",
+        "uci": "a1e1",
+        "confidence": 0.06,
+        "cost_usd_rounded": 5.9e-05,
+        "latency_ms": 420
+      },
+      {
+        "ply": 34,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bb5+",
+        "uci": "d7b5",
+        "confidence": 0.017,
+        "cost_usd_rounded": 0.000274,
+        "latency_ms": 638
+      },
+      {
+        "ply": 35,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf3+",
+        "uci": "e2f3",
+        "confidence": 0.28,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 36,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Be2+",
+        "uci": "b5e2",
+        "confidence": 0.032,
+        "cost_usd_rounded": 0.000108,
+        "latency_ms": 760
+      },
+      {
+        "ply": 37,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe2",
+        "uci": "f3e2",
+        "confidence": 0.34,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 428
+      },
+      {
+        "ply": 38,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rhe8",
+        "uci": "h8e8",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.000244,
+        "latency_ms": 459
+      },
+      {
+        "ply": 39,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf3+",
+        "uci": "e2f3",
+        "confidence": 0.11,
+        "cost_usd_rounded": 5.8e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 40,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd5",
+        "uci": "e6d5",
+        "confidence": 0.001,
+        "cost_usd_rounded": 0.000101,
+        "latency_ms": 537
+      },
+      {
+        "ply": 41,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxe8",
+        "uci": "e1e8",
+        "confidence": 0.34,
+        "cost_usd_rounded": 6e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 42,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rxe8",
+        "uci": "a8e8",
+        "confidence": 0.704,
+        "cost_usd_rounded": 0.000187,
+        "latency_ms": 749
+      },
+      {
+        "ply": 43,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "c4+",
+        "uci": "c2c4",
+        "confidence": 0.25,
+        "cost_usd_rounded": 4.5e-05,
+        "latency_ms": 390
+      },
+      {
+        "ply": 44,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxc4",
+        "uci": "d5c4",
+        "confidence": 0.492,
+        "cost_usd_rounded": 0.000115,
+        "latency_ms": 690
+      },
+      {
+        "ply": 45,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "b3+",
+        "uci": "b2b3",
+        "confidence": 0.12,
+        "cost_usd_rounded": 4.3e-05,
+        "latency_ms": 486
+      },
+      {
+        "ply": 46,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd5",
+        "uci": "c4d5",
+        "confidence": 0.004,
+        "cost_usd_rounded": 0.000128,
+        "latency_ms": 639
+      },
+      {
+        "ply": 47,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bd6",
+        "uci": "c7d6",
+        "confidence": 0.1,
+        "cost_usd_rounded": 4.2e-05,
+        "latency_ms": 348
+      },
+      {
+        "ply": 48,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxd6",
+        "uci": "d5d6",
+        "confidence": 0.554,
+        "cost_usd_rounded": 0.000258,
+        "latency_ms": 1220
+      },
+      {
+        "ply": 49,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "b4",
+        "uci": "b3b4",
+        "confidence": 0.2,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 448
+      },
+      {
+        "ply": 50,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Re3+",
+        "uci": "e8e3",
+        "confidence": 0.013,
+        "cost_usd_rounded": 0.000279,
+        "latency_ms": 878
+      },
+      {
+        "ply": 51,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe3",
+        "uci": "f3e3",
+        "confidence": 0.57,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 52,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "b5",
+        "uci": "b7b5",
+        "confidence": 0.031,
+        "cost_usd_rounded": 0.000176,
+        "latency_ms": 778
+      },
+      {
+        "ply": 53,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd4",
+        "uci": "e3d4",
+        "confidence": 0.18,
+        "cost_usd_rounded": 3.8e-05,
+        "latency_ms": 600
+      },
+      {
+        "ply": 54,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc6",
+        "uci": "d6c6",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000148,
+        "latency_ms": 608
+      },
+      {
+        "ply": 55,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke3",
+        "uci": "d4e3",
+        "confidence": 0.13,
+        "cost_usd_rounded": 3.5e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 56,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd5",
+        "uci": "c6d5",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000155,
+        "latency_ms": 659
+      },
+      {
+        "ply": 57,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf4",
+        "uci": "e3f4",
+        "confidence": 0.16,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 58,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc4",
+        "uci": "d5c4",
+        "confidence": 0.035,
+        "cost_usd_rounded": 0.000148,
+        "latency_ms": 700
+      },
+      {
+        "ply": 59,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf5",
+        "uci": "f4f5",
+        "confidence": 0.14,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 549
+      },
+      {
+        "ply": 60,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxb4",
+        "uci": "c4b4",
+        "confidence": 0.148,
+        "cost_usd_rounded": 0.00014,
+        "latency_ms": 559
+      },
+      {
+        "ply": 61,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf6",
+        "uci": "f5f6",
+        "confidence": 0.51,
+        "cost_usd_rounded": 3.5e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 62,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "b4c5",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000146,
+        "latency_ms": 568
+      },
+      {
+        "ply": 63,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxf7",
+        "uci": "f6f7",
+        "confidence": 0.41,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 64,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c5d4",
+        "confidence": 0.009,
+        "cost_usd_rounded": 0.00016,
+        "latency_ms": 1018
+      },
+      {
+        "ply": 65,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke6",
+        "uci": "f7e6",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3.8e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 66,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000146,
+        "latency_ms": 599
+      },
+      {
+        "ply": 67,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf5",
+        "uci": "e6f5",
+        "confidence": 0.1,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 68,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c5d4",
+        "confidence": 0.013,
+        "cost_usd_rounded": 0.00016,
+        "latency_ms": 639
+      },
+      {
+        "ply": 69,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke6",
+        "uci": "f5e6",
+        "confidence": 0.15,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 369
+      },
+      {
+        "ply": 70,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.029,
+        "cost_usd_rounded": 0.000146,
+        "latency_ms": 667
+      },
+      {
+        "ply": 71,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf5",
+        "uci": "e6f5",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 72,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c5d4",
+        "confidence": 0.019,
+        "cost_usd_rounded": 0.00016,
+        "latency_ms": 880
+      },
+      {
+        "ply": 73,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke6",
+        "uci": "f5e6",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 74,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.028,
+        "cost_usd_rounded": 0.000146,
+        "latency_ms": 708
+      },
+      {
+        "ply": 75,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf5",
+        "uci": "e6f5",
+        "confidence": 0.15,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 488
+      },
+      {
+        "ply": 76,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c5d4",
+        "confidence": 0.02,
+        "cost_usd_rounded": 0.00016,
+        "latency_ms": 648
+      },
+      {
+        "ply": 77,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke6",
+        "uci": "f5e6",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 478
+      },
+      {
+        "ply": 78,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.029,
+        "cost_usd_rounded": 0.000146,
+        "latency_ms": 858
+      },
+      {
+        "ply": 79,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf5",
+        "uci": "e6f5",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 471
+      },
+      {
+        "ply": 80,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c5d4",
+        "confidence": 0.021,
+        "cost_usd_rounded": 0.00016,
+        "latency_ms": 547
+      },
+      {
+        "ply": 81,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke6",
+        "uci": "f5e6",
+        "confidence": 0.14,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 468
+      }
+    ],
+    "result": "1/2-1/2",
+    "reason": "FivefoldRepetition",
+    "plies": 81,
+    "cost_usd": 0.00948,
+    "winner": null
+  },
+  {
+    "game_id": "19-standard-pair-10-clef-white",
+    "opening": "standard-pair-10",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "cloudflare/clef",
+    "black": "typesafe/jev-1.13",
+    "exit_code": 0,
+    "duration_s": 11.078,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.14,
+        "cost_usd_rounded": 0.000218,
+        "latency_ms": 976
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.27,
+        "cost_usd_rounded": 4.3e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.076,
+        "cost_usd_rounded": 0.000272,
+        "latency_ms": 870
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "dxe4",
+        "uci": "d5e4",
+        "confidence": 0.65,
+        "cost_usd_rounded": 5.2e-05,
+        "latency_ms": 449
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nf3",
+        "uci": "g1f3",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000346,
+        "latency_ms": 769
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "exf3",
+        "uci": "e4f3",
+        "confidence": 0.38,
+        "cost_usd_rounded": 5.6e-05,
+        "latency_ms": 620
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxf3",
+        "uci": "d1f3",
+        "confidence": 0.288,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 1021
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxd4",
+        "uci": "d8d4",
+        "confidence": 0.37,
+        "cost_usd_rounded": 5.4e-05,
+        "latency_ms": 400
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.013,
+        "cost_usd_rounded": 0.000403,
+        "latency_ms": 1607
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Qxc3+",
+        "uci": "d4c3",
+        "confidence": 0.57,
+        "cost_usd_rounded": 7.4e-05,
+        "latency_ms": 449
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxc3",
+        "uci": "f3c3",
+        "confidence": 0.39,
+        "cost_usd_rounded": 0.000118,
+        "latency_ms": 899
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Bh3",
+        "uci": "c8h3",
+        "confidence": 0.1,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qxh3",
+        "uci": "c3h3",
+        "confidence": 0.282,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 718
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "typesafe/jev-1.13",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.17,
+        "cost_usd_rounded": 4.4e-05,
+        "latency_ms": 450
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "cloudflare/clef",
+        "san": "Qc8#",
+        "uci": "h3c8",
+        "confidence": 0.087,
+        "cost_usd_rounded": 0.000382,
+        "latency_ms": 1039
+      }
+    ],
+    "result": "1-0",
+    "reason": "Checkmate",
+    "plies": 15,
+    "cost_usd": 0.002808,
+    "winner": "cloudflare/clef"
+  },
+  {
+    "game_id": "20-standard-pair-10-jev-white",
+    "opening": "standard-pair-10",
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "white": "typesafe/jev-1.13",
+    "black": "cloudflare/clef",
+    "exit_code": 0,
+    "duration_s": 80.876,
+    "moves": [
+      {
+        "ply": 1,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "e4",
+        "uci": "e2e4",
+        "confidence": 0.88,
+        "cost_usd_rounded": 4.2e-05,
+        "latency_ms": 557
+      },
+      {
+        "ply": 2,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "d5",
+        "uci": "d7d5",
+        "confidence": 0.139,
+        "cost_usd_rounded": 0.000219,
+        "latency_ms": 557
+      },
+      {
+        "ply": 3,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exd5",
+        "uci": "e4d5",
+        "confidence": 0.6,
+        "cost_usd_rounded": 5.5e-05,
+        "latency_ms": 400
+      },
+      {
+        "ply": 4,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxd5",
+        "uci": "d8d5",
+        "confidence": 0.427,
+        "cost_usd_rounded": 0.000279,
+        "latency_ms": 694
+      },
+      {
+        "ply": 5,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bb5+",
+        "uci": "f1b5",
+        "confidence": 0.28,
+        "cost_usd_rounded": 5.3e-05,
+        "latency_ms": 384
+      },
+      {
+        "ply": 6,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxb5",
+        "uci": "d5b5",
+        "confidence": 0.828,
+        "cost_usd_rounded": 0.000137,
+        "latency_ms": 529
+      },
+      {
+        "ply": 7,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "confidence": 0.17,
+        "cost_usd_rounded": 4.7e-05,
+        "latency_ms": 440
+      },
+      {
+        "ply": 8,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qe5+",
+        "uci": "b5e5",
+        "confidence": 0.022,
+        "cost_usd_rounded": 0.000404,
+        "latency_ms": 827
+      },
+      {
+        "ply": 9,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne4",
+        "uci": "c3e4",
+        "confidence": 0.34,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 390
+      },
+      {
+        "ply": 10,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe4+",
+        "uci": "e5e4",
+        "confidence": 0.065,
+        "cost_usd_rounded": 0.00039,
+        "latency_ms": 659
+      },
+      {
+        "ply": 11,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ne2",
+        "uci": "g1e2",
+        "confidence": 0.04,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 12,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qxe2+",
+        "uci": "e4e2",
+        "confidence": 0.022,
+        "cost_usd_rounded": 0.000411,
+        "latency_ms": 729
+      },
+      {
+        "ply": 13,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxe2",
+        "uci": "e1e2",
+        "confidence": 0.01,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 367
+      },
+      {
+        "ply": 14,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "confidence": 0.036,
+        "cost_usd_rounded": 0.000268,
+        "latency_ms": 560
+      },
+      {
+        "ply": 15,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Re1",
+        "uci": "h1e1",
+        "confidence": 0.06,
+        "cost_usd_rounded": 5.1e-05,
+        "latency_ms": 459
+      },
+      {
+        "ply": 16,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nc6",
+        "uci": "b8c6",
+        "confidence": 0.023,
+        "cost_usd_rounded": 0.00029,
+        "latency_ms": 689
+      },
+      {
+        "ply": 17,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf1",
+        "uci": "e2f1",
+        "confidence": 0.11,
+        "cost_usd_rounded": 4.7e-05,
+        "latency_ms": 457
+      },
+      {
+        "ply": 18,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "e5",
+        "uci": "e7e5",
+        "confidence": 0.029,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 590
+      },
+      {
+        "ply": 19,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rxe5+",
+        "uci": "e1e5",
+        "confidence": 0.49,
+        "cost_usd_rounded": 5e-05,
+        "latency_ms": 609
+      },
+      {
+        "ply": 20,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nxe5",
+        "uci": "c6e5",
+        "confidence": 0.477,
+        "cost_usd_rounded": 0.000126,
+        "latency_ms": 702
+      },
+      {
+        "ply": 21,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Qg4",
+        "uci": "d1g4",
+        "confidence": 0.15,
+        "cost_usd_rounded": 4.8e-05,
+        "latency_ms": 436
+      },
+      {
+        "ply": 22,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nexg4",
+        "uci": "e5g4",
+        "confidence": 0.253,
+        "cost_usd_rounded": 0.000343,
+        "latency_ms": 1528
+      },
+      {
+        "ply": 23,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "d4",
+        "uci": "d2d4",
+        "confidence": 0.12,
+        "cost_usd_rounded": 4.1e-05,
+        "latency_ms": 408
+      },
+      {
+        "ply": 24,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ne3+",
+        "uci": "g4e3",
+        "confidence": 0.019,
+        "cost_usd_rounded": 0.00032,
+        "latency_ms": 649
+      },
+      {
+        "ply": 25,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "fxe3",
+        "uci": "f2e3",
+        "confidence": 0.29,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 26,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Be7",
+        "uci": "f8e7",
+        "confidence": 0.033,
+        "cost_usd_rounded": 0.000305,
+        "latency_ms": 882
+      },
+      {
+        "ply": 27,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "d5",
+        "uci": "d4d5",
+        "confidence": 0.17,
+        "cost_usd_rounded": 4.2e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 28,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Nxd5",
+        "uci": "f6d5",
+        "confidence": 0.052,
+        "cost_usd_rounded": 0.000327,
+        "latency_ms": 597
+      },
+      {
+        "ply": 29,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "e4",
+        "uci": "e3e4",
+        "confidence": 0.09,
+        "cost_usd_rounded": 4.1e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 30,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "O-O",
+        "uci": "e8g8",
+        "confidence": 0.029,
+        "cost_usd_rounded": 0.000363,
+        "latency_ms": 890
+      },
+      {
+        "ply": 31,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "exd5",
+        "uci": "e4d5",
+        "confidence": 0.35,
+        "cost_usd_rounded": 4.6e-05,
+        "latency_ms": 428
+      },
+      {
+        "ply": 32,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "c5",
+        "uci": "c7c5",
+        "confidence": 0.02,
+        "cost_usd_rounded": 0.000287,
+        "latency_ms": 1002
+      },
+      {
+        "ply": 33,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "dxc6",
+        "uci": "d5c6",
+        "confidence": 0.44,
+        "cost_usd_rounded": 4.6e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 34,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "bxc6",
+        "uci": "b7c6",
+        "confidence": 0.498,
+        "cost_usd_rounded": 0.00028,
+        "latency_ms": 627
+      },
+      {
+        "ply": 35,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Bf4",
+        "uci": "c1f4",
+        "confidence": 0.11,
+        "cost_usd_rounded": 4.4e-05,
+        "latency_ms": 458
+      },
+      {
+        "ply": 36,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ba6+",
+        "uci": "c8a6",
+        "confidence": 0.018,
+        "cost_usd_rounded": 0.00028,
+        "latency_ms": 627
+      },
+      {
+        "ply": 37,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "c4",
+        "uci": "c2c4",
+        "confidence": 0.07,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 529
+      },
+      {
+        "ply": 38,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bxc4+",
+        "uci": "a6c4",
+        "confidence": 0.035,
+        "cost_usd_rounded": 0.000281,
+        "latency_ms": 579
+      },
+      {
+        "ply": 39,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg1",
+        "uci": "f1g1",
+        "confidence": 0.05,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 409
+      },
+      {
+        "ply": 40,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bc5+",
+        "uci": "e7c5",
+        "confidence": 0.012,
+        "cost_usd_rounded": 0.000331,
+        "latency_ms": 1130
+      },
+      {
+        "ply": 41,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Be3",
+        "uci": "f4e3",
+        "confidence": 0.31,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 538
+      },
+      {
+        "ply": 42,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bxe3+",
+        "uci": "c5e3",
+        "confidence": 0.277,
+        "cost_usd_rounded": 0.000318,
+        "latency_ms": 779
+      },
+      {
+        "ply": 43,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kh1",
+        "uci": "g1h1",
+        "confidence": 1.0,
+        "cost_usd_rounded": 2.4e-05,
+        "latency_ms": 648
+      },
+      {
+        "ply": 44,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bb6",
+        "uci": "e3b6",
+        "confidence": 0.01,
+        "cost_usd_rounded": 0.000346,
+        "latency_ms": 788
+      },
+      {
+        "ply": 45,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Rg1",
+        "uci": "a1g1",
+        "confidence": 0.08,
+        "cost_usd_rounded": 3.7e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 46,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bxg1",
+        "uci": "b6g1",
+        "confidence": 0.09,
+        "cost_usd_rounded": 0.000331,
+        "latency_ms": 788
+      },
+      {
+        "ply": 47,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxg1",
+        "uci": "h1g1",
+        "confidence": 0.63,
+        "cost_usd_rounded": 3.2e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 48,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bxa2",
+        "uci": "c4a2",
+        "confidence": 0.007,
+        "cost_usd_rounded": 0.000272,
+        "latency_ms": 679
+      },
+      {
+        "ply": 49,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf2",
+        "uci": "g1f2",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3.2e-05,
+        "latency_ms": 379
+      },
+      {
+        "ply": 50,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bb3",
+        "uci": "a2b3",
+        "confidence": 0.004,
+        "cost_usd_rounded": 0.000242,
+        "latency_ms": 611
+      },
+      {
+        "ply": 51,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke3",
+        "uci": "f2e3",
+        "confidence": 0.1,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 417
+      },
+      {
+        "ply": 52,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rfe8+",
+        "uci": "f8e8",
+        "confidence": 0.042,
+        "cost_usd_rounded": 0.000258,
+        "latency_ms": 728
+      },
+      {
+        "ply": 53,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd4",
+        "uci": "e3d4",
+        "confidence": 0.12,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 54,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "c5+",
+        "uci": "c6c5",
+        "confidence": 0.039,
+        "cost_usd_rounded": 0.000309,
+        "latency_ms": 597
+      },
+      {
+        "ply": 55,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxc5",
+        "uci": "d4c5",
+        "confidence": 0.77,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 418
+      },
+      {
+        "ply": 56,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Re5+",
+        "uci": "e8e5",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.0003,
+        "latency_ms": 668
+      },
+      {
+        "ply": 57,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd6",
+        "uci": "c5d6",
+        "confidence": 0.04,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 58,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Re6+",
+        "uci": "e5e6",
+        "confidence": 0.033,
+        "cost_usd_rounded": 0.000337,
+        "latency_ms": 1550
+      },
+      {
+        "ply": 59,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc5",
+        "uci": "d6c5",
+        "confidence": 0.11,
+        "cost_usd_rounded": 2.6e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 60,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rc6+",
+        "uci": "e6c6",
+        "confidence": 0.035,
+        "cost_usd_rounded": 0.00033,
+        "latency_ms": 1175
+      },
+      {
+        "ply": 61,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxc6",
+        "uci": "c5c6",
+        "confidence": 0.64,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 380
+      },
+      {
+        "ply": 62,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Bd5+",
+        "uci": "b3d5",
+        "confidence": 0.055,
+        "cost_usd_rounded": 0.000235,
+        "latency_ms": 718
+      },
+      {
+        "ply": 63,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxd5",
+        "uci": "c6d5",
+        "confidence": 0.41,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 428
+      },
+      {
+        "ply": 64,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd8+",
+        "uci": "a8d8",
+        "confidence": 0.069,
+        "cost_usd_rounded": 0.000183,
+        "latency_ms": 919
+      },
+      {
+        "ply": 65,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "d5c6",
+        "confidence": 0.18,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 486
+      },
+      {
+        "ply": 66,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Rd6+",
+        "uci": "d8d6",
+        "confidence": 0.078,
+        "cost_usd_rounded": 0.000234,
+        "latency_ms": 1476
+      },
+      {
+        "ply": 67,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxd6",
+        "uci": "c6d6",
+        "confidence": 0.33,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 68,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kf8",
+        "uci": "g8f8",
+        "confidence": 0.034,
+        "cost_usd_rounded": 0.000147,
+        "latency_ms": 928
+      },
+      {
+        "ply": 69,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc7",
+        "uci": "d6c7",
+        "confidence": 0.22,
+        "cost_usd_rounded": 3.5e-05,
+        "latency_ms": 478
+      },
+      {
+        "ply": 70,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke7",
+        "uci": "f8e7",
+        "confidence": 0.062,
+        "cost_usd_rounded": 0.000153,
+        "latency_ms": 608
+      },
+      {
+        "ply": 71,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "c7c6",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 72,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke6",
+        "uci": "e7e6",
+        "confidence": 0.031,
+        "cost_usd_rounded": 0.000168,
+        "latency_ms": 647
+      },
+      {
+        "ply": 73,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc7",
+        "uci": "c6c7",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 488
+      },
+      {
+        "ply": 74,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd5",
+        "uci": "e6d5",
+        "confidence": 0.02,
+        "cost_usd_rounded": 0.000168,
+        "latency_ms": 956
+      },
+      {
+        "ply": 75,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd7",
+        "uci": "c7d7",
+        "confidence": 0.2,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 429
+      },
+      {
+        "ply": 76,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc4",
+        "uci": "d5c4",
+        "confidence": 0.042,
+        "cost_usd_rounded": 0.000167,
+        "latency_ms": 675
+      },
+      {
+        "ply": 77,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "b3+",
+        "uci": "b2b3",
+        "confidence": 0.22,
+        "cost_usd_rounded": 3.6e-05,
+        "latency_ms": 477
+      },
+      {
+        "ply": 78,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxb3",
+        "uci": "c4b3",
+        "confidence": 0.209,
+        "cost_usd_rounded": 0.000132,
+        "latency_ms": 916
+      },
+      {
+        "ply": 79,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "d7c6",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 388
+      },
+      {
+        "ply": 80,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc4",
+        "uci": "b3c4",
+        "confidence": 0.025,
+        "cost_usd_rounded": 0.000188,
+        "latency_ms": 757
+      },
+      {
+        "ply": 81,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb7",
+        "uci": "c6b7",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 385
+      },
+      {
+        "ply": 82,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kb3",
+        "uci": "c4b3",
+        "confidence": 0.017,
+        "cost_usd_rounded": 0.000189,
+        "latency_ms": 1059
+      },
+      {
+        "ply": 83,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxa7",
+        "uci": "b7a7",
+        "confidence": 0.36,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 466
+      },
+      {
+        "ply": 84,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc4",
+        "uci": "b3c4",
+        "confidence": 0.01,
+        "cost_usd_rounded": 0.000174,
+        "latency_ms": 599
+      },
+      {
+        "ply": 85,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g3",
+        "uci": "g2g3",
+        "confidence": 0.11,
+        "cost_usd_rounded": 3.1e-05,
+        "latency_ms": 526
+      },
+      {
+        "ply": 86,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kb3",
+        "uci": "c4b3",
+        "confidence": 0.01,
+        "cost_usd_rounded": 0.000174,
+        "latency_ms": 626
+      },
+      {
+        "ply": 87,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb6",
+        "uci": "a7b6",
+        "confidence": 0.12,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 397
+      },
+      {
+        "ply": 88,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc4",
+        "uci": "b3c4",
+        "confidence": 0.018,
+        "cost_usd_rounded": 0.000174,
+        "latency_ms": 608
+      },
+      {
+        "ply": 89,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "b6c6",
+        "confidence": 0.13,
+        "cost_usd_rounded": 3.1e-05,
+        "latency_ms": 417
+      },
+      {
+        "ply": 90,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c4d4",
+        "confidence": 0.018,
+        "cost_usd_rounded": 0.000153,
+        "latency_ms": 1235
+      },
+      {
+        "ply": 91,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd6",
+        "uci": "c6d6",
+        "confidence": 0.08,
+        "cost_usd_rounded": 3.2e-05,
+        "latency_ms": 598
+      },
+      {
+        "ply": 92,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc3",
+        "uci": "d4c3",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000153,
+        "latency_ms": 486
+      },
+      {
+        "ply": 93,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc5",
+        "uci": "d6c5",
+        "confidence": 0.1,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 410
+      },
+      {
+        "ply": 94,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd3",
+        "uci": "c3d3",
+        "confidence": 0.027,
+        "cost_usd_rounded": 0.000153,
+        "latency_ms": 736
+      },
+      {
+        "ply": 95,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd6",
+        "uci": "c5d6",
+        "confidence": 0.16,
+        "cost_usd_rounded": 3.2e-05,
+        "latency_ms": 406
+      },
+      {
+        "ply": 96,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "d3d4",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000175,
+        "latency_ms": 788
+      },
+      {
+        "ply": 97,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc7",
+        "uci": "d6c7",
+        "confidence": 0.11,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 425
+      },
+      {
+        "ply": 98,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kc5",
+        "uci": "d4c5",
+        "confidence": 0.011,
+        "cost_usd_rounded": 0.000175,
+        "latency_ms": 1007
+      },
+      {
+        "ply": 99,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "g4",
+        "uci": "g3g4",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 398
+      },
+      {
+        "ply": 100,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "g5",
+        "uci": "g7g5",
+        "confidence": 0.01,
+        "cost_usd_rounded": 0.000153,
+        "latency_ms": 698
+      },
+      {
+        "ply": 101,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd7",
+        "uci": "c7d7",
+        "confidence": 0.18,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 425
+      },
+      {
+        "ply": 102,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kd4",
+        "uci": "c5d4",
+        "confidence": 0.009,
+        "cost_usd_rounded": 0.000146,
+        "latency_ms": 737
+      },
+      {
+        "ply": 103,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc6",
+        "uci": "d7c6",
+        "confidence": 0.14,
+        "cost_usd_rounded": 3.2e-05,
+        "latency_ms": 566
+      },
+      {
+        "ply": 104,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke5",
+        "uci": "d4e5",
+        "confidence": 0.016,
+        "cost_usd_rounded": 0.000146,
+        "latency_ms": 657
+      },
+      {
+        "ply": 105,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kb5",
+        "uci": "c6b5",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.1e-05,
+        "latency_ms": 498
+      },
+      {
+        "ply": 106,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Ke4",
+        "uci": "e5e4",
+        "confidence": 0.011,
+        "cost_usd_rounded": 0.000153,
+        "latency_ms": 855
+      },
+      {
+        "ply": 107,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc4",
+        "uci": "b5c4",
+        "confidence": 0.09,
+        "cost_usd_rounded": 3.3e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 108,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "f5",
+        "uci": "f7f5",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000131,
+        "latency_ms": 765
+      },
+      {
+        "ply": 109,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "gxf5",
+        "uci": "g4f5",
+        "confidence": 0.4,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 528
+      },
+      {
+        "ply": 110,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxf5",
+        "uci": "e4f5",
+        "confidence": 0.245,
+        "cost_usd_rounded": 0.000131,
+        "latency_ms": 1403
+      },
+      {
+        "ply": 111,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd5",
+        "uci": "c4d5",
+        "confidence": 0.24,
+        "cost_usd_rounded": 3.2e-05,
+        "latency_ms": 389
+      },
+      {
+        "ply": 112,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "g4",
+        "uci": "g5g4",
+        "confidence": 0.005,
+        "cost_usd_rounded": 0.000122,
+        "latency_ms": 568
+      },
+      {
+        "ply": 113,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kc5",
+        "uci": "d5c5",
+        "confidence": 0.1,
+        "cost_usd_rounded": 2.9e-05,
+        "latency_ms": 378
+      },
+      {
+        "ply": 114,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "g3",
+        "uci": "g4g3",
+        "confidence": 0.008,
+        "cost_usd_rounded": 0.000144,
+        "latency_ms": 689
+      },
+      {
+        "ply": 115,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "hxg3",
+        "uci": "h2g3",
+        "confidence": 0.19,
+        "cost_usd_rounded": 3.4e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 116,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kg4",
+        "uci": "f5g4",
+        "confidence": 0.02,
+        "cost_usd_rounded": 0.000136,
+        "latency_ms": 787
+      },
+      {
+        "ply": 117,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kd4",
+        "uci": "c5d4",
+        "confidence": 0.17,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 377
+      },
+      {
+        "ply": 118,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kxg3",
+        "uci": "g4g3",
+        "confidence": 0.226,
+        "cost_usd_rounded": 0.00013,
+        "latency_ms": 686
+      },
+      {
+        "ply": 119,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Ke5",
+        "uci": "d4e5",
+        "confidence": 0.11,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 387
+      },
+      {
+        "ply": 120,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Kg4",
+        "uci": "g3g4",
+        "confidence": 0.017,
+        "cost_usd_rounded": 0.000136,
+        "latency_ms": 705
+      },
+      {
+        "ply": 121,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf6",
+        "uci": "e5f6",
+        "confidence": 0.13,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 499
+      },
+      {
+        "ply": 122,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h5",
+        "uci": "h7h5",
+        "confidence": 0.008,
+        "cost_usd_rounded": 0.000129,
+        "latency_ms": 617
+      },
+      {
+        "ply": 123,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg6",
+        "uci": "f6g6",
+        "confidence": 0.11,
+        "cost_usd_rounded": 2.8e-05,
+        "latency_ms": 396
+      },
+      {
+        "ply": 124,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h4",
+        "uci": "h5h4",
+        "confidence": 0.037,
+        "cost_usd_rounded": 0.000114,
+        "latency_ms": 566
+      },
+      {
+        "ply": 125,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kf7",
+        "uci": "g6f7",
+        "confidence": 0.15,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 376
+      },
+      {
+        "ply": 126,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h3",
+        "uci": "h4h3",
+        "confidence": 0.014,
+        "cost_usd_rounded": 0.000128,
+        "latency_ms": 572
+      },
+      {
+        "ply": 127,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg6",
+        "uci": "f7g6",
+        "confidence": 0.11,
+        "cost_usd_rounded": 3e-05,
+        "latency_ms": 472
+      },
+      {
+        "ply": 128,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h2",
+        "uci": "h3h2",
+        "confidence": 0.02,
+        "cost_usd_rounded": 0.000107,
+        "latency_ms": 647
+      },
+      {
+        "ply": 129,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kh7",
+        "uci": "g6h7",
+        "confidence": 0.13,
+        "cost_usd_rounded": 2.7e-05,
+        "latency_ms": 501
+      },
+      {
+        "ply": 130,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "h1=Q+",
+        "uci": "h2h1q",
+        "confidence": 0.125,
+        "cost_usd_rounded": 0.00016,
+        "latency_ms": 612
+      },
+      {
+        "ply": 131,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kg7",
+        "uci": "h7g7",
+        "confidence": 0.03,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 407
+      },
+      {
+        "ply": 132,
+        "side": "black",
+        "model": "cloudflare/clef",
+        "san": "Qh8+",
+        "uci": "h1h8",
+        "confidence": 0.026,
+        "cost_usd_rounded": 0.000286,
+        "latency_ms": 618
+      },
+      {
+        "ply": 133,
+        "side": "white",
+        "model": "typesafe/jev-1.13",
+        "san": "Kxh8",
+        "uci": "g7h8",
+        "confidence": 0.5,
+        "cost_usd_rounded": 2.5e-05,
+        "latency_ms": 400
+      }
+    ],
+    "result": "1/2-1/2",
+    "reason": "InsufficientMaterial",
+    "plies": 133,
+    "cost_usd": 0.016968,
+    "winner": null
+  }
+]

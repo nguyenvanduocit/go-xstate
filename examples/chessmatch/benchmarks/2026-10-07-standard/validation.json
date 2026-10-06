@@ -1,0 +1,77 @@
+{
+  "python_chess_version": "1.11.2",
+  "completed_games_checked": 10,
+  "total_plies_checked": 646,
+  "games": [
+    {
+      "game": "11-standard-pair-6-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "12-standard-pair-6-jev-white",
+      "plies": 123,
+      "result": "1/2-1/2",
+      "reason": "InsufficientMaterial",
+      "validation": "PASS"
+    },
+    {
+      "game": "13-standard-pair-7-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "14-standard-pair-7-jev-white",
+      "plies": 111,
+      "result": "1/2-1/2",
+      "reason": "InsufficientMaterial",
+      "validation": "PASS"
+    },
+    {
+      "game": "15-standard-pair-8-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "16-standard-pair-8-jev-white",
+      "plies": 123,
+      "result": "1/2-1/2",
+      "reason": "InsufficientMaterial",
+      "validation": "PASS"
+    },
+    {
+      "game": "17-standard-pair-9-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "18-standard-pair-9-jev-white",
+      "plies": 81,
+      "result": "1/2-1/2",
+      "reason": "FivefoldRepetition",
+      "validation": "PASS"
+    },
+    {
+      "game": "19-standard-pair-10-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "20-standard-pair-10-jev-white",
+      "plies": 133,
+      "result": "1/2-1/2",
+      "reason": "InsufficientMaterial",
+      "validation": "PASS"
+    }
+  ]
+}

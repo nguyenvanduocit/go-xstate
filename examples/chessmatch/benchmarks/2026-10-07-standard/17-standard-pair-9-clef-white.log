@@ -1,0 +1,38 @@
+White: cloudflare/clef
+Black: typesafe/jev-1.13
+Limit: 1000 plies
+  1 white cloudflare/clef        d4      d2d4 confidence=0.140 cost=$0.000218 latency=661ms
+  2 black typesafe/jev-1.13      d5      d7d5 confidence=0.310 cost=$0.000043 latency=433ms
+  3 white cloudflare/clef        e4      e2e4 confidence=0.076 cost=$0.000272 latency=602ms
+  4 black typesafe/jev-1.13      dxe4    d5e4 confidence=0.680 cost=$0.000052 latency=414ms
+  5 white cloudflare/clef        Nf3     g1f3 confidence=0.026 cost=$0.000346 latency=1181ms
+  6 black typesafe/jev-1.13      exf3    e4f3 confidence=0.350 cost=$0.000056 latency=389ms
+  7 white cloudflare/clef        Qxf3    d1f3 confidence=0.288 cost=$0.000305 latency=959ms
+  8 black typesafe/jev-1.13      Qxd4    d8d4 confidence=0.440 cost=$0.000054 latency=549ms
+  9 white cloudflare/clef        Nc3     b1c3 confidence=0.013 cost=$0.000403 latency=728ms
+ 10 black typesafe/jev-1.13      Qxc3+   d4c3 confidence=0.580 cost=$0.000074 latency=419ms
+ 11 white cloudflare/clef        Qxc3    f3c3 confidence=0.390 cost=$0.000118 latency=889ms
+ 12 black typesafe/jev-1.13      Bh3     c8h3 confidence=0.080 cost=$0.000051 latency=408ms
+ 13 white cloudflare/clef        Qxh3    c3h3 confidence=0.282 cost=$0.000390 latency=870ms
+ 14 black typesafe/jev-1.13      Nf6     g8f6 confidence=0.160 cost=$0.000044 latency=981ms
+ 15 white cloudflare/clef        Qc8#    h3c8 confidence=0.087 cost=$0.000382 latency=752ms
+
+
+ A B C D E F G H
+8♜ ♞ ♕ - ♚ ♝ - ♜ 
+7♟ ♟ ♟ - ♟ ♟ ♟ ♟ 
+6- - - - - ♞ - - 
+5- - - - - - - - 
+4- - - - - - - - 
+3- - - - - - - - 
+2♙ ♙ ♙ - - ♙ ♙ ♙ 
+1♖ - ♗ - ♔ ♗ - ♖ 
+
+Result: 1-0 (Checkmate), 15 plies, reported cost $0.002808
+FEN: rnQ1kb1r/ppp1pppp/5n2/8/8/8/PPP2PPP/R1B1KB1R b KQkq - 2 8
+
+[White "cloudflare/clef"]
+[Black "typesafe/jev-1.13"]
+[Result "1-0"]
+
+1. d4 d5 2. e4 dxe4 3. Nf3 exf3 4. Qxf3 Qxd4 5. Nc3 Qxc3+ 6. Qxc3 Bh3 7. Qxh3 Nf6 8. Qc8# 1-0
