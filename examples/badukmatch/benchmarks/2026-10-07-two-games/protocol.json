@@ -1,0 +1,22 @@
+{
+  "board_size": 9,
+  "initial_board": "empty",
+  "rules": "Tromp-Taylor",
+  "komi": 7.5,
+  "max_moves": 1000,
+  "match_timeout": "30m",
+  "request_timeout": "45s",
+  "started_at": "2026-10-06T17:49:56.128046+00:00",
+  "games": [
+    {
+      "id": 1,
+      "black": "cloudflare/clef",
+      "white": "typesafe/jev-1.13"
+    },
+    {
+      "id": 2,
+      "black": "typesafe/jev-1.13",
+      "white": "cloudflare/clef"
+    }
+  ]
+}

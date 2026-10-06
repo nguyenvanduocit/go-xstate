@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "black": "cloudflare/clef",
+    "white": "typesafe/jev-1.13",
+    "exit_code": 0,
+    "elapsed_seconds": 12.906,
+    "moves": 15,
+    "result": "W+6.5",
+    "reason": "two consecutive passes",
+    "winner": "typesafe/jev-1.13",
+    "reported_cost_usd": 0.004789,
+    "black_minus_white_after_komi": -6.5,
+    "completed": true,
+    "stats": {
+      "b": {
+        "model": "cloudflare/clef",
+        "moves": 8,
+        "passes": 1,
+        "captured_opponent_stones": 0,
+        "self_captured_stones": 0,
+        "sum_rounded_move_cost_usd": 0.004172,
+        "latency_ms": 9245,
+        "mean_latency_ms": 1155.6
+      },
+      "w": {
+        "model": "typesafe/jev-1.13",
+        "moves": 7,
+        "passes": 1,
+        "captured_opponent_stones": 0,
+        "self_captured_stones": 0,
+        "sum_rounded_move_cost_usd": 0.000619,
+        "latency_ms": 2710,
+        "mean_latency_ms": 387.1
+      }
+    },
+    "final_board": ".....................OX.......OX.......OXX.....XOXO......XO......................",
+    "sgf": "01.sgf",
+    "log": "01.log"
+  },
+  {
+    "id": 2,
+    "black": "typesafe/jev-1.13",
+    "white": "cloudflare/clef",
+    "exit_code": 0,
+    "elapsed_seconds": 12.135,
+    "moves": 17,
+    "result": "W+6.5",
+    "reason": "two consecutive passes",
+    "winner": "cloudflare/clef",
+    "reported_cost_usd": 0.004914,
+    "black_minus_white_after_komi": -6.5,
+    "completed": true,
+    "stats": {
+      "b": {
+        "model": "typesafe/jev-1.13",
+        "moves": 9,
+        "passes": 1,
+        "captured_opponent_stones": 0,
+        "self_captured_stones": 0,
+        "sum_rounded_move_cost_usd": 0.000789,
+        "latency_ms": 4489,
+        "mean_latency_ms": 498.8
+      },
+      "w": {
+        "model": "cloudflare/clef",
+        "moves": 8,
+        "passes": 1,
+        "captured_opponent_stones": 0,
+        "self_captured_stones": 0,
+        "sum_rounded_move_cost_usd": 0.004124,
+        "latency_ms": 6692,
+        "mean_latency_ms": 836.5
+      }
+    },
+    "final_board": ".....................XOOOOO...OOXXXX...XX........X...............................",
+    "sgf": "02.sgf",
+    "log": "02.log"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "validator": "sgfmill 1.1.1 with independent positional-history check",
+  "games": 2,
+  "moves_verified": 32,
+  "checks": [
+    "alternating colors",
+    "log versus SGF moves and player models",
+    "empty target points",
+    "captures and self-captures",
+    "positional superko",
+    "two-pass termination",
+    "final board versus log",
+    "area score plus komi versus SGF and log result"
+  ],
+  "passed": true
+}

@@ -127,6 +127,15 @@ at two moves. It verifies the API path and choice-list size, not playing
 strength or a completed game. Larger boards produce more choices; their live
 API behavior has not been checked in this example.
 
+## Two completed games
+
+A [two-game run with swapped colors](benchmarks/2026-10-07-two-games/README.md)
+finished with one win each. Both models passed early: the games lasted 15 and
+17 moves, and White won both by 6.5 points after komi. Total reported cost
+was approximately $0.009703. These short games do not establish equal
+playing strength. SGFs, move logs, and independent replay checks are saved
+with the results.
+
 ## Verification
 
 ```sh
