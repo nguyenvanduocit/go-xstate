@@ -47,7 +47,7 @@ func formatTransitions(n *StateNode) *transitionMap {
 	if n.Config.On != nil {
 		for _, descriptor := range sortedKeys(n.Config.On) {
 			if descriptor == "" {
-				panic(errors.New(`Null events ("") cannot be specified as a transition key. Use ` + "`always: { ... }`" + ` instead.`))
+				panic(invalidConfig(n.ID, errors.New(`Null events ("") cannot be specified as a transition key. Use `+"`always: { ... }`"+` instead.`)))
 			}
 			var list []*TransitionDefinition
 			for _, t := range toTransitionConfigArray(n.Config.On[descriptor]) {
@@ -192,7 +192,7 @@ func formatInitialTransition(n *StateNode, target string, obj initialTransitionC
 			if obj.isObject {
 				shown = "[object Object]"
 			}
-			panic(fmt.Errorf("Initial state node \"%s\" not found on parent state node #%s", shown, n.ID))
+			panic(invalidConfig(n.ID, fmt.Errorf("Initial state node \"%s\" not found on parent state node #%s", shown, n.ID)))
 		}
 	}
 	t := &TransitionDefinition{
@@ -233,13 +233,16 @@ func resolveOneTarget(n *StateNode, target string) *StateNode {
 		resolved = n.Key + target
 	}
 	if n.Parent == nil {
-		panic(fmt.Errorf("Invalid target: \"%s\" is not a valid target from the root node. Did you mean \".%s\"?", target, target))
+		panic(invalidConfig(n.ID, fmt.Errorf("Invalid target: \"%s\" is not a valid target from the root node. Did you mean \".%s\"?", target, target)))
 	}
 	var result *StateNode
 	func() {
 		defer func() {
 			if r := recover(); r != nil {
-				panic(fmt.Errorf("Invalid transition definition for state node '%s':\n%s", n.ID, errorMessage(r)))
+				if err, ok := r.(*ConfigError); ok {
+					panic(invalidConfig(n.ID, fmt.Errorf("Invalid transition definition for state node '%s':\n%w", n.ID, err)))
+				}
+				panic(r)
 			}
 		}()
 		result = getStateNodeByPath(n.Parent, resolved)
@@ -289,7 +292,7 @@ func getStateNodeChild(n *StateNode, key string) *StateNode {
 	}
 	result := n.States[key]
 	if result == nil {
-		panic(fmt.Errorf("Child state '%s' does not exist on '%s'", key, n.ID))
+		panic(invalidConfig(n.ID, fmt.Errorf("Child state '%s' does not exist on '%s'", key, n.ID)))
 	}
 	return result
 }
@@ -299,7 +302,13 @@ func getStateNodeByPath(n *StateNode, statePath string) *StateNode {
 	if isStateID(statePath) {
 		var found *StateNode
 		func() {
-			defer func() { _ = recover() }()
+			defer func() {
+				if r := recover(); r != nil {
+					if _, ok := r.(*ConfigError); !ok {
+						panic(r)
+					}
+				}
+			}()
 			found = n.machine.getStateNodeByID(statePath)
 		}()
 		if found != nil {

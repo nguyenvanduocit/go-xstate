@@ -411,6 +411,7 @@ func TestTransition_TransitionFunction_ShouldNotExecuteTransitionActions(t *test
 func TestTransition_TransitionFunction_DelayedEventsExampleExperimental(t *testing.T) {
 	var dbMu sync.Mutex
 	var dbState string
+	completed := make(chan struct{})
 
 	machine := xs.CreateMachine(xs.MachineConfig[any]{
 		Initial: "start",
@@ -469,6 +470,9 @@ func TestTransition_TransitionFunction_DelayedEventsExampleExperimental(t *testi
 		)
 		dbState = transition1Stringify(t, nextState)
 		dbMu.Unlock()
+		if nextState.Status == xs.StatusDone {
+			close(completed)
+		}
 
 		go func() {
 			for _, action := range actions {
@@ -480,7 +484,11 @@ func TestTransition_TransitionFunction_DelayedEventsExampleExperimental(t *testi
 	postStart()
 	postEvent(xs.Ev("next"))
 
-	sleep(15)
+	select {
+	case <-completed:
+	case <-time.After(3 * time.Second):
+		t.Fatal("delayed workflow did not complete")
+	}
 	dbMu.Lock()
 	final := transition1Parse(t, dbState)
 	dbMu.Unlock()

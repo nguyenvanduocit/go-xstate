@@ -158,7 +158,7 @@ func (m *StateMachine[C]) getStateNodeByID(stateID string) *StateNode {
 	}
 	n := m.idMap[resolvedID]
 	if n == nil {
-		panic(fmt.Errorf("Child state node '#%s' does not exist on machine '%s'", resolvedID, m.ID))
+		panic(invalidConfig(m.ID, fmt.Errorf("Child state node '#%s' does not exist on machine '%s'", resolvedID, m.ID)))
 	}
 	return getStateNodeByPathArray(n, relative)
 }

@@ -16,7 +16,7 @@ between decision models. It follows the
 Compatibility and Go-specific behavior are described [below](#compatibility-and-concurrency).
 
 [Quick start](#quick-start) · [Examples](#examples) · [Packages](#packages) ·
-[Architecture](docs/ARCHITECTURE.md) · [Porting guide](docs/porting/core.md)
+[Go APIs](docs/GO_API.md) · [Architecture](docs/ARCHITECTURE.md) · [Porting guide](docs/porting/core.md)
 
 ## Install
 
@@ -68,6 +68,10 @@ once `Start` is called. `Send` processes an event synchronously, and
 `GetSnapshot` reads its result. For changing data, replace `struct{}` with your
 context type and update it through `Assign`; see the
 [counter machine](examples/counter/machine.go).
+
+For error-returning configuration and typed asynchronous tasks, use `Compile`,
+`NewTask`, `InvokeTask`, and `Await`; see the [Go API guide](docs/GO_API.md).
+The existing XState-style APIs remain available.
 
 ## What is included
 

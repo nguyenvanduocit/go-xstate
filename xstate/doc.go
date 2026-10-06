@@ -6,6 +6,11 @@
 // declaration order. Assign returns the next context value; callers should copy
 // mutable maps and slices before changing them.
 //
+// Compile returns static configuration errors instead of panicking. NewTask
+// and InvokeTask connect concrete input/output types to machine callbacks. Await
+// waits for a matching snapshot using a context and ordinary error returns;
+// cancelling a wait does not stop the actor.
+//
 // FromPromise, FromCallback, FromObservable, and FromTransition create other
 // actor kinds. Promise bodies run on goroutines and receive a context cancelled
 // when the actor stops. Actions and observers run synchronously under the actor

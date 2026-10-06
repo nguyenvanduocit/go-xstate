@@ -109,10 +109,28 @@ func NewMachine(cfg Config, choose ChooseMove) (*xs.StateMachine[Match], error) 
 		}
 		return cfg.WhiteModel
 	}
-	decide := xs.FromPromise(func(ctx context.Context, a xs.PromiseArgs) (Decision, error) {
-		return choose(ctx, a.Input.(Turn))
+	decide, err := xs.NewTask(choose)
+	if err != nil {
+		return nil, err
+	}
+	invocation, err := xs.InvokeTask(decide, xs.Invocation[Match, Turn, Decision]{
+		ID: "choose", DoneTarget: "applying", ErrorTarget: "failed",
+		Input: func(c Match) Turn {
+			recent := make([]string, 0, 8)
+			for _, move := range c.Moves[max(0, len(c.Moves)-8):] {
+				recent = append(recent, move.Side+" "+move.Point)
+			}
+			return Turn{Model: model(c.Side), Size: c.Size, Komi: c.Komi, Board: c.Board,
+				Side: c.Side, MoveNumber: len(c.Moves) + 1, ConsecutivePasses: c.ConsecutivePasses,
+				LegalMoves: slices.Clone(c.LegalMoves), RecentMoves: recent}
+		},
+		Done:   func(c Match, decision Decision) Match { c.pending = decision; return c },
+		Failed: func(c Match, err error) Match { c.Error = err.Error(); return c },
 	})
-	machine := xs.CreateMachine(xs.MachineConfig[Match]{
+	if err != nil {
+		return nil, err
+	}
+	return xs.Compile(xs.MachineConfig[Match]{
 		ID: "baduk-match", Initial: "setup",
 		On: map[string]xs.Transitions{"cancel": {{Target: ".cancelled"}}},
 		States: xs.States{
@@ -125,29 +143,7 @@ func NewMachine(cfg Config, choose ChooseMove) (*xs.StateMachine[Match], error) 
 				{Target: "limited", Guard: xs.GuardFunc(func(a xs.GuardArgs[Match]) bool { return len(a.Context.Moves) >= cfg.MaxMoves })},
 				{Target: "thinking"},
 			}},
-			{Key: "thinking", Invoke: []xs.InvokeConfig{{
-				Logic: decide,
-				Input: xs.NewExpr(func(a xs.ExprArgs[Match]) any {
-					c := a.Context
-					recent := make([]string, 0, 8)
-					for _, move := range c.Moves[max(0, len(c.Moves)-8):] {
-						recent = append(recent, move.Side+" "+move.Point)
-					}
-					return Turn{Model: model(c.Side), Size: c.Size, Komi: c.Komi, Board: c.Board,
-						Side: c.Side, MoveNumber: len(c.Moves) + 1, ConsecutivePasses: c.ConsecutivePasses,
-						LegalMoves: slices.Clone(c.LegalMoves), RecentMoves: recent}
-				}),
-				OnDone: xs.Transitions{{Target: "applying", Actions: xs.Actions{xs.Assign(func(a xs.AssignArgs[Match]) Match {
-					c := a.Context
-					c.pending = a.Event.(xs.DoneActorEvent).Output.(Decision)
-					return c
-				})}}},
-				OnError: xs.Transitions{{Target: "failed", Actions: xs.Actions{xs.Assign(func(a xs.AssignArgs[Match]) Match {
-					c := a.Context
-					c.Error = fmt.Sprint(a.Event.(xs.ErrorActorEvent).Error)
-					return c
-				})}}},
-			}}},
+			{Key: "thinking", Invoke: []xs.InvokeConfig{invocation}},
 			{Key: "applying", Entry: xs.Actions{xs.Assign(func(a xs.AssignArgs[Match]) Match {
 				c := a.Context
 				decision := c.pending
@@ -181,7 +177,6 @@ func NewMachine(cfg Config, choose ChooseMove) (*xs.StateMachine[Match], error) 
 			{Key: "cancelled", Type: xs.Final, Entry: reason("cancelled")},
 		},
 	})
-	return machine, nil
 }
 
 func reason(value string) xs.Actions {
@@ -244,7 +239,6 @@ func Play(ctx context.Context, cfg Config, choose ChooseMove, onMove func(Move))
 	}
 	actor := xs.CreateActor(machine)
 	defer actor.Stop()
-	done := make(chan error, 1)
 	seen := 0
 	actor.Subscribe(xs.Observer[*xs.MachineSnapshot[Match]]{
 		Next: func(s *xs.MachineSnapshot[Match]) {
@@ -256,16 +250,14 @@ func Play(ctx context.Context, cfg Config, choose ChooseMove, onMove func(Move))
 				}
 			}
 		},
-		Complete: func() { done <- nil },
-		Error:    func(err any) { done <- fmt.Errorf("actor: %v", err) },
 	})
 	actor.Start()
-	select {
-	case err = <-done:
-	case <-ctx.Done():
+	_, err = xs.Await(ctx, actor, func(s *xs.MachineSnapshot[Match]) bool { return s.Status == xs.StatusDone })
+	if err != nil && ctx.Err() != nil {
 		actor.Send(xs.Ev("cancel"))
 		err = ctx.Err()
 	}
+
 	result := actor.GetSnapshot().Context
 	if err == nil && result.Error != "" {
 		err = errors.New(result.Error)

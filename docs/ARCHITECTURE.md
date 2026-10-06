@@ -42,6 +42,12 @@ An `Actor[S]` embeds the non-generic `actorCore`. Actor kinds implement
 through the common interface. Public extension points include `Logic[S]` and
 the `Implementations` maps.
 
+`Compile` adds static validation and returns tagged `ConfigError` values; the
+legacy constructor keeps its panic API. `NewTask` / `InvokeTask` lower typed
+input/output callbacks to existing promise invocations. `Await` is the blocking,
+context-based form of `WaitFor(...).Wait()`. These additions share the existing
+execution model; see the [Go API guide](GO_API.md).
+
 ## Concurrency and ordering
 
 `Send` processes transitions synchronously: when it returns, the actor snapshot

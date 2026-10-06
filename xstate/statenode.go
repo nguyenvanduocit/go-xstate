@@ -103,7 +103,7 @@ func newStateNode(config StateConfig, parent *StateNode, key string, m machineIn
 		if len(n.childOrder) > 0 {
 			first = n.childOrder[0]
 		}
-		panic(fmt.Errorf("No initial state specified for compound state node \"#%s\". Try adding { initial: \"%s\" } to the state config.", n.ID, first))
+		panic(invalidConfig(n.ID, fmt.Errorf("No initial state specified for compound state node \"#%s\". Try adding { initial: \"%s\" } to the state config.", n.ID, first)))
 	}
 
 	if n.Type == History {
