@@ -6,6 +6,10 @@
 decision models inside a state machine. It includes a CLI, PGN output, and
 offline tests. Live play reads `OPENROUTER_KEY` from the environment.
 
+[Clef vs Jev Go / Baduk](badukmatch) offers every legal placement plus `pass`
+on a 9×9 board. Its state machine handles captures, superko, area scoring,
+and SGF output. A local demo runs without an API key.
+
 ## XState ports
 
 This nested Go module ports the logic from the 49 apps in
