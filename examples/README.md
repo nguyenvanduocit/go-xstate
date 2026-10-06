@@ -1,7 +1,7 @@
 # Examples
 
 This nested Go module ports the logic from the 49 apps in
-[`references/xstate/examples`](../references/xstate/examples). The
+[XState examples](https://github.com/statelyai/xstate/tree/38dcaffb20ec7f3cbb10e6161d8f0ebacca33701/examples). The
 [`manifest.tsv`](manifest.tsv) maps upstream names to Go package directories and
 records whether each port is ready or pending.
 
