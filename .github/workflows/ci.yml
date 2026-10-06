@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Test ${{ matrix.name }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: library
+            directory: .
+          - name: examples
+            directory: examples
+    defaults:
+      run:
+        shell: bash
+        working-directory: ${{ matrix.directory }}
+    env:
+      CGO_ENABLED: '1'
+      GOFLAGS: -mod=readonly
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: ${{ matrix.directory }}/go.mod
+          cache-dependency-path: |
+            go.sum
+            ${{ matrix.directory }}/go.sum
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Build
+        run: go build ./...
+
+      - name: Build MongoDB example
+        if: matrix.name == 'examples'
+        run: go build -tags mongodb ./...
+
+      - name: Run race tests
+        run: go test -race -count=1 -timeout=5m ./... 2>&1 | tee "$RUNNER_TEMP/test-output.txt"
+
+      - name: Upload test log
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: test-output-${{ matrix.name }}
+          path: ${{ runner.temp }}/test-output.txt
+          if-no-files-found: ignore
+          retention-days: 7

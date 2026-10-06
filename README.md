@@ -77,6 +77,20 @@ go test -race -count=1 ./xstate
 (cd examples && go test -race -count=1 ./counter)
 ```
 
+## GitHub Actions
+
+The [CI workflow](.github/workflows/ci.yml) runs on pushes to `main`, pull
+requests, and manual dispatch. Separate library and example jobs run vet,
+build, and race tests on Ubuntu with the Go version declared in each module.
+The example job also builds with `-tags mongodb`.
+
+Example tests execute the workflows and compare recorded traces and stdout.
+They use local fakes for external services; CI does not start a live MongoDB
+server or interactive example commands. Each job keeps its test log as an
+artifact for seven days, including failed test runs. To run it manually, open
+[Actions → CI](https://github.com/nguyenvanduocit/go-xstate/actions/workflows/ci.yml)
+and choose **Run workflow**.
+
 ## Compatibility
 
 The tests translate upstream runtime assertions and record explicit skips for
