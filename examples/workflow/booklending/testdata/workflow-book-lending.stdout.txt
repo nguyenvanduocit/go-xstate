@@ -1,0 +1,46 @@
+{
+  book: null,
+  lender: null,
+}
+Starting Get status for book {
+  bookid: "42",
+}
+{
+  book: {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    id: "42",
+    status: "unknown",
+  },
+  lender: null,
+}
+Starting Check out book with id {
+  bookid: "42",
+}
+{
+  book: {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    id: "42",
+    status: "available",
+  },
+  lender: null,
+}
+Starting Notify Lender for checkout {
+  bookid: "42",
+  lender: null,
+}
+{
+  book: {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    id: "42",
+    status: "available",
+  },
+  lender: null,
+}
+{
+  book: {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    id: "42",
+    status: "available",
+  },
+  lender: null,
+}

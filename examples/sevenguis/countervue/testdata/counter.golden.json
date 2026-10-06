@@ -1,0 +1,86 @@
+{
+  "name": "7guis-1-counter-vue",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "count": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "increase"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "count": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "increase"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "count": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "increase"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "count": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "count": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

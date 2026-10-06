@@ -1,0 +1,137 @@
+{
+  "name": "StoreNewPatientInfo",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "patient": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ignored"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "patient": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NewPatientEvent",
+          "name": "John Doe",
+          "condition": "Broken Arm"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "Onboard": "StorePatient"
+        },
+        "context": {
+          "patient": {
+            "name": "John Doe",
+            "condition": "Broken Arm"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.patientonboarding.Onboard.StorePatient"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 250
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "patient": {
+            "name": "John Doe",
+            "condition": "Broken Arm"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "wait": 250
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "patient": {
+            "name": "John Doe",
+            "condition": "Broken Arm"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "wait": 250
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "patient": {
+            "name": "John Doe",
+            "condition": "Broken Arm"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NewPatientEvent",
+          "name": "Jane",
+          "condition": "Cold"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "patient": {
+            "name": "John Doe",
+            "condition": "Broken Arm"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

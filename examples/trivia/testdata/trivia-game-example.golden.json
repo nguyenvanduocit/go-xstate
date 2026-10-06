@@ -1,0 +1,6124 @@
+{
+  "name": "trivia-game-example",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "homepage": "loadingData"
+        },
+        "context": {
+          "homePageCharacters": [],
+          "hasLoaded": false,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.homepage.loadingData"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.play"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "homepage": "loadingData"
+        },
+        "context": {
+          "homePageCharacters": [],
+          "hasLoaded": false,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.homepage.loadingData"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "homepage": "dataLoaded"
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.toggleClue"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "homepage": "dataLoaded"
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "homepage": "dataLoaded"
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.play"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "instructionModal",
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.close"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "homepage": "dataLoaded"
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.play"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "instructionModal",
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.reject"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "homepage": "dataLoaded"
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.play"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "instructionModal",
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.accept"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.playAgain"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.toggleClue"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.toggleClue"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.toggleClue"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 999
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "incorrectAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 101
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "incorrectAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.toggleClue"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "incorrectAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 1,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 101,
+            "name": "Character 101",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/101.jpeg",
+            "episode": [
+              "https://example.test/episode/101"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 1,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 102,
+            "name": "Character 102",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/102.jpeg",
+            "episode": [
+              "https://example.test/episode/102"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 2,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 102
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 102,
+            "name": "Character 102",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/102.jpeg",
+            "episode": [
+              "https://example.test/episode/102"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 2,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 999
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 102,
+            "name": "Character 102",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/102.jpeg",
+            "episode": [
+              "https://example.test/episode/102"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 2,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 102,
+            "name": "Character 102",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/102.jpeg",
+            "episode": [
+              "https://example.test/episode/102"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 2,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 103,
+            "name": "Character 103",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/103.jpeg",
+            "episode": [
+              "https://example.test/episode/103"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 3,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 999
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "incorrectAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 103,
+            "name": "Character 103",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/103.jpeg",
+            "episode": [
+              "https://example.test/episode/103"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 3,
+          "lifes": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 103,
+            "name": "Character 103",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/103.jpeg",
+            "episode": [
+              "https://example.test/episode/103"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 3,
+          "lifes": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 104,
+            "name": "Character 104",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/104.jpeg",
+            "episode": [
+              "https://example.test/episode/104"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 4,
+          "lifes": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 999
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "lostGame"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 104,
+            "name": "Character 104",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/104.jpeg",
+            "episode": [
+              "https://example.test/episode/104"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 4,
+          "lifes": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "lostGame"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 104,
+            "name": "Character 104",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/104.jpeg",
+            "episode": [
+              "https://example.test/episode/104"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 4,
+          "lifes": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 104
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "lostGame"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 104,
+            "name": "Character 104",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/104.jpeg",
+            "episode": [
+              "https://example.test/episode/104"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 10,
+          "question": 4,
+          "lifes": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.toggleClue"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "lostGame"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 104,
+            "name": "Character 104",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/104.jpeg",
+            "episode": [
+              "https://example.test/episode/104"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 10,
+          "question": 4,
+          "lifes": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.playAgain"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 105,
+            "name": "Character 105",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/105.jpeg",
+            "episode": [
+              "https://example.test/episode/105"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 999
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "incorrectAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 105,
+            "name": "Character 105",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/105.jpeg",
+            "episode": [
+              "https://example.test/episode/105"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 105,
+            "name": "Character 105",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/105.jpeg",
+            "episode": [
+              "https://example.test/episode/105"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 106,
+            "name": "Character 106",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/106.jpeg",
+            "episode": [
+              "https://example.test/episode/106"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 2,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 106
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 106,
+            "name": "Character 106",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/106.jpeg",
+            "episode": [
+              "https://example.test/episode/106"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 10,
+          "question": 2,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 106,
+            "name": "Character 106",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/106.jpeg",
+            "episode": [
+              "https://example.test/episode/106"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 10,
+          "question": 2,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 107,
+            "name": "Character 107",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/107.jpeg",
+            "episode": [
+              "https://example.test/episode/107"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 10,
+          "question": 3,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 107
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 107,
+            "name": "Character 107",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/107.jpeg",
+            "episode": [
+              "https://example.test/episode/107"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 20,
+          "question": 3,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 107,
+            "name": "Character 107",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/107.jpeg",
+            "episode": [
+              "https://example.test/episode/107"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 20,
+          "question": 3,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 108,
+            "name": "Character 108",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/108.jpeg",
+            "episode": [
+              "https://example.test/episode/108"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 20,
+          "question": 4,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 108
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 108,
+            "name": "Character 108",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/108.jpeg",
+            "episode": [
+              "https://example.test/episode/108"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 30,
+          "question": 4,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 108,
+            "name": "Character 108",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/108.jpeg",
+            "episode": [
+              "https://example.test/episode/108"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 30,
+          "question": 4,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 109,
+            "name": "Character 109",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/109.jpeg",
+            "episode": [
+              "https://example.test/episode/109"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 30,
+          "question": 5,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 109
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 109,
+            "name": "Character 109",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/109.jpeg",
+            "episode": [
+              "https://example.test/episode/109"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 40,
+          "question": 5,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 109,
+            "name": "Character 109",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/109.jpeg",
+            "episode": [
+              "https://example.test/episode/109"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 40,
+          "question": 5,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 110,
+            "name": "Character 110",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/110.jpeg",
+            "episode": [
+              "https://example.test/episode/110"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 40,
+          "question": 6,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 110
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 110,
+            "name": "Character 110",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/110.jpeg",
+            "episode": [
+              "https://example.test/episode/110"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 50,
+          "question": 6,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 110,
+            "name": "Character 110",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/110.jpeg",
+            "episode": [
+              "https://example.test/episode/110"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 50,
+          "question": 6,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 111,
+            "name": "Character 111",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/111.jpeg",
+            "episode": [
+              "https://example.test/episode/111"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 50,
+          "question": 7,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 111
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 111,
+            "name": "Character 111",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/111.jpeg",
+            "episode": [
+              "https://example.test/episode/111"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 60,
+          "question": 7,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 111,
+            "name": "Character 111",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/111.jpeg",
+            "episode": [
+              "https://example.test/episode/111"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 60,
+          "question": 7,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 112,
+            "name": "Character 112",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/112.jpeg",
+            "episode": [
+              "https://example.test/episode/112"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 60,
+          "question": 8,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 112
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 112,
+            "name": "Character 112",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/112.jpeg",
+            "episode": [
+              "https://example.test/episode/112"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 70,
+          "question": 8,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 112,
+            "name": "Character 112",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/112.jpeg",
+            "episode": [
+              "https://example.test/episode/112"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 70,
+          "question": 8,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 113,
+            "name": "Character 113",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/113.jpeg",
+            "episode": [
+              "https://example.test/episode/113"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 70,
+          "question": 9,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 113
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 113,
+            "name": "Character 113",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/113.jpeg",
+            "episode": [
+              "https://example.test/episode/113"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 80,
+          "question": 9,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 113,
+            "name": "Character 113",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/113.jpeg",
+            "episode": [
+              "https://example.test/episode/113"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 80,
+          "question": 9,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 114,
+            "name": "Character 114",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/114.jpeg",
+            "episode": [
+              "https://example.test/episode/114"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 80,
+          "question": 10,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 114
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "correctAnswer"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 114,
+            "name": "Character 114",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/114.jpeg",
+            "episode": [
+              "https://example.test/episode/114"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 90,
+          "question": 10,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": {
+            "id": 114,
+            "name": "Character 114",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/114.jpeg",
+            "episode": [
+              "https://example.test/episode/114"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 90,
+          "question": 10,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 115,
+            "name": "Character 115",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/115.jpeg",
+            "episode": [
+              "https://example.test/episode/115"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 90,
+          "question": 11,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 115
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "wonGame"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 115,
+            "name": "Character 115",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/115.jpeg",
+            "episode": [
+              "https://example.test/episode/115"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 100,
+          "question": 11,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.nextQuestion"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "wonGame"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 115,
+            "name": "Character 115",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/115.jpeg",
+            "episode": [
+              "https://example.test/episode/115"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 100,
+          "question": 11,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.selectAnswer",
+          "answer": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "wonGame"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 115,
+            "name": "Character 115",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/115.jpeg",
+            "episode": [
+              "https://example.test/episode/115"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 100,
+          "question": 11,
+          "lifes": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.playAgain"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "loadQuestionData": "loadCharacter"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": false,
+          "currentCharacter": null,
+          "randomCharacters": [],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 0,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.triviaMachine.startTrivia.loadQuestionData.loadCharacter"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 116,
+            "name": "Character 116",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/116.jpeg",
+            "episode": [
+              "https://example.test/episode/116"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": true,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "user.toggleClue"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "startTrivia": {
+            "questionReady": "questionStart"
+          }
+        },
+        "context": {
+          "homePageCharacters": [
+            {
+              "id": 1,
+              "name": "Character 1",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/1.jpeg",
+              "episode": [
+                "https://example.test/episode/1"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Character 2",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/2.jpeg",
+              "episode": [
+                "https://example.test/episode/2"
+              ]
+            }
+          ],
+          "hasLoaded": true,
+          "currentCharacter": {
+            "id": 116,
+            "name": "Character 116",
+            "status": "Alive",
+            "species": "Human",
+            "gender": "Male",
+            "image": "https://example.test/avatar/116.jpeg",
+            "episode": [
+              "https://example.test/episode/116"
+            ]
+          },
+          "randomCharacters": [
+            {
+              "id": 201,
+              "name": "Character 201",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/201.jpeg",
+              "episode": [
+                "https://example.test/episode/201"
+              ]
+            },
+            {
+              "id": 202,
+              "name": "Character 202",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/202.jpeg",
+              "episode": [
+                "https://example.test/episode/202"
+              ]
+            },
+            {
+              "id": 203,
+              "name": "Character 203",
+              "status": "Alive",
+              "species": "Human",
+              "gender": "Male",
+              "image": "https://example.test/avatar/203.jpeg",
+              "episode": [
+                "https://example.test/episode/203"
+              ]
+            }
+          ],
+          "isClueOpened": false,
+          "points": 0,
+          "question": 1,
+          "lifes": 3
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

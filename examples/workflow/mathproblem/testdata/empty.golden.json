@@ -1,0 +1,52 @@
+{
+  "name": "workflow-math-problem-empty",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Solve",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.math-problem.Solve"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 20
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Solve",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.math-problem.Solve"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Solved",
+        "context": {
+          "results": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "expressions": []
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "name": "store-tic-tac-toe/outcome",
+  "cases": [
+    {
+      "board": [
+        "x",
+        "x",
+        "x",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "board": [
+        null,
+        null,
+        null,
+        "x",
+        "x",
+        "x",
+        null,
+        null,
+        null
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "board": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "x",
+        "x",
+        "x"
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "board": [
+        "x",
+        null,
+        null,
+        "x",
+        null,
+        null,
+        "x",
+        null,
+        null
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          0,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "board": [
+        null,
+        "x",
+        null,
+        null,
+        "x",
+        null,
+        null,
+        "x",
+        null
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          1,
+          4,
+          7
+        ]
+      }
+    },
+    {
+      "board": [
+        null,
+        null,
+        "x",
+        null,
+        null,
+        "x",
+        null,
+        null,
+        "x"
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          2,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "board": [
+        "x",
+        null,
+        null,
+        null,
+        "x",
+        null,
+        null,
+        null,
+        "x"
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          0,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "board": [
+        null,
+        null,
+        "x",
+        null,
+        "x",
+        null,
+        "x",
+        null,
+        null
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          2,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "board": [
+        "o",
+        "o",
+        "o",
+        null,
+        "x",
+        null,
+        "x",
+        null,
+        "x"
+      ],
+      "outcome": {
+        "winner": "o",
+        "line": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "board": [
+        "x",
+        "x",
+        "x",
+        "x",
+        "o",
+        "o",
+        "x",
+        "o",
+        "o"
+      ],
+      "outcome": {
+        "winner": "x",
+        "line": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "board": [
+        "x",
+        "o",
+        "x",
+        "x",
+        "o",
+        "o",
+        "o",
+        "x",
+        "x"
+      ],
+      "outcome": {
+        "winner": "draw",
+        "line": null
+      }
+    },
+    {
+      "board": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "outcome": {
+        "winner": null,
+        "line": null
+      }
+    },
+    {
+      "board": [
+        "x",
+        "o",
+        "x",
+        null,
+        "o",
+        null,
+        null,
+        "x",
+        null
+      ],
+      "outcome": {
+        "winner": null,
+        "line": null
+      }
+    }
+  ]
+}

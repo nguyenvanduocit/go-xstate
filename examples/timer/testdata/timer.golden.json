@@ -1,0 +1,512 @@
+{
+  "name": "timer",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "start"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "stop"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "second"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "second"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "minute"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 62
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "second"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "start"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "start"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "minute"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "second"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "minute"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 60
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "start"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 60
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 59
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "stop"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 59
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 59
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "start"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 59
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "second"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "second"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "start"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "running",
+        "context": {
+          "seconds": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).running"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "stopped",
+        "context": {
+          "seconds": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

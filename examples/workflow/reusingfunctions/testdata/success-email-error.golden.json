@@ -1,0 +1,279 @@
+{
+  "name": "success-email-error",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "parent": {
+          "status": "active",
+          "value": {},
+          "context": {},
+          "output": null,
+          "tags": [],
+          "children": [
+            "paymentconfirmation"
+          ]
+        },
+        "child": {
+          "status": "active",
+          "value": "Pending",
+          "context": {
+            "customer": null,
+            "payment": null,
+            "funds": null,
+            "accountId": null
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "events": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "OTHER"
+        }
+      },
+      "snapshot": {
+        "parent": {
+          "status": "active",
+          "value": {},
+          "context": {},
+          "output": null,
+          "tags": [],
+          "children": [
+            "paymentconfirmation"
+          ]
+        },
+        "child": {
+          "status": "active",
+          "value": "Pending",
+          "context": {
+            "customer": null,
+            "payment": null,
+            "funds": null,
+            "accountId": null
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "events": [
+          {
+            "type": "OTHER"
+          }
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PaymentReceivedEvent",
+          "accountId": "1234",
+          "payment": {
+            "amount": 100
+          },
+          "customer": {
+            "name": "John Doe"
+          },
+          "funds": {
+            "available": false
+          }
+        }
+      },
+      "snapshot": {
+        "parent": {
+          "status": "active",
+          "value": {},
+          "context": {},
+          "output": null,
+          "tags": [],
+          "children": [
+            "paymentconfirmation"
+          ]
+        },
+        "child": {
+          "status": "active",
+          "value": "PaymentReceived",
+          "context": {
+            "customer": {
+              "name": "John Doe"
+            },
+            "payment": {
+              "amount": 100
+            },
+            "funds": {
+              "available": false
+            },
+            "accountId": null
+          },
+          "output": null,
+          "tags": [],
+          "children": [
+            "0.paymentconfirmation.PaymentReceived"
+          ]
+        },
+        "events": [
+          {
+            "type": "OTHER"
+          }
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 250
+      },
+      "snapshot": {
+        "parent": {
+          "status": "active",
+          "value": {},
+          "context": {},
+          "output": null,
+          "tags": [],
+          "children": [
+            "paymentconfirmation"
+          ]
+        },
+        "child": {
+          "status": "active",
+          "value": "SendPaymentSuccess",
+          "context": {
+            "customer": {
+              "name": "John Doe"
+            },
+            "payment": {
+              "amount": 100
+            },
+            "funds": {
+              "available": true
+            },
+            "accountId": null
+          },
+          "output": null,
+          "tags": [],
+          "children": [
+            "0.paymentconfirmation.SendPaymentSuccess"
+          ]
+        },
+        "events": [
+          {
+            "type": "OTHER"
+          }
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 250
+      },
+      "snapshot": {
+        "parent": {
+          "status": "active",
+          "value": {},
+          "context": {},
+          "output": null,
+          "tags": [],
+          "children": [
+            "paymentconfirmation"
+          ]
+        },
+        "child": {
+          "status": "error",
+          "value": "SendPaymentSuccess",
+          "context": {
+            "customer": {
+              "name": "John Doe"
+            },
+            "payment": {
+              "amount": 100
+            },
+            "funds": {
+              "available": true
+            },
+            "accountId": null
+          },
+          "output": null,
+          "tags": [],
+          "children": [
+            "0.paymentconfirmation.SendPaymentSuccess"
+          ],
+          "error": "service failed"
+        },
+        "events": [
+          {
+            "type": "OTHER"
+          },
+          {
+            "type": "xstate.error.actor.paymentconfirmation",
+            "error": {},
+            "actorId": "paymentconfirmation"
+          }
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PaymentReceivedEvent",
+          "accountId": "other",
+          "payment": {
+            "amount": 5
+          },
+          "customer": {
+            "name": "Other"
+          },
+          "funds": {
+            "available": true
+          }
+        }
+      },
+      "snapshot": {
+        "parent": {
+          "status": "active",
+          "value": {},
+          "context": {},
+          "output": null,
+          "tags": [],
+          "children": [
+            "paymentconfirmation"
+          ]
+        },
+        "child": {
+          "status": "error",
+          "value": "SendPaymentSuccess",
+          "context": {
+            "customer": {
+              "name": "John Doe"
+            },
+            "payment": {
+              "amount": 100
+            },
+            "funds": {
+              "available": true
+            },
+            "accountId": null
+          },
+          "output": null,
+          "tags": [],
+          "children": [
+            "0.paymentconfirmation.SendPaymentSuccess"
+          ],
+          "error": "service failed"
+        },
+        "events": [
+          {
+            "type": "OTHER"
+          },
+          {
+            "type": "xstate.error.actor.paymentconfirmation",
+            "error": {},
+            "actorId": "paymentconfirmation"
+          }
+        ]
+      }
+    }
+  ]
+}

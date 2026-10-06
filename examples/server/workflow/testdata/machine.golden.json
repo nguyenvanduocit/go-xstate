@@ -1,0 +1,137 @@
+{
+  "name": "express-workflow-machine",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "green",
+        "context": {
+          "cycles": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TIMER"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "yellow",
+        "context": {
+          "cycles": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TIMER"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "red",
+        "context": {
+          "cycles": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TIMER"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "green",
+        "context": {
+          "cycles": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "UNKNOWN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "green",
+        "context": {
+          "cycles": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TIMER"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "yellow",
+        "context": {
+          "cycles": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TIMER"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "red",
+        "context": {
+          "cycles": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TIMER"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "green",
+        "context": {
+          "cycles": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

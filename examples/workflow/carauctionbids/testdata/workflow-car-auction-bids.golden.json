@@ -1,0 +1,493 @@
+{
+  "name": "workflow-car-auction-bids",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarBidEvent",
+          "bid": {
+            "carid": "car123",
+            "amount": 3000,
+            "bidder": {
+              "id": "xyz",
+              "firstName": "John",
+              "lastName": "Wayne"
+            }
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarBidEvent",
+          "bid": {
+            "carid": "car123",
+            "amount": 4000,
+            "bidder": {
+              "id": "abc",
+              "firstName": "Jane",
+              "lastName": "Doe"
+            }
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "abc",
+                "firstName": "Jane",
+                "lastName": "Doe"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarBidEvent",
+          "bid": {
+            "carid": "car123",
+            "amount": 2500,
+            "bidder": {
+              "id": "low",
+              "firstName": "Lo",
+              "lastName": "Ball"
+            }
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "abc",
+                "firstName": "Jane",
+                "lastName": "Doe"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 2500,
+              "bidder": {
+                "id": "low",
+                "firstName": "Lo",
+                "lastName": "Ball"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarBidEvent",
+          "bid": {
+            "carid": "car123",
+            "amount": 4000,
+            "bidder": {
+              "id": "tie",
+              "firstName": "Tie",
+              "lastName": "Breaker"
+            }
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "abc",
+                "firstName": "Jane",
+                "lastName": "Doe"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 2500,
+              "bidder": {
+                "id": "low",
+                "firstName": "Lo",
+                "lastName": "Ball"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "tie",
+                "firstName": "Tie",
+                "lastName": "Breaker"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 999
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "abc",
+                "firstName": "Jane",
+                "lastName": "Doe"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 2500,
+              "bidder": {
+                "id": "low",
+                "firstName": "Lo",
+                "lastName": "Ball"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "tie",
+                "firstName": "Tie",
+                "lastName": "Breaker"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "BiddingEnded",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "abc",
+                "firstName": "Jane",
+                "lastName": "Doe"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 2500,
+              "bidder": {
+                "id": "low",
+                "firstName": "Lo",
+                "lastName": "Ball"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "tie",
+                "firstName": "Tie",
+                "lastName": "Breaker"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarBidEvent",
+          "bid": {
+            "carid": "car123",
+            "amount": 9000,
+            "bidder": {
+              "id": "late",
+              "firstName": "Late",
+              "lastName": "Comer"
+            }
+          }
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "BiddingEnded",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "abc",
+                "firstName": "Jane",
+                "lastName": "Doe"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 2500,
+              "bidder": {
+                "id": "low",
+                "firstName": "Lo",
+                "lastName": "Ball"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "tie",
+                "firstName": "Tie",
+                "lastName": "Breaker"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 5000
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "BiddingEnded",
+        "context": {
+          "bids": [
+            {
+              "carid": "car123",
+              "amount": 3000,
+              "bidder": {
+                "id": "xyz",
+                "firstName": "John",
+                "lastName": "Wayne"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "abc",
+                "firstName": "Jane",
+                "lastName": "Doe"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 2500,
+              "bidder": {
+                "id": "low",
+                "firstName": "Lo",
+                "lastName": "Ball"
+              }
+            },
+            {
+              "carid": "car123",
+              "amount": 4000,
+              "bidder": {
+                "id": "tie",
+                "firstName": "Tie",
+                "lastName": "Breaker"
+              }
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true
+}

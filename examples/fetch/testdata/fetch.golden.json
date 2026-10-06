@@ -1,0 +1,286 @@
+{
+  "name": "fetch",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RETRY"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FETCH"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "loading",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).loading"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "failure",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 500
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "failure",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FETCH"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "failure",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RETRY"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "loading",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).loading"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "failure",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 500
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "failure",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 499
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "failure",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "loading",
+        "context": {
+          "name": "World",
+          "data": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).loading"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "success",
+        "context": {
+          "name": "World",
+          "data": {
+            "greeting": "Hello, World!"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FETCH"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "success",
+        "context": {
+          "name": "World",
+          "data": {
+            "greeting": "Hello, World!"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RETRY"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "success",
+        "context": {
+          "name": "World",
+          "data": {
+            "greeting": "Hello, World!"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 5000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "success",
+        "context": {
+          "name": "World",
+          "data": {
+            "greeting": "Hello, World!"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true
+}

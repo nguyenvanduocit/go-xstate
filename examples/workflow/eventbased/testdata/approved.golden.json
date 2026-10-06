@@ -1,0 +1,137 @@
+{
+  "name": "approved",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVisaStatus",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVisaStatus",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 999
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVisaStatus",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "visaApprovedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleApprovedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleApprovedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 5000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleApprovedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleApprovedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleApprovedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleApprovedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "visaRejectedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleApprovedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleApprovedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "visaApprovedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true
+}

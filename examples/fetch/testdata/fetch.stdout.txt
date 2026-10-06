@@ -1,0 +1,17 @@
+Value: idle
+Context: {
+  name: "World",
+  data: null,
+}
+Value: loading
+Context: {
+  name: "World",
+  data: null,
+}
+Value: success
+Context: {
+  name: "World",
+  data: {
+    greeting: "Hello, World!",
+  },
+}

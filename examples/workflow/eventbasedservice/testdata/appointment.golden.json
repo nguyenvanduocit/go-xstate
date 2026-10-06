@@ -1,0 +1,231 @@
+{
+  "name": "workflow-event-based-service",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "patientInfo": null,
+          "appointmentInfo": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "patientInfo": null,
+          "appointmentInfo": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "MakeVetAppointment",
+          "patientInfo": {
+            "name": "Jenny",
+            "pet": "Ato",
+            "reason": "Annual checkup"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MakeVetAppointmentState",
+        "context": {
+          "patientInfo": {
+            "name": "Jenny",
+            "pet": "Ato",
+            "reason": "Annual checkup"
+          },
+          "appointmentInfo": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.VetAppointmentWorkflow.MakeVetAppointmentState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MakeVetAppointmentState",
+        "context": {
+          "patientInfo": {
+            "name": "Jenny",
+            "pet": "Ato",
+            "reason": "Annual checkup"
+          },
+          "appointmentInfo": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.VetAppointmentWorkflow.MakeVetAppointmentState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "MakeVetAppointment",
+          "patientInfo": {
+            "name": "Max",
+            "pet": "Rex",
+            "reason": "Vaccination"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MakeVetAppointmentState",
+        "context": {
+          "patientInfo": {
+            "name": "Jenny",
+            "pet": "Ato",
+            "reason": "Annual checkup"
+          },
+          "appointmentInfo": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.VetAppointmentWorkflow.MakeVetAppointmentState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MakeVetAppointmentState",
+        "context": {
+          "patientInfo": {
+            "name": "Jenny",
+            "pet": "Ato",
+            "reason": "Annual checkup"
+          },
+          "appointmentInfo": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.VetAppointmentWorkflow.MakeVetAppointmentState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "patientInfo": {
+            "name": "Jenny",
+            "pet": "Ato",
+            "reason": "Annual checkup"
+          },
+          "appointmentInfo": {
+            "appointmentInfo": {
+              "appointmentId": "1234:Jenny",
+              "appointmentDate": "2026-01-02T03:04:05.678Z"
+            }
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "MakeVetAppointment",
+          "patientInfo": {
+            "name": "Max",
+            "pet": "Rex",
+            "reason": "Vaccination"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MakeVetAppointmentState",
+        "context": {
+          "patientInfo": {
+            "name": "Max",
+            "pet": "Rex",
+            "reason": "Vaccination"
+          },
+          "appointmentInfo": {
+            "appointmentInfo": {
+              "appointmentId": "1234:Jenny",
+              "appointmentDate": "2026-01-02T03:04:05.678Z"
+            }
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.VetAppointmentWorkflow.MakeVetAppointmentState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "patientInfo": {
+            "name": "Max",
+            "pet": "Rex",
+            "reason": "Vaccination"
+          },
+          "appointmentInfo": {
+            "appointmentInfo": {
+              "appointmentId": "1234:Max",
+              "appointmentDate": "2026-01-02T03:04:05.678Z"
+            }
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "person": {
+      "name": "Jenny"
+    }
+  }
+}

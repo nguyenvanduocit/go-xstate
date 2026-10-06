@@ -1,0 +1,776 @@
+{
+  "name": "mongodb-credit-check-api-server",
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/"
+      },
+      "response": {
+        "status": 200,
+        "text": "\n    <html>\n      <body style=\"font-family: sans-serif;\">\n        <h1>Express Workflow</h1>\n        <p>Start a new workflow instance:</p>\n        <pre>curl -X POST http://localhost:4242/workflows</pre>\n        <p>Send an event to a workflow instance:</p>\n        <pre>curl -X POST http://localhost:4242/workflows/:workflowId -d '{\"type\":\"TIMER\"}'</pre>\n        <p>Get the current state of a workflow instance:</p>\n        <pre>curl -X GET http://localhost:4242/workflows/:workflowId</pre>\n      </body>\n    </html>\n  "
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows"
+      },
+      "response": {
+        "status": 201,
+        "json": {
+          "message": "New workflow created successfully",
+          "workflowId": "4fzzzx"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": "Entering Information"
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "",
+              "FirstName": "",
+              "LastName": "",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 0,
+              "GavperianScore": 0,
+              "ErrorMessage": "",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {}
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "Submit",
+          "SSN": "123",
+          "lastName": "Bauman",
+          "firstName": "Gavin"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "Event received. Issue a GET request to see the current workflow state"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": "Verifying Credentials"
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "",
+              "FirstName": "",
+              "LastName": "",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 0,
+              "GavperianScore": 0,
+              "ErrorMessage": "",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "0.multipleCreditCheck.creditCheck.Verifying Credentials": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "type": "Submit",
+                    "SSN": "123",
+                    "lastName": "Bauman",
+                    "firstName": "Gavin"
+                  }
+                },
+                "src": "verifyCredentials",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 60
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": "Entering Information"
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "",
+              "FirstName": "",
+              "LastName": "",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 0,
+              "GavperianScore": 0,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {}
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "Submit",
+          "SSN": "123456789",
+          "lastName": "Bauman",
+          "firstName": "Gavin"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "Event received. Issue a GET request to see the current workflow state"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": "Verifying Credentials"
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "",
+              "FirstName": "",
+              "LastName": "",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 0,
+              "GavperianScore": 0,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "0.multipleCreditCheck.creditCheck.Verifying Credentials": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "type": "Submit",
+                    "SSN": "123456789",
+                    "lastName": "Bauman",
+                    "firstName": "Gavin"
+                  }
+                },
+                "src": "verifyCredentials",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 40
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "CheckingCreditScores": {
+                  "CheckingEquiGavin": "CheckingForExistingReport",
+                  "CheckingGavUnion": "CheckingForExistingReport",
+                  "CheckingGavperian": "CheckingForExistingReport"
+                }
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 0,
+              "GavperianScore": 0,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "equiGavinDBActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "bureauName": "EquiGavin",
+                    "ssn": "123456789"
+                  }
+                },
+                "src": "checkReportsTable",
+                "syncSnapshot": false
+              },
+              "gavUnionDBActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "bureauName": "GavUnion",
+                    "ssn": "123456789"
+                  }
+                },
+                "src": "checkReportsTable",
+                "syncSnapshot": false
+              },
+              "gavperianCheckActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "bureauName": "Gavperian",
+                    "ssn": "123456789"
+                  }
+                },
+                "src": "checkReportsTable",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 70
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "CheckingCreditScores": {
+                  "CheckingEquiGavin": "FetchingReport",
+                  "CheckingGavUnion": "FetchingReport",
+                  "CheckingGavperian": "FetchingReport"
+                }
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 0,
+              "GavperianScore": 0,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "equiGavinFetchActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "bureauName": "EquiGavin",
+                    "ssn": "123456789"
+                  }
+                },
+                "src": "checkBureau",
+                "syncSnapshot": false
+              },
+              "gavUnionFetchActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "bureauName": "GavUnion",
+                    "ssn": "123456789"
+                  }
+                },
+                "src": "checkBureau",
+                "syncSnapshot": false
+              },
+              "checkGavPerianActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "ssn": "123456789",
+                    "bureauName": "Gavperian"
+                  }
+                },
+                "src": "checkBureau",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 100
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "CheckingCreditScores": {
+                  "CheckingEquiGavin": "FetchingComplete",
+                  "CheckingGavUnion": "FetchingReport",
+                  "CheckingGavperian": "FetchingReport"
+                }
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 720,
+              "GavperianScore": 0,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "gavUnionFetchActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "bureauName": "GavUnion",
+                    "ssn": "123456789"
+                  }
+                },
+                "src": "checkBureau",
+                "syncSnapshot": false
+              },
+              "checkGavPerianActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "ssn": "123456789",
+                    "bureauName": "Gavperian"
+                  }
+                },
+                "src": "checkBureau",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 100
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "CheckingCreditScores": {
+                  "CheckingEquiGavin": "FetchingComplete",
+                  "CheckingGavUnion": "FetchingComplete",
+                  "CheckingGavperian": "FetchingReport"
+                }
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 580,
+              "EquiGavinScore": 720,
+              "GavperianScore": 0,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "checkGavPerianActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": {
+                    "ssn": "123456789",
+                    "bureauName": "Gavperian"
+                  }
+                },
+                "src": "checkBureau",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 70
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "DeterminingInterestRateOptions": "DeterminingMiddleScore"
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 580,
+              "EquiGavinScore": 720,
+              "GavperianScore": 650,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "scoreDeterminationActor": {
+                "snapshot": {
+                  "status": "active",
+                  "input": [
+                    720,
+                    580,
+                    650
+                  ]
+                },
+                "src": "determineMiddleScore",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 50
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "DeterminingInterestRateOptions": "FetchingRates"
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 580,
+              "EquiGavinScore": 720,
+              "GavperianScore": 650,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 650,
+              "InterestRateOptions": []
+            },
+            "children": {
+              "0.multipleCreditCheck.creditCheck.DeterminingInterestRateOptions.FetchingRates": {
+                "snapshot": {
+                  "status": "active",
+                  "input": 650
+                },
+                "src": "generateInterestRates",
+                "syncSnapshot": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "wait": 60
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "DeterminingInterestRateOptions": "RatesProvided"
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 580,
+              "EquiGavinScore": 720,
+              "GavperianScore": 650,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 650,
+              "InterestRateOptions": [
+                5
+              ]
+            },
+            "children": {}
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "unknown"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "Event received. Issue a GET request to see the current workflow state"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "DeterminingInterestRateOptions": "RatesProvided"
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 580,
+              "EquiGavinScore": 720,
+              "GavperianScore": 650,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 650,
+              "InterestRateOptions": [
+                5
+              ]
+            },
+            "children": {}
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/missing"
+      },
+      "response": {
+        "status": 404,
+        "text": "Workflow state not found"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/missing",
+        "body": {
+          "type": "Submit",
+          "SSN": "123456789",
+          "lastName": "Bauman",
+          "firstName": "Gavin"
+        }
+      },
+      "response": {
+        "status": 500,
+        "text": "Error sending event. Details: Error: Actor not found with the provided workflowId"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows"
+      },
+      "response": {
+        "status": 201,
+        "json": {
+          "message": "New workflow created successfully",
+          "workflowId": "zk0000"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/zk0000",
+        "body": {
+          "type": "unknown"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "Event received. Issue a GET request to see the current workflow state"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/zk0000"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "zk0000",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": "Entering Information"
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "",
+              "FirstName": "",
+              "LastName": "",
+              "GavUnionScore": 0,
+              "EquiGavinScore": 0,
+              "GavperianScore": 0,
+              "ErrorMessage": "",
+              "MiddleScore": 0,
+              "InterestRateOptions": []
+            },
+            "children": {}
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx",
+          "persistedState": {
+            "status": "active",
+            "value": {
+              "creditCheck": {
+                "DeterminingInterestRateOptions": "RatesProvided"
+              }
+            },
+            "historyValue": {},
+            "context": {
+              "SSN": "123456789",
+              "FirstName": "Gavin",
+              "LastName": "Bauman",
+              "GavUnionScore": 580,
+              "EquiGavinScore": 720,
+              "GavperianScore": 650,
+              "ErrorMessage": "Failed to verify credentials. Details: Error: Invalid Credentials. Details: invalid SSN",
+              "MiddleScore": 650,
+              "InterestRateOptions": [
+                5
+              ]
+            },
+            "children": {}
+          }
+        }
+      }
+    }
+  ]
+}

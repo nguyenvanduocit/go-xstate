@@ -1,0 +1,647 @@
+{
+  "name": "todomvc-react/derived",
+  "cases": [
+    {
+      "filter": "all",
+      "todos": [],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 0,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "active",
+      "todos": [],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 0,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "completed",
+      "todos": [],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 0,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "bogus",
+      "todos": [],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 0,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "all",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "active",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "completed",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "bogus",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "all",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": true
+          }
+        ],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "active",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "completed",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": true
+          }
+        ],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "bogus",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": true
+          }
+        ],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "all",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        },
+        {
+          "id": "c",
+          "title": "todo c",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": false
+          },
+          {
+            "id": "b",
+            "title": "todo b",
+            "completed": true
+          },
+          {
+            "id": "c",
+            "title": "todo c",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 2,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "active",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        },
+        {
+          "id": "c",
+          "title": "todo c",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": false
+          },
+          {
+            "id": "c",
+            "title": "todo c",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 2,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "completed",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        },
+        {
+          "id": "c",
+          "title": "todo c",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "b",
+            "title": "todo b",
+            "completed": true
+          }
+        ],
+        "numActiveTodos": 2,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "bogus",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": false
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        },
+        {
+          "id": "c",
+          "title": "todo c",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": false
+          },
+          {
+            "id": "b",
+            "title": "todo b",
+            "completed": true
+          },
+          {
+            "id": "c",
+            "title": "todo c",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 2,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "all",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": true
+          },
+          {
+            "id": "b",
+            "title": "todo b",
+            "completed": true
+          }
+        ],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "active",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "completed",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": true
+          },
+          {
+            "id": "b",
+            "title": "todo b",
+            "completed": true
+          }
+        ],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "bogus",
+      "todos": [
+        {
+          "id": "a",
+          "title": "todo a",
+          "completed": true
+        },
+        {
+          "id": "b",
+          "title": "todo b",
+          "completed": true
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "a",
+            "title": "todo a",
+            "completed": true
+          },
+          {
+            "id": "b",
+            "title": "todo b",
+            "completed": true
+          }
+        ],
+        "numActiveTodos": 0,
+        "allCompleted": true,
+        "mark": "active",
+        "clearCompletedVisible": true
+      }
+    },
+    {
+      "filter": "all",
+      "todos": [
+        {
+          "id": "1",
+          "title": "Learn state machines",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "1",
+            "title": "Learn state machines",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "active",
+      "todos": [
+        {
+          "id": "1",
+          "title": "Learn state machines",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "1",
+            "title": "Learn state machines",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "completed",
+      "todos": [
+        {
+          "id": "1",
+          "title": "Learn state machines",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    },
+    {
+      "filter": "bogus",
+      "todos": [
+        {
+          "id": "1",
+          "title": "Learn state machines",
+          "completed": false
+        }
+      ],
+      "derived": {
+        "filtered": [
+          {
+            "id": "1",
+            "title": "Learn state machines",
+            "completed": false
+          }
+        ],
+        "numActiveTodos": 1,
+        "allCompleted": false,
+        "mark": "completed",
+        "clearCompletedVisible": false
+      }
+    }
+  ],
+  "hashCases": [
+    {
+      "hash": "",
+      "filter": "all",
+      "initialEvent": null
+    },
+    {
+      "hash": "#",
+      "filter": "all",
+      "initialEvent": null
+    },
+    {
+      "hash": "#/",
+      "filter": "all",
+      "initialEvent": null
+    },
+    {
+      "hash": "#/active",
+      "filter": "active",
+      "initialEvent": {
+        "type": "filter.change",
+        "filter": "active"
+      }
+    },
+    {
+      "hash": "#/completed",
+      "filter": "completed",
+      "initialEvent": {
+        "type": "filter.change",
+        "filter": "completed"
+      }
+    },
+    {
+      "hash": "#/all",
+      "filter": "all",
+      "initialEvent": {
+        "type": "filter.change",
+        "filter": "all"
+      }
+    },
+    {
+      "hash": "#/bogus",
+      "filter": "bogus",
+      "initialEvent": {
+        "type": "filter.change",
+        "filter": "bogus"
+      }
+    },
+    {
+      "hash": "#x",
+      "filter": "all",
+      "initialEvent": null
+    },
+    {
+      "hash": "#/a/b",
+      "filter": "a/b",
+      "initialEvent": {
+        "type": "filter.change",
+        "filter": "a/b"
+      }
+    }
+  ]
+}

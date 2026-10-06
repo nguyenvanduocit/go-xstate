@@ -1,0 +1,1853 @@
+{
+  "name": "snake-react/snake",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "New Game",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 11,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 10,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "New Game",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 11,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 10,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_GAME"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "New Game",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 11,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 10,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Right"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 13,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 11,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 14,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 13,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 15,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 14,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 13,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 15,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 14,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 15,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 0,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 19,
+            "y": 7
+          },
+          "score": 1,
+          "highScore": 1,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_GAME"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 19,
+            "y": 7
+          },
+          "score": 1,
+          "highScore": 1,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Down"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Down"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Down"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Left"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Left"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 8,
+              "dir": "Left"
+            },
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Left"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Right"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 8,
+              "dir": "Left"
+            },
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Left"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Up"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 8,
+              "dir": "Left"
+            },
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Game Over",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 8,
+              "dir": "Left"
+            },
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Game Over",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 8,
+              "dir": "Left"
+            },
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Left"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Game Over",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 8,
+              "dir": "Left"
+            },
+            {
+              "x": 19,
+              "y": 8,
+              "dir": "Down"
+            },
+            {
+              "x": 19,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 3,
+            "y": 3
+          },
+          "score": 2,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_GAME"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "New Game",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 11,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 10,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Left"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 13,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 11,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 14,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 13,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 15,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 14,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 13,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 15,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 14,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 15,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ARROW_KEY",
+          "dir": "Up"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 6,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 16,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 5,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 6,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 4,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 5,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 6,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 3,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 4,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 5,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 6,
+              "dir": "Up"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 2,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 3,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 4,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 5,
+              "dir": "Up"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 1,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 2,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 3,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 4,
+              "dir": "Up"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Moving",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": 0,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 1,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 2,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 3,
+              "dir": "Up"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.SnakeMachine.Moving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "TICK"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Game Over",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 18,
+              "y": -1,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 0,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 1,
+              "dir": "Up"
+            },
+            {
+              "x": 18,
+              "y": 2,
+              "dir": "Up"
+            }
+          ],
+          "apple": {
+            "x": 5,
+            "y": 10
+          },
+          "score": 1,
+          "highScore": 2,
+          "dir": "Up"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_GAME"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "New Game",
+        "context": {
+          "gridSize": {
+            "x": 25,
+            "y": 15
+          },
+          "snake": [
+            {
+              "x": 12,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 11,
+              "y": 7,
+              "dir": "Right"
+            },
+            {
+              "x": 10,
+              "y": 7,
+              "dir": "Right"
+            }
+          ],
+          "apple": {
+            "x": 18,
+            "y": 7
+          },
+          "score": 0,
+          "highScore": 2,
+          "dir": "Right"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

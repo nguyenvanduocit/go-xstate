@@ -1,0 +1,2166 @@
+{
+  "name": "store-tic-tac-toe/store",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "@xstate.init"
+            },
+            "context": {
+              "board": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 0
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 0
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 9
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 9
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": -1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": -1
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 3
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            "o",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 3
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                "o",
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              null,
+              null,
+              "o",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 1
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                null,
+                "o",
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "x",
+              null,
+              "o",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 4
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 4
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                null,
+                "o",
+                "o",
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "x",
+              null,
+              "o",
+              "o",
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 2
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            "x",
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "won"
+        },
+        "outcome": {
+          "winner": "x",
+          "line": [
+            0,
+            1,
+            2
+          ]
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 2
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                "x",
+                "o",
+                "o",
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "won"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "x",
+              "x",
+              "o",
+              "o",
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": [
+            "won"
+          ]
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 8
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            "x",
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "won"
+        },
+        "outcome": {
+          "winner": "x",
+          "line": [
+            0,
+            1,
+            2
+          ]
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 8
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                "x",
+                "o",
+                "o",
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "won"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "reset"
+            },
+            "context": {
+              "board": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": [
+            "playing"
+          ]
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "reset"
+            },
+            "context": {
+              "board": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 0
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 3
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            "o",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 3
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                "o",
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              null,
+              null,
+              "o",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 1
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                null,
+                "o",
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "x",
+              null,
+              "o",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 4
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 4
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                null,
+                "o",
+                "o",
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "x",
+              null,
+              "o",
+              "o",
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 8
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            "x"
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 8
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                null,
+                "o",
+                "o",
+                null,
+                null,
+                null,
+                "x"
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "x",
+              null,
+              "o",
+              "o",
+              null,
+              null,
+              null,
+              "x"
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 5
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            "o",
+            "o",
+            null,
+            null,
+            "x"
+          ],
+          "currentPlayer": "x",
+          "status": "won"
+        },
+        "outcome": {
+          "winner": "o",
+          "line": [
+            3,
+            4,
+            5
+          ]
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 5
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                null,
+                "o",
+                "o",
+                "o",
+                null,
+                null,
+                "x"
+              ],
+              "currentPlayer": "x",
+              "status": "won"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "x",
+              null,
+              "o",
+              "o",
+              "o",
+              null,
+              null,
+              "x"
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": [
+            "won"
+          ]
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            "o",
+            "o",
+            null,
+            null,
+            "x"
+          ],
+          "currentPlayer": "x",
+          "status": "won"
+        },
+        "outcome": {
+          "winner": "o",
+          "line": [
+            3,
+            4,
+            5
+          ]
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "unknown"
+            },
+            "context": {
+              "board": [
+                "x",
+                "x",
+                null,
+                "o",
+                "o",
+                "o",
+                null,
+                null,
+                "x"
+              ],
+              "currentPlayer": "x",
+              "status": "won"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "reset"
+            },
+            "context": {
+              "board": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [],
+          "status": [
+            "playing"
+          ]
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 0
+            },
+            "context": {
+              "board": [
+                "x",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 1
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 2
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 2
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              "x",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 4
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            null,
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 4
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                null,
+                "o",
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              "x",
+              null,
+              "o",
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 3
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            "x",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 3
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                "x",
+                "o",
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              "x",
+              "x",
+              "o",
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 5
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            "x",
+            "o",
+            "o",
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 5
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                "x",
+                "o",
+                "o",
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              "x",
+              "x",
+              "o",
+              "o",
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 7
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            "x",
+            "o",
+            "o",
+            null,
+            "x",
+            null
+          ],
+          "currentPlayer": "o",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 7
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                "x",
+                "o",
+                "o",
+                null,
+                "x",
+                null
+              ],
+              "currentPlayer": "o",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              "x",
+              "x",
+              "o",
+              "o",
+              null,
+              "x",
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 6
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            "x",
+            "o",
+            "o",
+            "o",
+            "x",
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 6
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                "x",
+                "o",
+                "o",
+                "o",
+                "x",
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              "x",
+              "x",
+              "o",
+              "o",
+              "o",
+              "x",
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 8
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            "x",
+            "o",
+            "o",
+            "o",
+            "x",
+            "x"
+          ],
+          "currentPlayer": "o",
+          "status": "won"
+        },
+        "outcome": {
+          "winner": "draw",
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 8
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                "x",
+                "o",
+                "o",
+                "o",
+                "x",
+                "x"
+              ],
+              "currentPlayer": "o",
+              "status": "won"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              "x",
+              "o",
+              "x",
+              "x",
+              "o",
+              "o",
+              "o",
+              "x",
+              "x"
+            ]
+          ],
+          "currentPlayer": [
+            "o"
+          ],
+          "status": [
+            "won"
+          ]
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "played",
+          "position": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            "x",
+            "o",
+            "x",
+            "x",
+            "o",
+            "o",
+            "o",
+            "x",
+            "x"
+          ],
+          "currentPlayer": "o",
+          "status": "won"
+        },
+        "outcome": {
+          "winner": "draw",
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "played",
+              "position": 0
+            },
+            "context": {
+              "board": [
+                "x",
+                "o",
+                "x",
+                "x",
+                "o",
+                "o",
+                "o",
+                "x",
+                "x"
+              ],
+              "currentPlayer": "o",
+              "status": "won"
+            }
+          }
+        ],
+        "notified": {
+          "board": [],
+          "currentPlayer": [],
+          "status": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "currentPlayer": "x",
+          "status": "playing"
+        },
+        "outcome": {
+          "winner": null,
+          "line": null
+        },
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "reset"
+            },
+            "context": {
+              "board": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "currentPlayer": "x",
+              "status": "playing"
+            }
+          }
+        ],
+        "notified": {
+          "board": [
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "currentPlayer": [
+            "x"
+          ],
+          "status": [
+            "playing"
+          ]
+        }
+      }
+    }
+  ]
+}

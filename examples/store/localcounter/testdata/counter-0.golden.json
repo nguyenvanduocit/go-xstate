@@ -1,0 +1,133 @@
+{
+  "name": "local-store-counter-react/counter-0",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": 5
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 6
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": -3
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": -2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": -2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

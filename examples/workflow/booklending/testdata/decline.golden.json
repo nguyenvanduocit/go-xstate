@@ -1,0 +1,170 @@
+{
+  "name": "workflow-book-lending-decline",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Book Lending Request",
+        "context": {
+          "book": null,
+          "lender": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "bookLendingRequest",
+          "book": {
+            "title": "Dune",
+            "id": "7"
+          },
+          "lender": {
+            "name": "Jane Roe",
+            "address": "1 Main St",
+            "phone": "555-0100"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Get Book Status",
+        "context": {
+          "book": {
+            "title": "Dune",
+            "id": "7",
+            "status": "unknown"
+          },
+          "lender": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).Get Book Status"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Report Status To Lender",
+        "context": {
+          "book": {
+            "title": "Dune",
+            "id": "7",
+            "status": "onloan"
+          },
+          "lender": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).Report Status To Lender"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 80
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Wait for Lender response",
+        "context": {
+          "book": {
+            "title": "Dune",
+            "id": "7",
+            "status": "onloan"
+          },
+          "lender": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "declineBookhold"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Cancel Request",
+        "context": {
+          "book": {
+            "title": "Dune",
+            "id": "7",
+            "status": "onloan"
+          },
+          "lender": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.(machine).Cancel Request"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "book": {
+            "title": "Dune",
+            "id": "7",
+            "status": "onloan"
+          },
+          "lender": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "bookLendingRequest",
+          "book": {
+            "title": "Dune",
+            "id": "7"
+          },
+          "lender": {
+            "name": "Jane Roe",
+            "address": "1 Main St",
+            "phone": "555-0100"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "book": {
+            "title": "Dune",
+            "id": "7",
+            "status": "onloan"
+          },
+          "lender": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}

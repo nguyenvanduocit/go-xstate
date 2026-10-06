@@ -1,0 +1,27 @@
+Starting checkTirePressure
+Starting checkOilPressure
+Starting checkCoolantLevel
+Starting checkBattery
+Completed checkCoolantLevel
+Completed checkTirePressure
+Completed checkBattery
+Completed checkOilPressure
+Done with vitals check undefined
+Starting checkTirePressure
+Starting checkOilPressure
+Starting checkCoolantLevel
+Starting checkBattery
+Completed checkCoolantLevel
+Completed checkTirePressure
+Completed checkBattery
+Completed checkOilPressure
+Done with vitals check undefined
+Starting checkTirePressure
+Starting checkOilPressure
+Starting checkCoolantLevel
+Starting checkBattery
+Completed checkCoolantLevel
+Car turned off
+Completed checkTirePressure
+Completed checkBattery
+Completed checkOilPressure

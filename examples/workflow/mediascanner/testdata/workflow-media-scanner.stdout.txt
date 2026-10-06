@@ -1,0 +1,53 @@
+Starting the awesome media scanner thingy
+{
+  state: "idle",
+  error: undefined,
+  context: {
+    basePath: "YOUR BASE PATH HERE",
+    destinationPath: "YOUR DESTINATION PATH HERE",
+    directoriesToCheck: [],
+    dirsToEvaluate: [],
+    dirsToMove: [],
+    filesToEmail: [],
+    dirsToReport: [],
+    processedFiles: [],
+    acceptedFileTypes: [
+      "mp4", "mkv", "avi", "mov", "m4v", "mpg", "mpeg", "wmv", "flv", "ts", "mts"
+    ],
+  },
+}
+{
+  state: "Scanning",
+  error: undefined,
+  context: {
+    basePath: "YOUR BASE PATH HERE",
+    destinationPath: "YOUR DESTINATION PATH HERE",
+    directoriesToCheck: [],
+    dirsToEvaluate: [],
+    dirsToMove: [],
+    filesToEmail: [],
+    dirsToReport: [],
+    processedFiles: [],
+    acceptedFileTypes: [
+      "mp4", "mkv", "avi", "mov", "m4v", "mpg", "mpeg", "wmv", "flv", "ts", "mts"
+    ],
+  },
+}
+Emailing errors
+{
+  state: "ReportingErrors",
+  error: undefined,
+  context: {
+    basePath: "YOUR BASE PATH HERE",
+    destinationPath: "YOUR DESTINATION PATH HERE",
+    directoriesToCheck: [],
+    dirsToEvaluate: [],
+    dirsToMove: [],
+    filesToEmail: [],
+    dirsToReport: [],
+    processedFiles: [],
+    acceptedFileTypes: [
+      "mp4", "mkv", "avi", "mov", "m4v", "mpg", "mpeg", "wmv", "flv", "ts", "mts"
+    ],
+  },
+}

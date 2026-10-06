@@ -1,0 +1,646 @@
+{
+  "name": "todomvc-react/todo-commit",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "initialTitle": "Learn state machines",
+            "title": "Learn state machines"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn state machines",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn state machines",
+            "title": "Learn state machines"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn state machines",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "change",
+          "value": "Learn XState"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn state machines",
+            "title": "Learn XState"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn state machines",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "blur"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "initialTitle": "Learn state machines",
+            "title": "Learn XState"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn XState",
+            "title": "Learn XState"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "change",
+          "value": "discarded"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn XState",
+            "title": "discarded"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "cancel"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "initialTitle": "Learn XState",
+            "title": "Learn XState"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todos",
+        "send": {
+          "type": "todo.mark",
+          "id": "1",
+          "mark": "completed"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "initialTitle": "Learn XState",
+            "title": "Learn XState"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState",
+                "completed": true
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn XState",
+            "title": "Learn XState"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState",
+                "completed": true
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "change",
+          "value": "Learn XState again"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn XState",
+            "title": "Learn XState again"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState",
+                "completed": true
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "blur"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "initialTitle": "Learn XState",
+            "title": "Learn XState again"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState again",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn XState again",
+            "title": "Learn XState again"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState again",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "change",
+          "value": "   "
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "Learn XState again",
+            "title": "   "
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [
+              {
+                "id": "1",
+                "title": "Learn XState again",
+                "completed": false
+              }
+            ],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "blur"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "initialTitle": "Learn XState again",
+            "title": "   "
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "   ",
+            "title": "   "
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "change",
+          "value": "Back again"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "initialTitle": "   ",
+            "title": "Back again"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "to": "todo",
+        "send": {
+          "type": "blur"
+        }
+      },
+      "snapshot": {
+        "todo": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "initialTitle": "   ",
+            "title": "Back again"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        },
+        "todos": {
+          "status": "active",
+          "value": {},
+          "context": {
+            "todo": "",
+            "todos": [],
+            "filter": "all"
+          },
+          "output": null,
+          "tags": [],
+          "children": []
+        }
+      }
+    }
+  ]
+}

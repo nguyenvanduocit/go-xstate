@@ -1,0 +1,97 @@
+{
+  "name": "workflow-applicant-request-start-error",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "CheckApplication",
+        "context": {
+          "applicant": {
+            "fname": "John",
+            "lname": "Stockton",
+            "age": 30,
+            "email": "js@something.com"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "Submit"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StartApplication",
+        "context": {
+          "applicant": {
+            "fname": "John",
+            "lname": "Stockton",
+            "age": 30,
+            "email": "js@something.com"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.applicantrequest.StartApplication"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 75
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "RejectApplication",
+        "context": {
+          "applicant": {
+            "fname": "John",
+            "lname": "Stockton",
+            "age": 30,
+            "email": "js@something.com"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.applicantrequest.RejectApplication"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 75
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "applicant": {
+            "fname": "John",
+            "lname": "Stockton",
+            "age": 30,
+            "email": "js@something.com"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "input": {
+    "applicant": {
+      "fname": "John",
+      "lname": "Stockton",
+      "age": 30,
+      "email": "js@something.com"
+    }
+  }
+}

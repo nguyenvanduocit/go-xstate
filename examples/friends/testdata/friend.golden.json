@@ -1,0 +1,395 @@
+{
+  "name": "friend",
+  "clock": false,
+  "input": {
+    "name": "Ann"
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Ann",
+          "name": "Ann"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "ignored"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Ann",
+          "name": "Ann"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CANCEL"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Ann",
+          "name": "Ann"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "prevName": "Ann",
+          "name": "Ann"
+        },
+        "output": null,
+        "tags": [
+          "form"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "Anna"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "prevName": "Ann",
+          "name": "Anna"
+        },
+        "output": null,
+        "tags": [
+          "form"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "prevName": "Ann",
+          "name": "Anna"
+        },
+        "output": null,
+        "tags": [
+          "form"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CANCEL"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Ann",
+          "name": "Ann"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "prevName": "Ann",
+          "name": "Ann"
+        },
+        "output": null,
+        "tags": [
+          "form"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "Bob"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "prevName": "Ann",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "form"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SAVE"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "saving",
+        "context": {
+          "prevName": "Ann",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "form",
+          "saving"
+        ],
+        "children": [
+          "0.friend.saving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "ignored"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "saving",
+        "context": {
+          "prevName": "Ann",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "form",
+          "saving"
+        ],
+        "children": [
+          "0.friend.saving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Bob",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "prevName": "Bob",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "form"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "Carl"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "prevName": "Bob",
+          "name": "Carl"
+        },
+        "output": null,
+        "tags": [
+          "form"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SAVE"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "saving",
+        "context": {
+          "prevName": "Bob",
+          "name": "Carl"
+        },
+        "output": null,
+        "tags": [
+          "form",
+          "saving"
+        ],
+        "children": [
+          "0.friend.saving"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CANCEL"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Bob",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Bob",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SAVE"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Bob",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "prevName": "Bob",
+          "name": "Bob"
+        },
+        "output": null,
+        "tags": [
+          "read"
+        ],
+        "children": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "name": "rejected",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVisaStatus",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "visaRejectedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleRejectedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleRejectedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 5000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleRejectedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleRejectedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleRejectedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleRejectedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "visaApprovedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleRejectedVisa",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleRejectedVisa"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true
+}

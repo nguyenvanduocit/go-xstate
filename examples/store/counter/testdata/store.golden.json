@@ -1,0 +1,285 @@
+{
+  "name": "store-counter-react/store",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 0
+        },
+        "count": 0,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "@xstate.init"
+            },
+            "context": {
+              "count": 0
+            }
+          }
+        ],
+        "notified": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 1
+        },
+        "count": 1,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "inc",
+              "by": 1
+            },
+            "context": {
+              "count": 1
+            }
+          }
+        ],
+        "notified": [
+          1
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 2
+        },
+        "count": 2,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "inc",
+              "by": 1
+            },
+            "context": {
+              "count": 2
+            }
+          }
+        ],
+        "notified": [
+          2
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": 5
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 7
+        },
+        "count": 7,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "inc",
+              "by": 5
+            },
+            "context": {
+              "count": 7
+            }
+          }
+        ],
+        "notified": [
+          7
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 0
+        },
+        "count": 0,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "reset"
+            },
+            "context": {
+              "count": 0
+            }
+          }
+        ],
+        "notified": [
+          0
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 1
+        },
+        "count": 1,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "inc",
+              "by": 1
+            },
+            "context": {
+              "count": 1
+            }
+          }
+        ],
+        "notified": [
+          1
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "inc",
+          "by": -3
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": -2
+        },
+        "count": -2,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "inc",
+              "by": -3
+            },
+            "context": {
+              "count": -2
+            }
+          }
+        ],
+        "notified": [
+          -2
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": -2
+        },
+        "count": -2,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "unknown"
+            },
+            "context": {
+              "count": -2
+            }
+          }
+        ],
+        "notified": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 0
+        },
+        "count": 0,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "reset"
+            },
+            "context": {
+              "count": 0
+            }
+          }
+        ],
+        "notified": [
+          0
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reset"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "context": {
+          "count": 0
+        },
+        "count": 0,
+        "inspected": [
+          {
+            "type": "@xstate.transition",
+            "event": {
+              "type": "reset"
+            },
+            "context": {
+              "count": 0
+            }
+          }
+        ],
+        "notified": []
+      }
+    }
+  ]
+}

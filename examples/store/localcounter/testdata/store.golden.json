@@ -1,0 +1,356 @@
+{
+  "name": "local-store-counter-react/store",
+  "runs": [
+    {
+      "initialCount": 0,
+      "steps": [
+        {
+          "step": "start",
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 0
+            },
+            "count": 0
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 1
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 1
+            },
+            "count": 1
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 5
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 6
+            },
+            "count": 6
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "reset"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 0
+            },
+            "count": 0
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 1
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 1
+            },
+            "count": 1
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": -3
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": -2
+            },
+            "count": -2
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "unknown"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": -2
+            },
+            "count": -2
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "reset"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 0
+            },
+            "count": 0
+          }
+        }
+      ]
+    },
+    {
+      "initialCount": 10,
+      "steps": [
+        {
+          "step": "start",
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 10
+            },
+            "count": 10
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 1
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 11
+            },
+            "count": 11
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 5
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 16
+            },
+            "count": 16
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "reset"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 0
+            },
+            "count": 0
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 1
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 1
+            },
+            "count": 1
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": -3
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": -2
+            },
+            "count": -2
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "unknown"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": -2
+            },
+            "count": -2
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "reset"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 0
+            },
+            "count": 0
+          }
+        }
+      ]
+    },
+    {
+      "initialCount": 100,
+      "steps": [
+        {
+          "step": "start",
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 100
+            },
+            "count": 100
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 1
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 101
+            },
+            "count": 101
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 5
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 106
+            },
+            "count": 106
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "reset"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 0
+            },
+            "count": 0
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": 1
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 1
+            },
+            "count": 1
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "inc",
+              "by": -3
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": -2
+            },
+            "count": -2
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "unknown"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": -2
+            },
+            "count": -2
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "reset"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "context": {
+              "count": 0
+            },
+            "count": 0
+          }
+        }
+      ]
+    }
+  ]
+}

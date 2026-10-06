@@ -1,0 +1,530 @@
+{
+  "name": "friends",
+  "clock": false,
+  "input": null,
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_FRIEND.CHANGE",
+          "name": "Alice"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "Alice",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "Alice",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": "   "
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "Alice",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": "﻿"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "Alice",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": "Alice"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": "x"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_FRIEND.CHANGE",
+          "name": "Bob"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "Bob",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-a4v5h4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-a4v5h4",
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": " \t"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-a4v5h4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-a4v5h4",
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 7
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-a4v5h4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-a4v5h4",
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": -1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-a4v5h4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-a4v5h4",
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 0.5
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-a4v5h4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-a4v5h4",
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-a4v5h4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-a4v5h4",
+          "friend-xkxayr"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-a4v5h4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-a4v5h4"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_FRIEND.CHANGE",
+          "name": "Zed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "Zed",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": "Zed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-tcp7oc"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-tcp7oc"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-tcp7oc"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-tcp7oc"
+        ]
+      }
+    }
+  ]
+}

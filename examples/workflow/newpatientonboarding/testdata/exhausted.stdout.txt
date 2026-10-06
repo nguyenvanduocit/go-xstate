@@ -1,0 +1,75 @@
+Starting StoreNewPatientInfo {
+  name: "John Doe",
+  condition: "Broken Arm",
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 1,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 2,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 3,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 4,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 5,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 6,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 7,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 8,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 9,
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 10,
+}
+workflow completed undefined

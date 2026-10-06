@@ -1,0 +1,427 @@
+{
+  "name": "x-wins",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 0,
+          "player": "x"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RESET"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 0,
+          "player": "x"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 0,
+          "player": "x"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 1,
+          "player": "o"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 1,
+          "player": "o"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 9
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 1,
+          "player": "o"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": -1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 1,
+          "player": "o"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 3
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            "x",
+            null,
+            null,
+            "o",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 2,
+          "player": "x"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 3,
+          "player": "o"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 4
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            "x",
+            "x",
+            null,
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 4,
+          "player": "x"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 2
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "gameOver": "winner"
+        },
+        "context": {
+          "board": [
+            "x",
+            "x",
+            "x",
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 5,
+          "player": "o",
+          "winner": "x"
+        },
+        "output": null,
+        "tags": [
+          "winner"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 5
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "gameOver": "winner"
+        },
+        "context": {
+          "board": [
+            "x",
+            "x",
+            "x",
+            "o",
+            "o",
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 5,
+          "player": "o",
+          "winner": "x"
+        },
+        "output": null,
+        "tags": [
+          "winner"
+        ],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RESET"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "moves": 0,
+          "player": "x"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "PLAY",
+          "value": 8
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "playing",
+        "context": {
+          "board": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "x"
+          ],
+          "moves": 1,
+          "player": "o"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

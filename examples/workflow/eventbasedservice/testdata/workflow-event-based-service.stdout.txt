@@ -1,0 +1,9 @@
+Making vet appointment for {
+  name: "Jenny",
+  pet: "Ato",
+  reason: "Annual checkup",
+}
+Vet appointment made {
+  appointmentId: "1234",
+  appointmentDate: "2026-01-02T03:04:05.678Z",
+}

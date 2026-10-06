@@ -1,0 +1,44 @@
+{
+  "name": "workflow-filling-water-already-full",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "done",
+        "value": "GlassFull",
+        "context": {
+          "counts": {
+            "current": 7,
+            "max": 5
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 500
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "GlassFull",
+        "context": {
+          "counts": {
+            "current": 7,
+            "max": 5
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true,
+  "input": {
+    "current": 7,
+    "max": 5
+  }
+}

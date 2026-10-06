@@ -1,0 +1,460 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>go-xstate: deep code review</title><style>
+:root{--bg:#f8fafc;--fg:#142033;--muted:#516078;--card:#fff;--border:#d6deea;--link:#165bb4;--code:#eef2f7;--red:#a92323;--amber:#865400}
+@media(prefers-color-scheme:dark){:root{--bg:#10151e;--fg:#e7edf8;--muted:#a8b7ce;--card:#182130;--border:#354257;--link:#93c1ff;--code:#111a28;--red:#ff9e9e;--amber:#f4cc84}}
+*{box-sizing:border-box}body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}main{max-width:1000px;margin:auto;padding:28px 24px}h1{font-size:30px;line-height:1.2;margin:0 0 12px}h2{font-size:22px;line-height:1.35}h3{font-size:18px;margin:8px 0}.intro,p{max-width:760px}a{color:var(--link);overflow-wrap:anywhere}.meta{color:var(--muted);font-size:14px}.badge{display:inline-block;padding:2px 8px;border:1px solid currentColor;border-radius:5px;font-size:12px;font-weight:700;letter-spacing:.025em}.blocker{color:var(--red)}.major{color:var(--amber)}article{background:var(--card);border-top:3px solid var(--border);padding:20px 24px;margin:22px 0}article.block{border-color:var(--red)}pre{background:var(--code);padding:16px;overflow-x:auto;font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em}details{border-top:1px solid var(--border);padding:12px 0}summary{cursor:pointer;font-weight:600}.evidence{border-left:3px solid var(--link);padding-left:16px}nav li{margin:6px 0}table{table-layout:fixed;border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;vertical-align:top;border-bottom:1px solid var(--border);padding:10px}footer{border-top:1px solid var(--border);padding-top:16px;color:var(--muted)}@media(max-width:600px){main{padding:20px 14px}article{padding:16px 12px}h1{font-size:25px}h2{font-size:20px}td,th{padding:7px;overflow-wrap:anywhere}}@media print{body{background:white;color:black}main{max-width:none}article{break-inside:avoid}details{display:block}a{color:inherit}pre{white-space:pre-wrap;overflow-wrap:anywhere}.badge{color:black}}
+</style></head><body><main>
+<header><p class="meta">go-xstate · reviewed and fixed source tree · 6 October 2026</p><h1>All nine reviewed defects fixed</h1><p class="intro"><strong>HIGH confidence:</strong> the two blockers and seven major findings below now have fixes and regression coverage. Independent reviewers checked the runtime, companion packages, and examples. The final <code>./scripts/test.sh</code> run exited 0: vet and race tests passed in both modules.</p><p class="meta">Runtime fixes were coordinated with agent 086e89b4-f9ef-49ed-a162-7cf95c32b924. No Git metadata was available; no commit was created.</p></header><section id="resolution"><h2>Fixes and verification</h2><table><thead><tr><th>Finding</th><th>Change</th><th>Regression tests</th></tr></thead><tbody><tr><td>1. Source deletion through aliases</td><td>Resolve parent aliases and check physical identity and ancestry before overwrite; preserve leaf symlink behavior.</td><td><a href="../examples/workflow/mediascanner/move_alias_test.go">examples/workflow/mediascanner/move_alias_test.go</a></td></tr><tr><td>2. Cross-root delivery</td><td>Deliver under the destination lock after the outermost source unlock; cover concurrent, delayed, reciprocal, and nested sends.</td><td><a href="../xstate/system_concurrency_test.go">xstate/system_concurrency_test.go</a></td></tr><tr><td>3. Stopwatch deadlock</td><td>Cancel the ticker without waiting for its goroutine while holding the actor lock.</td><td><a href="../examples/stopwatch/pending_tick_test.go">examples/stopwatch/pending_tick_test.go</a></td></tr><tr><td>4. Workflow HTTP blocking</td><td>Decode a bounded body and write responses outside the state lock; keep state updates atomic and configure server timeouts.</td><td><a href="../examples/server/workflow/concurrency_test.go">examples/server/workflow/concurrency_test.go</a></td></tr><tr><td>5. Store JSON restoration</td><td>Use the generic typed snapshot conversion for standalone and child store actors.</td><td><a href="../store/from_store_test.go">store/from_store_test.go</a></td></tr><tr><td>6. Pointer-context restoration</td><td>Copy affected reference graphs, preserving cycles, repeated references, and identity of unchanged resources.</td><td><a href="../xstate/persist_test.go">xstate/persist_test.go</a></td></tr><tr><td>7. Machine cache retention</td><td>Own the candidate cache on the machine; test garbage collection of unreachable machines.</td><td><a href="../xstate/machine_cache_test.go">xstate/machine_cache_test.go</a></td></tr><tr><td>8. Closure equality</td><td>Treat non-nil functions as unequal by default, preserving nil equality and explicit comparators.</td><td><a href="../store/closure_test.go">store/closure_test.go</a></td></tr><tr><td>9. SCXML null and undefined</td><td>Keep distinct representations through nested values and persistence; preserve sparse and typed array behavior.</td><td><a href="../scxml/ecmascript_test.go">scxml/ecmascript_test.go</a></td></tr></tbody></table><p>The original public cross-root reproduction now reports <code>count=1000 want=1000</code> without races. The alias reproduction preserves the source. An additional persistence check confirms an unchanged mutex retains identity and remains usable after the original is unlocked.</p><p>Full verification exposed timing assumptions in existing store async-effect, cancellation, carvitals stdout, and asyncsubflow cancellation tests. Their scheduling is now controlled with signals, simulated clocks, or virtual time. Assertions and production behavior were preserved; targeted race repetitions also passed.</p><p><strong>Documented limits:</strong> cross-root SendTo delivery and synchronous replies complete before the outermost call returns, after releasing source locks; reads inside source actions precede delivery. Direct reciprocal foreign API calls can still deadlock. Persistence does not preserve arbitrary interior-pointer or overlapping-slice aliases, or transform map keys and concrete actor-pointer slots. See <a href="../xstate/doc.go">package docs</a> and <a href="../docs/ARCHITECTURE.md">architecture notes</a>.</p><p>No live MongoDB or ffprobe integration was exercised. Formatting checks were clean.</p><details><summary>Final full-suite output — exit 0</summary><pre><code>./scripts/test.sh
+ok  	github.com/nguyenvanduocit/go-xstate/graph	2.701s
+ok  	github.com/nguyenvanduocit/go-xstate/scxml	2.901s
+ok  	github.com/nguyenvanduocit/go-xstate/store	2.616s
+ok  	github.com/nguyenvanduocit/go-xstate/xstate	5.404s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/counter	1.800s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/donut	2.671s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/fetch	3.378s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/friends	6.521s
+?   	github.com/nguyenvanduocit/go-xstate/examples/internal/tracetest	[no test files]
+ok  	github.com/nguyenvanduocit/go-xstate/examples/server/creditcheck	5.410s
+?   	github.com/nguyenvanduocit/go-xstate/examples/server/creditcheck/cmd/server	[no test files]
+ok  	github.com/nguyenvanduocit/go-xstate/examples/server/persistedstate	4.743s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/server/workflow	5.578s
+?   	github.com/nguyenvanduocit/go-xstate/examples/server/workflow/cmd/server	[no test files]
+ok  	github.com/nguyenvanduocit/go-xstate/examples/sevenguis/counterreact	6.302s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/sevenguis/countervue	7.140s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/sevenguis/flightbooker	8.518s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/sevenguis/temperaturereact	7.979s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/sevenguis/temperaturevue	7.981s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/snake	9.103s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/stopwatch	7.127s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/store/counter	6.776s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/store/localcounter	4.535s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/store/tictactoe	4.889s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/tictactoe	5.584s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/tiles	4.175s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/timer	4.641s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/todomvc	4.801s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/toggle	5.110s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/trivia	7.386s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/accumulateroomreadings	9.436s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/applicantrequest	6.940s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/asyncfunction	7.163s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/asyncsubflow	6.618s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/booklending	8.160s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/carauctionbids	9.479s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/carvitals	7.390s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/checkinbox	8.109s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/creditcheck	7.680s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/eventbased	5.528s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/eventbasedservice	5.816s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/eventgreeting	6.943s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/fillingwater	6.127s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/finalizecollegeapp	5.915s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/greeting	4.531s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/hello	4.473s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/mathproblem	4.756s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/mediascanner	10.938s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/monitorjob	6.172s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/monitorpatient	5.389s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/newpatientonboarding	8.676s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/parallel	6.026s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/provisionorders	6.885s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/purchaseorderdeadline	6.911s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/reusingfunctions	8.993s
+ok  	github.com/nguyenvanduocit/go-xstate/examples/workflow/sendcloudevent	7.458s
+</code></pre></details></section><section aria-label="Historical review"><h2>Original findings and pre-fix evidence</h2><p>The findings, line numbers, reproduction snippets, and captured failures below describe the source tree <strong>before these fixes</strong>. Some snippets reference implementation details that have since changed. They are retained as review evidence; use the permanent regression tests linked above for the current tree.</p></section>
+<nav aria-label="Findings"><ol><li><a href="#f1">MoveDirectory can delete its own source through a symlink alias</a></li><li><a href="#f2">Cross-system SendTo races with the receiving actor and loses events</a></li><li><a href="#f3">Stopping the stopwatch can deadlock with a pending tick</a></li><li><a href="#f4">An unfinished POST body blocks all workflow API operations</a></li><li><a href="#f5">FromStore cannot restore a JSON-round-tripped actor snapshot</a></li><li><a href="#f6">Pointer contexts retain stale child actors after in-memory restoration</a></li><li><a href="#f7">The global candidate cache permanently retains dynamically created machines</a></li><li><a href="#f8">Atom equality conflates closures with different captured values</a></li><li><a href="#f9">SCXML turns explicit JavaScript null into undefined</a></li></ol></nav>
+<article id="f1" class="block"><span class="badge blocker">BLOCKER</span> <span class="meta">HIGH confidence</span><h2>1. MoveDirectory can delete its own source through a symlink alias</h2><p class="meta"><a href="../examples/workflow/mediascanner/files.go">examples/workflow/mediascanner/files.go:177</a></p><p>The overwrite checks compare lexical absolute paths. If alias points to real, MoveDirectory(alias/movie, real/movie) passes both checks even though the paths name the same directory. RemoveAll deletes the source; the subsequent Rename fails. The ancestor variant deletes the containing tree too.</p><p class="evidence"><strong>Observed:</strong> Independent reproduction: source exists=false after the call; Rename returns ENOENT. The separate ancestor regression also fails with movie.mp4 missing.</p><p><strong>Suggested fix:</strong> Check physical identity and resolved parent ancestry before any destructive overwrite. Preserve the intended behavior of moving a leaf symlink. Add alias-to-same-directory and alias-to-ancestor regression cases.</p><details><summary>Reproduction source and command</summary><p>From examples/: go run /tmp/go-xstate-review-alias-independent.go</p><pre><code>package main
+import (
+ &quot;fmt&quot;
+ &quot;os&quot;
+ &quot;path/filepath&quot;
+ ms &quot;github.com/nguyenvanduocit/go-xstate/examples/workflow/mediascanner&quot;
+)
+func main(){
+ root,err:=os.MkdirTemp(&quot;&quot;,&quot;xstate-review-alias-independent-&quot;);if err!=nil{panic(err)};defer os.RemoveAll(root)
+ real:=filepath.Join(root,&quot;real&quot;);source:=filepath.Join(real,&quot;movie&quot;)
+ if err=os.MkdirAll(source,0755);err!=nil{panic(err)}
+ file:=filepath.Join(source,&quot;video.mp4&quot;);if err=os.WriteFile(file,[]byte(&quot;irreplaceable&quot;),0600);err!=nil{panic(err)}
+ alias:=filepath.Join(root,&quot;alias&quot;);if err=os.Symlink(real,alias);err!=nil{panic(err)}
+ err=ms.MoveDirectory(filepath.Join(alias,&quot;movie&quot;),source)
+ _,statErr:=os.Stat(file)
+ fmt.Printf(&quot;MoveDirectory(alias/movie, real/movie) error=%v\nsource exists=%v\n&quot;,err,statErr==nil)
+}
+</code></pre></details></article>
+<article id="f2" class="block"><span class="badge blocker">BLOCKER</span> <span class="meta">HIGH confidence</span><h2>2. Cross-system SendTo races with the receiving actor and loses events</h2><p class="meta"><a href="../xstate/system.go">xstate/system.go:216</a></p><p>relay calls the destination core.send directly while holding the source system lock. Separate root actors have separate locks, so a concurrent receiver.Send or snapshot read is not protected. The mailbox and snapshot can be modified concurrently even with immutable integer context.</p><p class="evidence"><strong>Observed:</strong> Independent go run -race reproduction: 22 data races; count=997 after 1,000 sends. Exact counts depend on scheduling. The test uses only public actor APIs.</p><p><strong>Suggested fix:</strong> Deliver foreign-system messages through synchronization owned by the destination. Define cross-system dispatch and ordering explicitly: taking the target lock while retaining the source lock can deadlock reciprocal sends. Cover direct sends, delayed sends, snapshot reads, and reciprocal messaging.</p><details><summary>Reproduction source and command</summary><p>From repository root: go run -race /tmp/go-xstate-runtime-cross-system.go</p><pre><code>package main
+import (
+ &quot;fmt&quot;
+ &quot;sync&quot;
+ xs &quot;github.com/nguyenvanduocit/go-xstate/xstate&quot;
+)
+func main() {
+ receiver := xs.CreateActor(xs.FromTransition(func(state int, ev xs.Event, _ *xs.ActorScope) int { return state+1 }, nil)).Start()
+ machine := xs.CreateMachine(xs.MachineConfig[struct{}]{
+   On: map[string]xs.Transitions{
+    &quot;ping&quot;: {{Actions: xs.Actions{xs.SendTo(receiver, xs.Ev(&quot;count&quot;))}}},
+   },
+ })
+ sender := xs.CreateActor(machine).Start()
+ var wg sync.WaitGroup
+ wg.Add(2)
+ go func(){defer wg.Done();for range 500 { sender.Send(xs.Ev(&quot;ping&quot;)) }}()
+ go func(){defer wg.Done();for range 500 { receiver.Send(xs.Ev(&quot;count&quot;)) }}()
+ wg.Wait()
+ fmt.Printf(&quot;count=%d want=1000\n&quot;,receiver.GetSnapshot().Context)
+}
+</code></pre></details></article>
+<article id="f3" class=""><span class="badge major">MAJOR</span> <span class="meta">HIGH confidence</span><h2>3. Stopping the stopwatch can deadlock with a pending tick</h2><p class="meta"><a href="../examples/stopwatch/machine.go">examples/stopwatch/machine.go:36</a></p><p>Callback cleanup runs under the actor system lock and waits on done. The ticker goroutine can be blocked acquiring that same lock in SendBack, so it cannot exit and close done. Stop, reset, and actor shutdown can hang indefinitely.</p><p class="evidence"><strong>Observed:</strong> TestReviewStopWhileTickIsPending times out after one second. Its stack shows cleanup waiting at machine.go:39 and the ticker waiting in callback_actor.go:66. A 100 ms observer delay arranges the pending tick.</p><p><strong>Suggested fix:</strong> Stop the ticker and signal cancellation without joining the goroutine under the actor lock. SendBack already ignores delivery after callback disposal. Retain a regression that arranges a pending tick during cleanup.</p><details><summary>Reproduction source and command</summary><p>Copy into examples/stopwatch as a temporary _test.go file; run go test -run TestReviewStopWhileTickIsPending ./stopwatch from examples/.</p><pre><code>package stopwatch_test
+import(&quot;runtime&quot;;&quot;testing&quot;;&quot;time&quot;;&quot;github.com/nguyenvanduocit/go-xstate/examples/stopwatch&quot;;xs &quot;github.com/nguyenvanduocit/go-xstate/xstate&quot;)
+func TestReviewStopWhileTickIsPending(t *testing.T){
+ actor:=xs.CreateActor(stopwatch.Machine()).Start()
+ actor.Subscribe(xs.Observer[*xs.MachineSnapshot[stopwatch.Context]]{Next:func(s *xs.MachineSnapshot[stopwatch.Context]){
+  if s.Matches(&quot;running&quot;)&amp;&amp;s.Context.Elapsed==0{time.Sleep(100*time.Millisecond);actor.Send(xs.Ev(&quot;stop&quot;))}
+ }})
+ done:=make(chan struct{})
+ go func(){actor.Send(xs.Ev(&quot;start&quot;));close(done)}()
+ select{case &lt;-done:actor.Stop();case &lt;-time.After(time.Second):stack:=make([]byte,64000);n:=runtime.Stack(stack,true);t.Fatalf(&quot;stop deadlocked with pending ticker: %s&quot;,stack[:n])}
+}
+</code></pre></details></article>
+<article id="f4" class=""><span class="badge major">MAJOR</span> <span class="meta">HIGH confidence</span><h2>4. An unfinished POST body blocks all workflow API operations</h2><p class="meta"><a href="../examples/server/workflow/server.go">examples/server/workflow/server.go:92</a></p><p>send takes the server-wide mutex before decoding the HTTP request body. A client can open a workflow and then leave its event body unfinished, holding the lock needed by workflow reads, creates, and other sends. The example server has no read deadline. The index page does not require this lock.</p><p class="evidence"><strong>Observed:</strong> TestReviewSlowBodyDoesNotBlockOtherWorkflows gates the body reader: GET stays blocked until the POST body is released.</p><p><strong>Suggested fix:</strong> Decode and validate a bounded request body before locking. Keep the read/restore/send/persist sequence atomic, and release the lock before network response writes. Configure HTTP read deadlines for the runnable server.</p><details><summary>Reproduction source and command</summary><p>Copy into examples/server/workflow as a temporary _test.go file; run go test -run TestReviewSlowBodyDoesNotBlockOtherWorkflows ./server/workflow from examples/.</p><pre><code>package workflow_test
+import(&quot;io&quot;;&quot;net/http/httptest&quot;;&quot;testing&quot;;&quot;time&quot;; workflow &quot;github.com/nguyenvanduocit/go-xstate/examples/server/workflow&quot;)
+type reviewBlockedBody struct{entered,release chan struct{}}
+func(b *reviewBlockedBody)Read([]byte)(int,error){close(b.entered);&lt;-b.release;return 0,io.EOF}
+func TestReviewSlowBodyDoesNotBlockOtherWorkflows(t *testing.T){
+ h:=workflow.NewServer(func()string{return &quot;w1&quot;}).Handler()
+ h.ServeHTTP(httptest.NewRecorder(),httptest.NewRequest(&quot;POST&quot;,&quot;/workflows&quot;,nil))
+ b:=&amp;reviewBlockedBody{make(chan struct{}),make(chan struct{})}
+ postDone:=make(chan struct{})
+ go func(){h.ServeHTTP(httptest.NewRecorder(),httptest.NewRequest(&quot;POST&quot;,&quot;/workflows/w1&quot;,b));close(postDone)}()
+ &lt;-b.entered
+ getDone:=make(chan struct{})
+ go func(){h.ServeHTTP(httptest.NewRecorder(),httptest.NewRequest(&quot;GET&quot;,&quot;/workflows/w1&quot;,nil));close(getDone)}()
+ blocked:=false
+ select{case &lt;-getDone: case &lt;-time.After(100*time.Millisecond):blocked=true}
+ close(b.release);&lt;-postDone;&lt;-getDone
+ if blocked{t.Fatal(&quot;GET blocked by unfinished request body&quot;)}
+}
+</code></pre></details></article>
+<article id="f5" class=""><span class="badge major">MAJOR</span> <span class="meta">HIGH confidence</span><h2>5. FromStore cannot restore a JSON-round-tripped actor snapshot</h2><p class="meta"><a href="../store/fromstore.go">store/fromstore.go:58</a></p><p>RestoreSnapshot assumes persisted data is already *StoreSnapshot[C]. Normal JSON decoding yields map[string]any, so the type assertion fails. Actor initialization catches the panic and produces an error snapshot with zero context; this is not an unhandled process panic.</p><p class="evidence"><strong>Observed:</strong> TestReviewCompanionFromStoreJSONRestore: original Count=42; restored Status=&quot;error&quot;, Count=0, Error=*runtime.TypeAssertionError.</p><p><strong>Suggested fix:</strong> Remove the restrictive RestoreSnapshot override to use the generic Logic conversion, or explicitly convert decoded persistence data into the typed store snapshot. Test both standalone store actors and store actors persisted as children.</p><details><summary>Reproduction source and command</summary><p>Copy into store as a temporary _test.go file; run go test ./store -run TestReviewCompanionFromStoreJSONRestore -count=1.</p><pre><code>package store_test
+
+import (
+ &quot;encoding/json&quot;
+ &quot;testing&quot;
+ &quot;github.com/nguyenvanduocit/go-xstate/store&quot;
+ xs &quot;github.com/nguyenvanduocit/go-xstate/xstate&quot;
+)
+
+//go:noinline
+func reviewClosure(n int) func() int { return func() int { return n } }
+
+func TestReviewCompanionClosureUpdate(t *testing.T) {
+ a := store.CreateAtom(reviewClosure(1))
+ a.Set(reviewClosure(2))
+ if got := a.Get()(); got != 2 { t.Fatalf(&quot;updated function returns %d, want 2&quot;, got) }
+}
+
+func TestReviewCompanionFromStoreJSONRestore(t *testing.T) {
+ type ctx struct { Count int }
+ logic := store.FromStore(store.StoreConfig[ctx]{Context: ctx{Count: 42}})
+ original := xs.CreateActor(logic).Start()
+ defer original.Stop()
+ b, err := json.Marshal(original.GetPersistedSnapshot()); if err != nil { t.Fatal(err) }
+ var persisted any
+ if err := json.Unmarshal(b, &amp;persisted); err != nil { t.Fatal(err) }
+ restored := xs.CreateActor(logic, xs.WithSnapshot(persisted))
+ if got := restored.GetSnapshot(); got.Status != xs.StatusActive || got.Context.Count != 42 { t.Fatalf(&quot;restored snapshot = %#v&quot;, got) }
+}
+</code></pre></details></article>
+<article id="f6" class=""><span class="badge major">MAJOR</span> <span class="meta">HIGH confidence</span><h2>6. Pointer contexts retain stale child actors after in-memory restoration</h2><p class="meta"><a href="../xstate/persist.go">xstate/persist.go:172</a></p><p>With a context of type *struct{Child ActorRef}, persistValue and reviveValue do not traverse the pointer. Direct GetPersistedSnapshot → WithSnapshot restoration creates new children, but the context still references the old child. After stopping the original parent, sends through the restored context go to the stopped actor.</p><p class="evidence"><strong>Observed:</strong> TestReviewPointerContextRestore: staleRef=true; an INC sent through the restored context leaves the restored child count at 0 instead of 1. The runtime logs a send to the stopped child.</p><p><strong>Suggested fix:</strong> Traverse pointer-backed context values during persistence and revival, copying values before replacing actor markers. Handle nil pointers and cycles deliberately. Verify that context references resolve to the restored Children entries without mutating the original context.</p><details><summary>Reproduction source and command</summary><p>Copy the root reproduction into xstate as a temporary _test.go file; run go test ./xstate -run TestReviewPointerContextRestore -count=1.</p><pre><code>package xstate
+
+import (
+ &quot;encoding/json&quot;
+ &quot;runtime&quot;
+ &quot;testing&quot;
+)
+
+func TestReviewMachineCacheRetention(t *testing.T) {
+ count := func() int { n:=0; machineCaches.Range(func(_, _ any) bool {n++; return true}); return n }
+ before:=count()
+ for i:=0;i&lt;100;i++ { m:=CreateMachine(MachineConfig[struct{}]{}); a:=CreateActor(m).Start(); a.Send(Ev(&quot;event&quot;)); a.Stop() }
+ runtime.GC(); runtime.GC()
+ if got:=count()-before; got!=0 {t.Fatalf(&quot;stopped unreachable machines retained in global cache: %d&quot;,got)}
+}
+
+func TestReviewPointerContextRestore(t *testing.T) {
+ type ctx struct { Child ActorRef }
+ child:=FromTransition(func(n int,_ Event,_ *ActorScope) int{return n+1},func(TransitionInitArgs) int{return 0})
+ m:=CreateMachine(MachineConfig[*ctx]{ContextFn:func(a ContextArgs)*ctx{return &amp;ctx{Child:a.Spawn(&quot;child&quot;,SpawnOptions{ID:&quot;child&quot;})}}},Implementations{Actors:map[string]ActorLogic{&quot;child&quot;:child}})
+ a:=CreateActor(m).Start()
+ p:=a.GetPersistedSnapshot(); a.Stop()
+ b:=CreateActor(m,WithSnapshot(p)).Start(); defer b.Stop()
+ b.GetSnapshot().Context.Child.Send(Ev(&quot;INC&quot;))
+ got:=As[*TransitionSnapshot[int]](b.GetSnapshot().Children[&quot;child&quot;]).GetSnapshot().Context
+ if got!=1 {t.Fatalf(&quot;sending through restored pointer context did not reach restored child: got %d, want 1; staleRef=%v&quot;,got,b.GetSnapshot().Context.Child!=b.GetSnapshot().Children[&quot;child&quot;])}
+}
+</code></pre></details></article>
+<article id="f7" class=""><span class="badge major">MAJOR</span> <span class="meta">HIGH confidence</span><h2>7. The global candidate cache permanently retains dynamically created machines</h2><p class="meta"><a href="../xstate/machine_logic.go">xstate/machine_logic.go:21</a></p><p>machineCaches is a package-level sync.Map keyed by the machine pointer, with no removal path. Once an event lookup populates it, the machine, state nodes, context, and implementation closures remain strongly reachable after actors stop and caller references disappear. Repeated CreateMachine or Provide use accumulates retained machines.</p><p class="evidence"><strong>Observed:</strong> TestReviewMachineCacheRetention creates and stops 100 machines, drops local references, and forces two garbage collections. All 100 remain in the global cache.</p><p><strong>Suggested fix:</strong> Own the cache on StateMachine so its lifetime follows the machine. Do not clear a shared machine cache on one actor&#x27;s Stop. Add a lifetime regression; fixed, long-lived machine definitions are less exposed than per-request machine creation.</p><details><summary>Reproduction source and command</summary><p>Copy the root reproduction into xstate as a temporary _test.go file; run go test ./xstate -run TestReviewMachineCacheRetention -count=1.</p><pre><code>package xstate
+
+import (
+ &quot;encoding/json&quot;
+ &quot;runtime&quot;
+ &quot;testing&quot;
+)
+
+func TestReviewMachineCacheRetention(t *testing.T) {
+ count := func() int { n:=0; machineCaches.Range(func(_, _ any) bool {n++; return true}); return n }
+ before:=count()
+ for i:=0;i&lt;100;i++ { m:=CreateMachine(MachineConfig[struct{}]{}); a:=CreateActor(m).Start(); a.Send(Ev(&quot;event&quot;)); a.Stop() }
+ runtime.GC(); runtime.GC()
+ if got:=count()-before; got!=0 {t.Fatalf(&quot;stopped unreachable machines retained in global cache: %d&quot;,got)}
+}
+
+func TestReviewPointerContextRestore(t *testing.T) {
+ type ctx struct { Child ActorRef }
+ child:=FromTransition(func(n int,_ Event,_ *ActorScope) int{return n+1},func(TransitionInitArgs) int{return 0})
+ m:=CreateMachine(MachineConfig[*ctx]{ContextFn:func(a ContextArgs)*ctx{return &amp;ctx{Child:a.Spawn(&quot;child&quot;,SpawnOptions{ID:&quot;child&quot;})}}},Implementations{Actors:map[string]ActorLogic{&quot;child&quot;:child}})
+ a:=CreateActor(m).Start()
+ p:=a.GetPersistedSnapshot(); a.Stop()
+ b:=CreateActor(m,WithSnapshot(p)).Start(); defer b.Stop()
+ b.GetSnapshot().Context.Child.Send(Ev(&quot;INC&quot;))
+ got:=As[*TransitionSnapshot[int]](b.GetSnapshot().Children[&quot;child&quot;]).GetSnapshot().Context
+ if got!=1 {t.Fatalf(&quot;sending through restored pointer context did not reach restored child: got %d, want 1; staleRef=%v&quot;,got,b.GetSnapshot().Context.Child!=b.GetSnapshot().Children[&quot;child&quot;])}
+}
+</code></pre></details></article>
+<article id="f8" class=""><span class="badge major">MAJOR</span> <span class="meta">HIGH confidence</span><h2>8. Atom equality conflates closures with different captured values</h2><p class="meta"><a href="../store/shallowequal.go">store/shallowequal.go:85</a></p><p>sameValue compares functions by reflect.Value.Pointer(), which identifies executable code rather than the closure environment. Different closures from one factory can compare equal. Atom.Set then keeps the previous function and suppresses notification.</p><p class="evidence"><strong>Observed:</strong> TestReviewCompanionClosureUpdate creates a closure returning 1, sets one returning 2, and still reads 1. The factory is marked noinline to make the shared-code case stable.</p><p><strong>Suggested fix:</strong> Handle functions separately. Treat non-nil functions conservatively as unequal unless callers provide a comparator; keep nil equality. Apply this to function fields and selected values that share the same equality helper.</p><details><summary>Reproduction source and command</summary><p>Copy into store as a temporary _test.go file; run go test ./store -run TestReviewCompanionClosureUpdate -count=1.</p><pre><code>package store_test
+
+import (
+ &quot;encoding/json&quot;
+ &quot;testing&quot;
+ &quot;github.com/nguyenvanduocit/go-xstate/store&quot;
+ xs &quot;github.com/nguyenvanduocit/go-xstate/xstate&quot;
+)
+
+//go:noinline
+func reviewClosure(n int) func() int { return func() int { return n } }
+
+func TestReviewCompanionClosureUpdate(t *testing.T) {
+ a := store.CreateAtom(reviewClosure(1))
+ a.Set(reviewClosure(2))
+ if got := a.Get()(); got != 2 { t.Fatalf(&quot;updated function returns %d, want 2&quot;, got) }
+}
+
+func TestReviewCompanionFromStoreJSONRestore(t *testing.T) {
+ type ctx struct { Count int }
+ logic := store.FromStore(store.StoreConfig[ctx]{Context: ctx{Count: 42}})
+ original := xs.CreateActor(logic).Start()
+ defer original.Stop()
+ b, err := json.Marshal(original.GetPersistedSnapshot()); if err != nil { t.Fatal(err) }
+ var persisted any
+ if err := json.Unmarshal(b, &amp;persisted); err != nil { t.Fatal(err) }
+ restored := xs.CreateActor(logic, xs.WithSnapshot(persisted))
+ if got := restored.GetSnapshot(); got.Status != xs.StatusActive || got.Context.Count != 42 { t.Fatalf(&quot;restored snapshot = %#v&quot;, got) }
+}
+</code></pre></details></article>
+<article id="f9" class=""><span class="badge major">MAJOR</span> <span class="meta">HIGH confidence</span><h2>9. SCXML turns explicit JavaScript null into undefined</h2><p class="meta"><a href="../scxml/ecmascript.go">scxml/ecmascript.go:112</a></p><p>Exporting a JavaScript null yields Go nil. toJS maps every nil back to undefined, so an explicit &lt;data expr=&quot;null&quot;&gt; changes meaning before the next guard or action. Nested context and event values use the same conversion path.</p><p class="evidence"><strong>Observed:</strong> TestReviewCompanionNullDatamodel declares x=null and sends GO with guard x === null. The actor remains in state a instead of entering b.</p><p><strong>Suggested fix:</strong> Preserve null and undefined as distinct values throughout recursive export/import. Use an explicit undefined representation for unbound data and preserve null in context, arrays, and event payloads.</p><details><summary>Reproduction source and command</summary><p>Copy into scxml as a temporary _test.go file; run go test ./scxml -run TestReviewCompanionNullDatamodel -count=1.</p><pre><code>package scxml_test
+
+import (
+ &quot;testing&quot;
+ &quot;github.com/nguyenvanduocit/go-xstate/scxml&quot;
+ xs &quot;github.com/nguyenvanduocit/go-xstate/xstate&quot;
+)
+
+func TestReviewCompanionNullDatamodel(t *testing.T) {
+ m := scxml.ToMachine(`&lt;scxml initial=&quot;a&quot;&gt;&lt;datamodel&gt;&lt;data id=&quot;x&quot; expr=&quot;null&quot;/&gt;&lt;/datamodel&gt;&lt;state id=&quot;a&quot;&gt;&lt;transition event=&quot;GO&quot; cond=&quot;x === null&quot; target=&quot;b&quot;/&gt;&lt;/state&gt;&lt;final id=&quot;b&quot;/&gt;&lt;/scxml&gt;`)
+ a := xs.CreateActor(m).Start()
+ defer a.Stop()
+ a.Send(xs.Ev(&quot;GO&quot;))
+ if !a.GetSnapshot().Matches(&quot;b&quot;) { t.Fatalf(&quot;expected null guard to match, got %#v&quot;, a.GetSnapshot()) }
+}
+</code></pre></details></article>
+<section><h2>Original review verification and scope (before fixes)</h2><table><thead><tr><th>Check</th><th>Result</th></tr></thead><tbody><tr><td><code>./scripts/test.sh</code></td><td>PASS: go vet and go test -race -count=1 in both root and examples modules.</td></tr><tr><td>Focused reproduction tests</td><td>FAIL as expected for all nine reported defects. The primary reviewer independently reran every finding.</td></tr><tr><td><code>gofmt -l xstate store graph scxml examples</code></td><td>No production formatting differences after scratch-test removal.</td></tr><tr><td>Review lenses</td><td>Correctness, quality, security, performance, tests, style, and architecture. Work was divided among three reviewers plus the primary reviewer, followed by independent critique.</td></tr></tbody></table><p>Reviewed the engine and actor lifecycle, persistence, stores and atoms, graph traversal and model testing, SCXML conversion, HTTP and filesystem examples, and selected workflow examples. Local upstream references and porting records informed compatibility checks.</p><p>Performance evidence here concerns retained machines; no throughput benchmark was run. MongoDB and ffprobe integration were not exercised against live services. This was not a dependency vulnerability audit or proof of complete XState compatibility.</p><h2>What the independent critique changed</h2><p>The ordinary JSON-config importer case was excluded because the porting manifest scopes that helper to revived machine definitions. A graph failure requiring a nondeterministic initializer was also excluded as an inherited behavior. Documented runtime constraints were not reported as standalone bugs; the stopwatch finding is an example violating those constraints.</p><p>Fix guidance preserves shared-machine lifetimes and warns against introducing reciprocal cross-system lock deadlocks. FromStore is described as returning an error snapshot because actor initialization catches its type assertion panic.</p></section>
+<section><h2>Captured pre-fix output</h2>
+<details><summary>Cross-system race: output excerpt</summary><pre><code>==================
+WARNING: DATA RACE
+Read at 0x00c0001b81b0 by goroutine 7:
+  github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).enqueue()
+      /Users/firegroup/projects/go-xstate/xstate/mailbox.go:33 +0xb0
+  github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).send()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:530 +0x230
+  github.com/nguyenvanduocit/go-xstate/xstate.(*ActorSystem).relay()
+      /Users/firegroup/projects/go-xstate/xstate/system.go:217 +0xf4
+  github.com/nguyenvanduocit/go-xstate/xstate.SendTo.sendTo.func3.1()
+      /Users/firegroup/projects/go-xstate/xstate/action.go:364 +0x314
+  github.com/nguyenvanduocit/go-xstate/xstate.safeCall()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:288 +0x68
+  github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).update()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:297 +0x140
+  github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).process()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:438 +0x188
+  github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).process-fm()
+      &lt;autogenerated&gt;:1 +0x3c
+  github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).flush()
+      /Users/firegroup/projects/go-xstate/xstate/mailbox.go:48 +0x98
+  github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).enqueue()
+      /Users/firegroup/projects/go-xstate/xstate/mailbox.go:41 +0x1e0
+  github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).send()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:530 +0x230
+  github.com/nguyenvanduocit/go-xstate/xstate.(*ActorSystem).relay()
+      /Users/firegroup/projects/go-xstate/xstate/system.go:217 +0xf4
+  github.com/nguyenvanduocit/go-xstate/xstate.(*Actor[go.shape.*uint8]).Send()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:556 +0xe8
+  main.main.func2()
+      /tmp/go-xstate-runtime-cross-system.go:17 +0xa8
+
+Previous write at 0x00c0001b81b0 by goroutine 8:
+  github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).enqueue()
+      /Users/firegroup/projects/go-xstate/xstate/mailbox.go:38 +0x160
+  github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).send()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:530 +0x230
+  github.com/nguyenvanduocit/go-xstate/xstate.(*ActorSystem).relay()
+      /Users/firegroup/projects/go-xstate/xstate/system.go:217 +0xf4
+  github.com/nguyenvanduocit/go-xstate/xstate.(*Actor[go.shape.*uint8]).Send()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:556 +0xe8
+  main.main.func3()
+      /tmp/go-xstate-runtime-cross-system.go:18 +0xa8
+
+Goroutine 7 (running) created at:
+  main.main()
+      /tmp/go-xstate-runtime-cross-system.go:17 +0x3d0
+
+Goroutine 8 (running) created at:
+  main.main()
+      /tmp/go-xstate-runtime-cross-system.go:18 +0x468
+==================
+==================
+WARNING: DATA RACE
+Write at 0x00c0001b81b0 by goroutine 7:
+  github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).enqueue()
+      /Users/firegroup/projects/go-xstate/xstate/mailbox.go:38 +0x160
+  github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).send()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:530 +0x230
+  github.com/nguyenvanduocit/go-xstate/xstate.(*ActorSystem).relay()
+      /Users/firegroup/projects/go-xstate/xstate/system.go:217 +0xf4
+  github.com/nguyenvanduocit/go-xstate/xstate.SendTo.sendTo.func3.1()
+      /Users/firegroup/projects/go-xstate/xstate/action.go:364 +0x314
+  github.com/nguyenvanduocit/go-xstate/xstate.safeCall()
+      /Users/firegroup/projects/go-xstate/xstate/actor.go:288 +0x68
+[additional race reports omitted]
+==================
+count=997 want=1000
+Found 22 data race(s)
+exit status 66</code></pre></details>
+<details><summary>Core persistence and retention regressions</summary><pre><code>=== RUN   TestReviewMachineCacheRetention
+    review_root_temp_test.go:14: stopped unreachable machines retained in global cache: 100
+--- FAIL: TestReviewMachineCacheRetention (0.02s)
+=== RUN   TestReviewPointerContextRestore
+2026/10/06 22:11:08 [xstate warn] Event &quot;INC&quot; was sent to stopped actor &quot;child (x:101)&quot;. This actor has already reached its final state, and will not transition.
+Event: {&quot;type&quot;:&quot;INC&quot;}
+    review_root_temp_test.go:26: sending through restored pointer context did not reach restored child: got 0, want 1; staleRef=true
+--- FAIL: TestReviewPointerContextRestore (0.00s)
+</code></pre></details>
+<details><summary>Store and SCXML regressions</summary><pre><code>=== RUN   TestReviewCompanionClosureUpdate
+    review_companions_tmp_test.go:16: updated function returns 1, want 2
+--- FAIL: TestReviewCompanionClosureUpdate (0.00s)
+=== RUN   TestReviewCompanionFromStoreJSONRestore
+    review_companions_tmp_test.go:28: restored snapshot = &amp;store.StoreSnapshot[github.com/nguyenvanduocit/go-xstate/store_test.ctx·33]{Status:&quot;error&quot;, Context:store_test.ctx{Count:0}, Output:interface {}(nil), Error:(*runtime.TypeAssertionError)(0x36b7780cde90), ExtensionState:map[string]interface {}(nil)}
+--- FAIL: TestReviewCompanionFromStoreJSONRestore (0.00s)
+FAIL
+FAIL	github.com/nguyenvanduocit/go-xstate/store	0.517s
+=== RUN   TestReviewCompanionNullDatamodel
+    review_companions_tmp_test.go:14: expected null guard to match, got &amp;xstate.MachineSnapshot[map[string]interface {}]{Status:&quot;active&quot;, Value:&quot;a&quot;, Context:map[string]interface {}{&quot;x&quot;:interface {}(nil)}, Output:interface {}(nil), Error:interface {}(nil), Children:map[string]xstate.ActorRef{}, Tags:[]string{}, HistoryValue:map[string][]*xstate.StateNode{}, Machine:(*xstate.StateMachine[map[string]interface {}])(0x745e9ac28400), nodes:[]*xstate.StateNode{(*xstate.StateNode)(0x745e9aae5c08), (*xstate.StateNode)(0x745e9ac5e008)}, childOrder:[]string(nil)}
+--- FAIL: TestReviewCompanionNullDatamodel (0.01s)
+FAIL
+FAIL	github.com/nguyenvanduocit/go-xstate/scxml	0.885s
+FAIL
+</code></pre></details>
+<details><summary>Example regressions and deadlock stack</summary><pre><code>--- FAIL: TestReviewStopWhileTickIsPending (1.00s)
+    review_deadlock_test.go:10: stop deadlocked with pending ticker: goroutine 5 [running]:
+        github.com/nguyenvanduocit/go-xstate/examples/stopwatch_test.TestReviewStopWhileTickIsPending(0x61136d7fe6c8)
+        	/Users/firegroup/projects/go-xstate/examples/stopwatch/review_deadlock_test.go:10 +0x17c
+        testing.tRunner(0x61136d7fe6c8, 0x1006ed5c0)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/testing/testing.go:2036 +0xc4
+        created by testing.(*T).Run in goroutine 1
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/testing/testing.go:2101 +0x3a8
+        
+        goroutine 1 [chan receive]:
+        testing.(*T).Run(0x61136d7fe488, {0x10048c065?, 0x114a64400036e4c0?}, 0x1006ed5c0)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/testing/testing.go:2109 +0x3bc
+        testing.runTests.func1(0x61136d7fe488)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/testing/testing.go:2585 +0x40
+        testing.tRunner(0x61136d7fe488, 0x61136d747c48)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/testing/testing.go:2036 +0xc4
+        testing.runTests({0x1004909c6, 0x2d}, {0x100492655, 0x37}, 0x61136d726150, {0x10074cb60, 0x3, 0x3}, {0x8080808080443d3e?, 0x100485ab9?, ...})
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/testing/testing.go:2583 +0x3f0
+        testing.(*M).Run(0x61136d7a6c80)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/testing/testing.go:2443 +0x578
+        main.main()
+        	_testmain.go:52 +0x80
+        
+        goroutine 6 [chan receive]:
+        github.com/nguyenvanduocit/go-xstate/examples/stopwatch.Machine.Ticks.func1.2()
+        	/Users/firegroup/projects/go-xstate/examples/stopwatch/machine.go:39 +0x40
+        github.com/nguyenvanduocit/go-xstate/xstate.(*CallbackLogic).transitionAny(0x61136d900030?, {0x1006f1c90?, 0x61136d898180}, {0x1006f0900, 0x10077ba80}, 0x0?)
+        	/Users/firegroup/projects/go-xstate/xstate/callback_actor.go:105 +0x1b4
+        github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).process.func1()
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:432 +0x38
+        github.com/nguyenvanduocit/go-xstate/xstate.safeCall(0x0?)
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:288 +0x50
+        github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).process(0x61136d716c80, {0x1006f0900, 0x10077ba80})
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:432 +0x48
+        github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).flush(0x61136d7b29e0)
+        	/Users/firegroup/projects/go-xstate/xstate/mailbox.go:48 +0x44
+        github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).enqueue(0x61136d7b29e0, {0x1006f0900, 0x10077ba80})
+        	/Users/firegroup/projects/go-xstate/xstate/mailbox.go:41 +0xd4
+        github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).stop(0x1006f32f8?)
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:454 +0xa0
+        github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).stopChild(0x61136d716b40, {0x1006f32f8, 0x61136d716c80})
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:277 +0x70
+        github.com/nguyenvanduocit/go-xstate/xstate.exitStates.StopChild.func5.1()
+        	/Users/firegroup/projects/go-xstate/xstate/action.go:497 +0x2c
+        github.com/nguyenvanduocit/go-xstate/xstate.safeCall(0x1006f3768?)
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:288 +0x50
+        github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).update(0x61136d716b40, {0x1006f1b68, 0x61136d9120b0}, {0x1006f03c0, 0x61136d900030})
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:297 +0xcc
+        github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).process(0x61136d716b40, {0x1006f03c0, 0x61136d900030})
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:438 +0xc0
+        github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).flush(0x61136d7b26a0)
+        	/Users/firegroup/projects/go-xstate/xstate/mailbox.go:48 +0x44
+        github.com/nguyenvanduocit/go-xstate/xstate.(*mailbox).enqueue(0x61136d7b26a0, {0x1006f03c0, 0x61136d7abd70})
+        	/Users/firegroup/projects/go-xstate/xstate/mailbox.go:41 +0xd4
+        github.com/nguyenvanduocit/go-xstate/xstate.(*actorCore).send(0x1006f3058?, {0x1006f03c0?, 0x61136d7abd70?})
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:530 +0x194
+        github.com/nguyenvanduocit/go-xstate/xstate.(*ActorSystem).relay(0x61136d896000, {0x0, 0x0}, {0x1006f3058, 0x61136d716b40}, {0x1006f03c0, 0x61136d7abd70})
+        	/Users/firegroup/projects/go-xstate/xstate/system.go:217 +0xe0
+        github.com/nguyenvanduocit/go-xstate/xstate.(*Actor[...]).Send(0x1006f4bc0, {0x1006f03c0, 0x61136d7abd70})
+        	/Users/firegroup/projects/go-xstate/xstate/actor.go:556 +0x84
+        github.com/nguyenvanduocit/go-xstate/examples/stopwatch_test.TestReviewStopWhileTickIsPending.func2()
+        	/Users/firegroup/projects/go-xstate/examples/stopwatch/review_deadlock_test.go:9 +0x94
+        created by github.com/nguyenvanduocit/go-xstate/examples/stopwatch_test.TestReviewStopWhileTickIsPending in goroutine 5
+        	/Users/firegroup/projects/go-xstate/examples/stopwatch/review_deadlock_test.go:9 +0x10c
+        
+        goroutine 7 [sync.Mutex.Lock]:
+        internal/sync.runtime_SemacquireMutex(0x61136d79eee8?, 0x14?, 0x61136d900000?)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/runtime/sema.go:95 +0x28
+        internal/sync.(*Mutex).lockSlow(0x61136d896000)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/internal/sync/mutex.go:149 +0x170
+        internal/sync.(*Mutex).Lock(...)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/internal/sync/mutex.go:70
+        sync.(*Mutex).Lock(...)
+        	/opt/homebrew/Cellar/go/1.26.5/libexec/src/sync/mutex.go:46
+        github.com/nguyenvanduocit/go-xstate/xstate.(*sysLock).lock(0x61136d896000, 0x61136d896000)
+        	/Users/firegroup/projects/go-xstate/xstate/sync.go:104 +0x1b8
+        github.com/nguyenvanduocit/go-xstate/xstate.(*ActorSystem).lock(...)
+        	/Users/firegroup/projects/go-xstate/xstate/system.go:131
+        github.com/nguyenvanduocit/go-xstate/xstate.(*CallbackLogic).startAny.func1({0x1006f03c0, 0x61136d900000})
+        	/Users/firegroup/projects/go-xstate/xstate/callback_actor.go:66 +0x54
+        github.com/nguyenvanduocit/go-xstate/examples/stopwatch.Machine.Ticks.func1.1()
+        	/Users/firegroup/projects/go-xstate/examples/stopwatch/machine.go:30 +0x84
+        created by github.com/nguyenvanduocit/go-xstate/examples/stopwatch.Machine.Ticks.func1 in goroutine 6
+        	/Users/firegroup/projects/go-xstate/examples/stopwatch/machine.go:25 +0xf4
+FAIL
+FAIL	github.com/nguyenvanduocit/go-xstate/examples/stopwatch	1.939s
+--- FAIL: TestReviewMoveAliasDoesNotDeleteSource (0.00s)
+    review_symlink_test.go:10: move err=rename /var/folders/gv/3wrq6lbs1y30kzkskcntzcm40000gn/T/TestReviewMoveAliasDoesNotDeleteSource2900541866/001/alias/child /var/folders/gv/3wrq6lbs1y30kzkskcntzcm40000gn/T/TestReviewMoveAliasDoesNotDeleteSource2900541866/001/real: no such file or directory, source destroyed: stat /var/folders/gv/3wrq6lbs1y30kzkskcntzcm40000gn/T/TestReviewMoveAliasDoesNotDeleteSource2900541866/001/real/child/movie.mp4: no such file or directory
+FAIL
+FAIL	github.com/nguyenvanduocit/go-xstate/examples/workflow/mediascanner	0.506s
+--- FAIL: TestReviewSlowBodyDoesNotBlockOtherWorkflows (0.10s)
+    review_bodylock_test.go:17: GET blocked by unfinished request body
+FAIL
+FAIL	github.com/nguyenvanduocit/go-xstate/examples/server/workflow	1.413s
+FAIL
+</code></pre></details>
+</section><footer><p>All nine findings are addressed with permanent regression coverage. Final validation: <code>./scripts/test.sh</code> passed in both modules on 6 October 2026. Changes remain in the workspace for review.</p></footer></main></body></html>

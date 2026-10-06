@@ -1,0 +1,865 @@
+{
+  "name": "friends-children",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      },
+      "actors": {}
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEW_FRIEND.CHANGE",
+          "name": "Dana"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "Dana",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      },
+      "actors": {}
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": "Dana"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dana",
+            "name": "Dana"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        },
+        "to": 0
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "prevName": "Dana",
+            "name": "Dana"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "Dani"
+        },
+        "to": 0
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "prevName": "Dana",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SAVE"
+        },
+        "to": 0
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "saving",
+          "context": {
+            "prevName": "Dana",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "form",
+            "saving"
+          ],
+          "children": [
+            "0.friend.saving"
+          ]
+        }
+      }
+    },
+    {
+      "step": {
+        "wait": 1100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        },
+        "to": 0
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "Dee"
+        },
+        "to": 0
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dee"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CANCEL"
+        },
+        "to": 0
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIENDS.ADD",
+          "name": "x"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "",
+            "name": ""
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        },
+        "to": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "prevName": "",
+            "name": ""
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SET_NAME",
+          "value": "Eve"
+        },
+        "to": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "prevName": "",
+            "name": "Eve"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SAVE"
+        },
+        "to": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            },
+            {
+              "xstate$$type": 1,
+              "id": "friend-bta69r"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-bta69r",
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "active",
+          "value": "saving",
+          "context": {
+            "prevName": "",
+            "name": "Eve"
+          },
+          "output": null,
+          "tags": [
+            "form",
+            "saving"
+          ],
+          "children": [
+            "0.friend.saving"
+          ]
+        },
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 1
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "stopped",
+          "value": "saving",
+          "context": {
+            "prevName": "",
+            "name": "Eve"
+          },
+          "output": null,
+          "tags": [
+            "form",
+            "saving"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "wait": 1100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "stopped",
+          "value": "saving",
+          "context": {
+            "prevName": "",
+            "name": "Eve"
+          },
+          "output": null,
+          "tags": [
+            "form",
+            "saving"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "reading",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "read"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "EDIT"
+        },
+        "to": 0
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": [
+            {
+              "xstate$$type": 1,
+              "id": "friend-xkxayr"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "friend-xkxayr"
+        ]
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "stopped",
+          "value": "saving",
+          "context": {
+            "prevName": "",
+            "name": "Eve"
+          },
+          "output": null,
+          "tags": [
+            "form",
+            "saving"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "active",
+          "value": "editing",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FRIEND.REMOVE",
+          "index": 0
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "stopped",
+          "value": "saving",
+          "context": {
+            "prevName": "",
+            "name": "Eve"
+          },
+          "output": null,
+          "tags": [
+            "form",
+            "saving"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "stopped",
+          "value": "editing",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        }
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "newFriendName": "",
+          "friends": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      },
+      "actors": {
+        "friend-bta69r": {
+          "status": "stopped",
+          "value": "saving",
+          "context": {
+            "prevName": "",
+            "name": "Eve"
+          },
+          "output": null,
+          "tags": [
+            "form",
+            "saving"
+          ],
+          "children": []
+        },
+        "friend-xkxayr": {
+          "status": "stopped",
+          "value": "editing",
+          "context": {
+            "prevName": "Dani",
+            "name": "Dani"
+          },
+          "output": null,
+          "tags": [
+            "form"
+          ],
+          "children": []
+        }
+      }
+    }
+  ]
+}

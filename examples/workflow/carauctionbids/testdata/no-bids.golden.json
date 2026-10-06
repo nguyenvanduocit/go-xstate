@@ -1,0 +1,50 @@
+{
+  "name": "no-bids",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 2999
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "error",
+        "value": "StoreCarAuctionBid",
+        "context": {
+          "bids": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [],
+        "error": "reduce of empty array with no initial value"
+      }
+    }
+  ],
+  "clock": true
+}

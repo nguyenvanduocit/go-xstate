@@ -1,0 +1,120 @@
+{
+  "name": "workflow-provision-orders-other-error",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "laptop",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "Unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "laptop",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 25
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "laptop",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "error",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "laptop",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ],
+        "error": "Order service unavailable"
+      }
+    },
+    {
+      "step": {
+        "wait": 75
+      },
+      "snapshot": {
+        "status": "error",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "laptop",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ],
+        "error": "Order service unavailable"
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "order": {
+      "id": "o-1",
+      "item": "laptop",
+      "quantity": "10"
+    }
+  }
+}

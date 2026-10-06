@@ -1,0 +1,122 @@
+{
+  "name": "workflow-credit-check/review",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "CheckCredit",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.customercreditcheck.CheckCredit"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckCredit",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.customercreditcheck.CheckCredit"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "RejectApplication",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": {
+            "id": "customer123",
+            "score": 600,
+            "decision": "Review",
+            "reason": "Needs manual review"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.customercreditcheck.RejectApplication"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": {
+            "id": "customer123",
+            "score": 600,
+            "decision": "Review",
+            "reason": "Needs manual review"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true,
+  "input": {
+    "customer": {
+      "id": "customer123",
+      "name": "John Doe",
+      "SSN": 123456,
+      "yearlyIncome": 50000,
+      "address": "123 MyLane, MyCity, MyCountry",
+      "employer": "MyCompany"
+    }
+  }
+}

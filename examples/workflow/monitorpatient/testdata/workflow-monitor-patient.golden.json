@@ -1,0 +1,135 @@
+{
+  "name": "workflow-monitor-patient",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "MonitorVitals",
+        "context": {
+          "patientId": "patient1"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "org.monitor.highBodyTemp",
+          "source": "monitoringSource",
+          "id": "event1",
+          "time": "2024-01-01T00:00:00.000Z",
+          "patientId": "patient1",
+          "data": {
+            "value": "39.5"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MonitorVitals",
+        "context": {
+          "patientId": "patient1"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "org.monitor.highBloodPressure",
+          "source": "monitoringSource",
+          "id": "event1",
+          "time": "2024-01-01T00:00:00.000Z",
+          "patientId": "patient1",
+          "data": {
+            "value": "180/110"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MonitorVitals",
+        "context": {
+          "patientId": "patient1"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "org.monitor.highRespirationRate",
+          "source": "monitoringSource",
+          "id": "event1",
+          "time": "2024-01-01T00:00:00.000Z",
+          "patientId": "patient1",
+          "data": {
+            "value": "28"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MonitorVitals",
+        "context": {
+          "patientId": "patient1"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MonitorVitals",
+        "context": {
+          "patientId": "patient1"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "org.monitor.highBodyTemp",
+          "source": "monitoringSource",
+          "id": "event1",
+          "time": "2024-01-01T00:00:00.000Z",
+          "patientId": "patient1",
+          "data": {
+            "value": "40.1"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MonitorVitals",
+        "context": {
+          "patientId": "patient1"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "patientId": "patient1"
+  }
+}

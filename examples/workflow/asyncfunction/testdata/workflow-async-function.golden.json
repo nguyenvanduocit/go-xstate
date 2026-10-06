@@ -1,0 +1,56 @@
+{
+  "name": "workflow-async-function",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Send email",
+        "context": {
+          "customer": "david@example.com"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.async-function-invocation.Send email"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Send email",
+        "context": {
+          "customer": "david@example.com"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.async-function-invocation.Send email"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Email sent",
+        "context": {
+          "customer": "david@example.com"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "customer": "david@example.com"
+  }
+}

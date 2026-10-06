@@ -1,0 +1,303 @@
+{
+  "name": "express-workflow-server",
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/"
+      },
+      "response": {
+        "status": 200,
+        "text": "\n    <html>\n      <body style=\"font-family: sans-serif;\">\n        <h1>Express Workflow</h1>\n        <p>Start a new workflow instance:</p>\n        <pre>curl -X POST http://localhost:4242/workflows</pre>\n        <p>Send an event to a workflow instance:</p>\n        <pre>curl -X POST http://localhost:4242/workflows/:workflowId -d '{\"type\":\"TIMER\"}' -H \"Content-Type: application/json\" </pre>\n        <p>Get the current state of a workflow instance:</p>\n        <pre>curl -X GET http://localhost:4242/workflows/:workflowId</pre>\n      </body>\n    </html>\n  "
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "4fzzzx"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "green",
+          "historyValue": {},
+          "context": {
+            "cycles": 0
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "TIMER"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "OK"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "yellow",
+          "historyValue": {},
+          "context": {
+            "cycles": 0
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "TIMER"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "OK"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "red",
+          "historyValue": {},
+          "context": {
+            "cycles": 0
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "UNKNOWN"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "OK"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "red",
+          "historyValue": {},
+          "context": {
+            "cycles": 0
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "TIMER"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "OK"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "green",
+          "historyValue": {},
+          "context": {
+            "cycles": 1
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/4fzzzx",
+        "body": {
+          "type": "TIMER",
+          "extra": 1
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "OK"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "yellow",
+          "historyValue": {},
+          "context": {
+            "cycles": 1
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "workflowId": "zk0000"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/zk0000"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "green",
+          "historyValue": {},
+          "context": {
+            "cycles": 0
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/zk0000",
+        "body": {
+          "type": "TIMER"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "OK"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/zk0000"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "yellow",
+          "historyValue": {},
+          "context": {
+            "cycles": 0
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/4fzzzx"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "status": "active",
+          "value": "yellow",
+          "historyValue": {},
+          "context": {
+            "cycles": 1
+          },
+          "children": {}
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/workflows/missing"
+      },
+      "response": {
+        "status": 404,
+        "text": "Actor not found"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "path": "/workflows/missing",
+        "body": {
+          "type": "TIMER"
+        }
+      },
+      "response": {
+        "status": 404,
+        "text": "Actor not found"
+      }
+    }
+  ]
+}

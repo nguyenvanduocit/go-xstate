@@ -1,0 +1,85 @@
+{
+  "name": "error",
+  "input": {
+    "orders": [
+      {
+        "id": "123",
+        "item": "laptop",
+        "quantity": "10"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrdersState",
+        "context": {
+          "orders": [
+            {
+              "id": "123",
+              "item": "laptop",
+              "quantity": "10"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.sendcloudeventonprovision.ProvisionOrdersState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "error",
+        "value": "ProvisionOrdersState",
+        "context": {
+          "orders": [
+            {
+              "id": "123",
+              "item": "laptop",
+              "quantity": "10"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.sendcloudeventonprovision.ProvisionOrdersState"
+        ],
+        "error": "provision failed"
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ignored"
+        }
+      },
+      "snapshot": {
+        "status": "error",
+        "value": "ProvisionOrdersState",
+        "context": {
+          "orders": [
+            {
+              "id": "123",
+              "item": "laptop",
+              "quantity": "10"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.sendcloudeventonprovision.ProvisionOrdersState"
+        ],
+        "error": "provision failed"
+      }
+    }
+  ]
+}

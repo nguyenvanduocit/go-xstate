@@ -1,0 +1,602 @@
+{
+  "name": "7guis-2-temperature-vue",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "100"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 100,
+          "fahrenheit": 212
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "-40"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": -40,
+          "fahrenheit": -40
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "36.6"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 36.6,
+          "fahrenheit": 98
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "2.5"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 2.5,
+          "fahrenheit": 37
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "-37.5"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": -37.5,
+          "fahrenheit": -35
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "1e2"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 100,
+          "fahrenheit": 212
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": " 12 "
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 12,
+          "fahrenheit": 54
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "0x10"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 16,
+          "fahrenheit": 61
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "0b11"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 3,
+          "fahrenheit": 37
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "0o17"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 15,
+          "fahrenheit": 59
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": ".5"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 0.5,
+          "fahrenheit": 33
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "5."
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 5,
+          "fahrenheit": 41
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "+7"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 7,
+          "fahrenheit": 45
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": " "
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "abc"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "1_0"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "1e"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "-0x10"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "Infinity"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": null,
+          "fahrenheit": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeC",
+          "value": "-0"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 0,
+          "fahrenheit": 32
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "212"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 100,
+          "fahrenheit": 212
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "-40"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": -40,
+          "fahrenheit": -40
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "98.6"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 37,
+          "fahrenheit": 98.6
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "-39.1"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": -39,
+          "fahrenheit": -39.1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": ".5"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": -17,
+          "fahrenheit": 0.5
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "\t32\n"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 0,
+          "fahrenheit": 32
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "abc"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 0,
+          "fahrenheit": 32
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "-Infinity"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": null,
+          "fahrenheit": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "changeF",
+          "value": "0x20"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 0,
+          "fahrenheit": 32
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ready",
+        "context": {
+          "celsius": 0,
+          "fahrenheit": 32
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

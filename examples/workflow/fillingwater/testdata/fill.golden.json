@@ -1,0 +1,98 @@
+{
+  "name": "workflow-filling-water-fill",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "AddWater",
+        "context": {
+          "counts": {
+            "current": 0,
+            "max": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 499
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "AddWater",
+        "context": {
+          "counts": {
+            "current": 0,
+            "max": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "AddWater",
+        "context": {
+          "counts": {
+            "current": 1,
+            "max": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 500
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "GlassFull",
+        "context": {
+          "counts": {
+            "current": 2,
+            "max": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 500
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "GlassFull",
+        "context": {
+          "counts": {
+            "current": 2,
+            "max": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true,
+  "input": {
+    "current": 0,
+    "max": 2
+  }
+}

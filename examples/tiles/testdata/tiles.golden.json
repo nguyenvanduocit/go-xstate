@@ -1,0 +1,2078 @@
+{
+  "name": "tiles",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "start",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "start",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "start",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "start",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "move.canceled"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "start",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 1,
+            "x": 1,
+            "y": 0
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "start",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "shuffle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "shuffle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 2,
+            "x": 2,
+            "y": 0
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "move.canceled"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "shuffle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 6,
+            "x": 2,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 10,
+            "x": 2,
+            "y": 2
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 10,
+            "x": 2,
+            "y": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 10,
+            "x": 2,
+            "y": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 10,
+            "x": 2,
+            "y": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 7,
+            "x": 3,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 7,
+            "x": 3,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 7,
+            "x": 3,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 7,
+            "x": 3,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 13,
+            "x": 1,
+            "y": 3
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 13,
+            "x": 1,
+            "y": 3
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 13,
+            "x": 1,
+            "y": 3
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 13,
+            "x": 1,
+            "y": 3
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 6,
+            "x": 2,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 6,
+            "x": 2,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 9,
+            "x": 1,
+            "y": 2
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 9,
+            "x": 1,
+            "y": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "move.canceled"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 6,
+            "x": 2,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 6,
+            "x": 2,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            6,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            6,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 9,
+            "x": 1,
+            "y": 2
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            6,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 9,
+            "x": 1,
+            "y": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            9,
+            5,
+            7,
+            8,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            9,
+            5,
+            7,
+            8,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 9,
+            "x": 1,
+            "y": 2
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            9,
+            5,
+            7,
+            8,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 9,
+            "x": 1,
+            "y": 2
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            6,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            6,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 6,
+            "x": 2,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            6,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          },
+          "hovered": {
+            "index": 6,
+            "x": 2,
+            "y": 1
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 1,
+            "x": 1,
+            "y": 0
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 1,
+            "x": 1,
+            "y": 0
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.hover",
+          "tile": {
+            "index": 0,
+            "x": 0,
+            "y": 0
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selected"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected": {
+            "index": 1,
+            "x": 1,
+            "y": 0
+          },
+          "hovered": {
+            "index": 0,
+            "x": 0,
+            "y": 0
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "gameOver",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.select",
+          "tile": {
+            "index": 5,
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "gameOver",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "tile.move"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "gameOver",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "move.canceled"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "gameOver",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "shuffle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "gameOver",
+        "context": {
+          "tiles": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "shuffle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "playing": "selecting"
+        },
+        "context": {
+          "tiles": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

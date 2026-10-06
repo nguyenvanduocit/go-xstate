@@ -1,0 +1,69 @@
+{
+  "name": "persisted-donut-maker-sessions",
+  "sessions": [
+    {
+      "input": [
+        "NEXT",
+        "NEXT",
+        "MIXED_DRY",
+        "BOGUS"
+      ],
+      "stdout": "No persisted state found.\nCurrent state: \u001b[1m\"ingredients\"\u001b[0m\n Next events: \n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m{\"directions\":\"makeDough\"}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m{\"directions\":{\"mix\":{\"mixDry\":\"mixing\",\"mixWet\":\"mixing\"}}}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mxstate.done.state.donut.directions.mix\u001b[0m\n  \u001b[1mMIXED_DRY\u001b[0m\n  \u001b[1mMIXED_WET\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m{\"directions\":{\"mix\":{\"mixDry\":\"mixed\",\"mixWet\":\"mixing\"}}}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mxstate.done.state.donut.directions.mix\u001b[0m\n  \u001b[1mMIXED_WET\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m{\"directions\":{\"mix\":{\"mixDry\":\"mixed\",\"mixWet\":\"mixing\"}}}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mxstate.done.state.donut.directions.mix\u001b[0m\n  \u001b[1mMIXED_WET\u001b[0m \nEnter the next event to send:\n",
+      "persisted": {
+        "status": "active",
+        "value": {
+          "directions": {
+            "mix": {
+              "mixDry": "mixed",
+              "mixWet": "mixing"
+            }
+          }
+        },
+        "historyValue": {},
+        "context": {},
+        "children": {}
+      }
+    },
+    {
+      "input": [
+        "MIXED_WET",
+        "NEXT",
+        "NEXT",
+        "NEXT",
+        "NEXT",
+        "ANOTHER_DONUT",
+        "NEXT"
+      ],
+      "stdout": "Current state: \u001b[1m{\"directions\":{\"mix\":{\"mixDry\":\"mixed\",\"mixWet\":\"mixing\"}}}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mxstate.done.state.donut.directions.mix\u001b[0m\n  \u001b[1mMIXED_WET\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m\"fry\"\u001b[0m\n Next events: \n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m\"flip\"\u001b[0m\n Next events: \n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m\"dry\"\u001b[0m\n Next events: \n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m\"glaze\"\u001b[0m\n Next events: \n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m\"serve\"\u001b[0m\n Next events: \n  \u001b[1mANOTHER_DONUT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m\"ingredients\"\u001b[0m\n Next events: \n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m{\"directions\":\"makeDough\"}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\n",
+      "persisted": {
+        "status": "active",
+        "value": {
+          "directions": "makeDough"
+        },
+        "historyValue": {},
+        "context": {},
+        "children": {}
+      }
+    },
+    {
+      "input": [
+        "NEXT"
+      ],
+      "stdout": "Current state: \u001b[1m{\"directions\":\"makeDough\"}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mNEXT\u001b[0m \nEnter the next event to send:\nCurrent state: \u001b[1m{\"directions\":{\"mix\":{\"mixDry\":\"mixing\",\"mixWet\":\"mixing\"}}}\u001b[0m\n Next events: \n  \u001b[1mxstate.done.state.donut.directions\u001b[0m\n  \u001b[1mxstate.done.state.donut.directions.mix\u001b[0m\n  \u001b[1mMIXED_DRY\u001b[0m\n  \u001b[1mMIXED_WET\u001b[0m \nEnter the next event to send:\n",
+      "persisted": {
+        "status": "active",
+        "value": {
+          "directions": {
+            "mix": {
+              "mixDry": "mixing",
+              "mixWet": "mixing"
+            }
+          }
+        },
+        "historyValue": {},
+        "context": {},
+        "children": {}
+      }
+    }
+  ]
+}

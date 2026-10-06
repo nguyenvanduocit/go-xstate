@@ -1,0 +1,70 @@
+Received event {
+  type: "xstate.init",
+  input: undefined,
+}
+{
+  bids: [],
+}
+Received event {
+  type: "CarBidEvent",
+  bid: {
+    carid: "car123",
+    amount: 3000,
+    bidder: {
+      id: "xyz",
+      firstName: "John",
+      lastName: "Wayne",
+    },
+  },
+}
+{
+  bids: [
+    {
+      carid: "car123",
+      amount: 3000,
+      bidder: [Object ...],
+    }
+  ],
+}
+Received event {
+  type: "CarBidEvent",
+  bid: {
+    carid: "car123",
+    amount: 4000,
+    bidder: {
+      id: "abc",
+      firstName: "Jane",
+      lastName: "Doe",
+    },
+  },
+}
+{
+  bids: [
+    {
+      carid: "car123",
+      amount: 3000,
+      bidder: [Object ...],
+    }, {
+      carid: "car123",
+      amount: 4000,
+      bidder: [Object ...],
+    }
+  ],
+}
+Received event {
+  type: "xstate.after.BiddingDelay.handleCarAuctionBid.StoreCarAuctionBid",
+}
+{
+  bids: [
+    {
+      carid: "car123",
+      amount: 3000,
+      bidder: [Object ...],
+    }, {
+      carid: "car123",
+      amount: 4000,
+      bidder: [Object ...],
+    }
+  ],
+}
+workflow completed undefined

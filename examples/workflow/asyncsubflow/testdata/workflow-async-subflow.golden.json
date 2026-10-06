@@ -1,0 +1,94 @@
+{
+  "name": "workflow-async-subflow",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Onboard",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.async-function-invocation.Onboard"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Onboard",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.async-function-invocation.Onboard"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 20
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Onboard",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.async-function-invocation.Onboard"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Onboard",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.async-function-invocation.Onboard"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 60
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Onboarded",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Onboarded",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}

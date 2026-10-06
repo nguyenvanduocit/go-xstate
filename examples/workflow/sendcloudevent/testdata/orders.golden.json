@@ -1,0 +1,119 @@
+{
+  "name": "orders",
+  "input": {
+    "orders": [
+      {
+        "id": "123",
+        "item": "laptop",
+        "quantity": "10"
+      },
+      {
+        "id": "456",
+        "item": "desktop",
+        "quantity": "4"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrdersState",
+        "context": {
+          "orders": [
+            {
+              "id": "123",
+              "item": "laptop",
+              "quantity": "10"
+            },
+            {
+              "id": "456",
+              "item": "desktop",
+              "quantity": "4"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.sendcloudeventonprovision.ProvisionOrdersState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "orders": [
+            {
+              "id": "123",
+              "item": "laptop",
+              "quantity": "10"
+            },
+            {
+              "id": "456",
+              "item": "desktop",
+              "quantity": "4"
+            }
+          ],
+          "provisionedOrders": [
+            {
+              "id": "123",
+              "outcome": "SUCCESS"
+            },
+            {
+              "id": "456",
+              "outcome": "SUCCESS"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ignored"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "orders": [
+            {
+              "id": "123",
+              "item": "laptop",
+              "quantity": "10"
+            },
+            {
+              "id": "456",
+              "item": "desktop",
+              "quantity": "4"
+            }
+          ],
+          "provisionedOrders": [
+            {
+              "id": "123",
+              "outcome": "SUCCESS"
+            },
+            {
+              "id": "456",
+              "outcome": "SUCCESS"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

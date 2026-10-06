@@ -1,0 +1,118 @@
+{
+  "name": "workflow-provision-orders-missing-item",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "Unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 25
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrder",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.ProvisionOrder"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "Exception": "MissingItem"
+        },
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.provisionorders.Exception.MissingItem"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 75
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "order": {
+            "id": "o-1",
+            "item": "",
+            "quantity": "10"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "order": {
+      "id": "o-1",
+      "item": "",
+      "quantity": "10"
+    }
+  }
+}

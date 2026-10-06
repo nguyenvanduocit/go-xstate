@@ -1,0 +1,423 @@
+{
+  "name": "7guis-flight-booker-react/flight-booker",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_RETURN_DATE",
+          "value": "2024-03-20"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_RETURN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_DEPART_DATE",
+          "value": "2024-03-09"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-09",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_DEPART"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-09",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_DEPART_DATE",
+          "value": "2024-03-12"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_TRIP_TYPE"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_DEPART"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_RETURN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_RETURN_DATE",
+          "value": "2024-03-12"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-12"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_RETURN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-12"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_RETURN_DATE",
+          "value": "2024-03-15"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_DEPART_DATE",
+          "value": "2024-03-01"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-01",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_RETURN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-01",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_TRIP_TYPE"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-01",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_TRIP_TYPE"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-01",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_DEPART_DATE",
+          "value": "2024-03-12"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "roundTrip"
+        },
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_RETURN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "booking",
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.flightBookerMachine.booking"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_DEPART_DATE",
+          "value": "2024-03-13"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "booking",
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.flightBookerMachine.booking"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 300
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "booked",
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_TRIP_TYPE"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "booked",
+        "context": {
+          "departDate": "2024-03-12",
+          "returnDate": "2024-03-15"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

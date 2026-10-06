@@ -1,0 +1,106 @@
+{
+  "name": "workflow-monitor-job/failed",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "SubmitJob",
+        "context": {
+          "job": {
+            "name": "job1"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.SubmitJob"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WaitForCompletion",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 5000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "GetJobStatus",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.GetJobStatus"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "JobFailed",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123",
+          "jobStatus": "FAILED"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.JobFailed"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123",
+          "jobStatus": "FAILED"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true,
+  "input": {
+    "job": {
+      "name": "job1"
+    }
+  }
+}

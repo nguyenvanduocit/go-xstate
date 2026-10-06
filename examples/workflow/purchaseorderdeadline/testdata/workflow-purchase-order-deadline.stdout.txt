@@ -1,0 +1,6 @@
+logNewOrderCreated
+logOrderConfirmed
+Starting CancelOrder
+Completed CancelOrder
+logOrderCancelled
+workflow completed undefined

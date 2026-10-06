@@ -1,0 +1,100 @@
+{
+  "name": "onboarding",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Welcome",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.onboarding.Welcome"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Welcome",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.onboarding.Welcome"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 20
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Welcome",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.onboarding.Welcome"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Personalize",
+        "context": {
+          "name": "Ada"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.onboarding.Personalize"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 60
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Completed",
+        "context": {
+          "name": "Ada"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Completed",
+        "context": {
+          "name": "Ada"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}

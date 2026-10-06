@@ -1,0 +1,357 @@
+{
+  "name": "7guis-temperature-react",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": "100"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "100",
+          "tempF": 212
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "",
+          "tempF": ""
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": "-40"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "-40",
+          "tempF": -40
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": "36.6"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "36.6",
+          "tempF": 97.88000000000001
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": "1e2"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "1e2",
+          "tempF": 212
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": " 12 "
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": " 12 ",
+          "tempF": 53.6
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": "0x10"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "0x10",
+          "tempF": 60.8
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": " "
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": " ",
+          "tempF": 32
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": "abc"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "abc",
+          "tempF": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CELSIUS",
+          "value": "Infinity"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "Infinity",
+          "tempF": null
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FAHRENHEIT",
+          "value": "212"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": 100,
+          "tempF": "212"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FAHRENHEIT",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": "",
+          "tempF": ""
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FAHRENHEIT",
+          "value": "-40"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": -40,
+          "tempF": "-40"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FAHRENHEIT",
+          "value": "98.6"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": 37,
+          "tempF": "98.6"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FAHRENHEIT",
+          "value": ".5"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": -17.5,
+          "tempF": ".5"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FAHRENHEIT",
+          "value": "abc"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": null,
+          "tempF": "abc"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "FAHRENHEIT",
+          "value": "-Infinity"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": null,
+          "tempF": "-Infinity"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "tempC": null,
+          "tempF": "-Infinity"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

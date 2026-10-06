@@ -1,0 +1,1046 @@
+{
+  "name": "todomvc-react/todos",
+  "clock": false,
+  "input": null,
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.change",
+          "value": "Buy milk"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "Buy milk",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.change",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": "   "
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": "﻿"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.change",
+          "value": "typing"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "typing",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": "Buy milk"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy milk",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": " Walk the dog "
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy milk",
+              "completed": false
+            },
+            {
+              "id": "bta69r",
+              "title": " Walk the dog ",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy milk",
+              "completed": false
+            },
+            {
+              "id": "bta69r",
+              "title": " Walk the dog ",
+              "completed": false
+            },
+            {
+              "id": "a4v5h4",
+              "title": "",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.commit",
+          "todo": {
+            "id": "xkxayr",
+            "title": "Buy oat milk",
+            "completed": false
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": false
+            },
+            {
+              "id": "bta69r",
+              "title": " Walk the dog ",
+              "completed": false
+            },
+            {
+              "id": "a4v5h4",
+              "title": "",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.commit",
+          "todo": {
+            "id": "nope",
+            "title": "Ghost",
+            "completed": false
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": false
+            },
+            {
+              "id": "bta69r",
+              "title": " Walk the dog ",
+              "completed": false
+            },
+            {
+              "id": "a4v5h4",
+              "title": "",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.commit",
+          "todo": {
+            "id": "bta69r",
+            "title": "   ",
+            "completed": false
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": false
+            },
+            {
+              "id": "a4v5h4",
+              "title": "",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.commit",
+          "todo": {
+            "id": "a4v5h4",
+            "title": "﻿",
+            "completed": false
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.mark",
+          "id": "1",
+          "mark": "completed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": true
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.mark",
+          "id": "xkxayr",
+          "mark": "completed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": true
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.mark",
+          "id": "nope",
+          "mark": "completed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": true
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.mark",
+          "id": "1",
+          "mark": "active"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "filter.change",
+          "filter": "active"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "active"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "filter.change",
+          "filter": "completed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "completed"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "filter.change",
+          "filter": "bogus"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "bogus"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "filter.change",
+          "filter": "all"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.markAll",
+          "mark": "completed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": true
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.markAll",
+          "mark": "active"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.mark",
+          "id": "xkxayr",
+          "mark": "completed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "xkxayr",
+              "title": "Buy oat milk",
+              "completed": true
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todos.clearCompleted"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todos.clearCompleted"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": "Fourth"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": false
+            },
+            {
+              "id": "tcp7oc",
+              "title": "Fourth",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.delete",
+          "id": "1"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "tcp7oc",
+              "title": "Fourth",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.delete",
+          "id": "nope"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "tcp7oc",
+              "title": "Fourth",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.delete",
+          "id": "tcp7oc"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todo.markAll",
+          "mark": "completed"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "todos.clearCompleted"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "newTodo.commit",
+          "value": "Fifth"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "5j23v",
+              "title": "Fifth",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "5j23v",
+              "title": "Fifth",
+              "completed": false
+            }
+          ],
+          "filter": "all"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

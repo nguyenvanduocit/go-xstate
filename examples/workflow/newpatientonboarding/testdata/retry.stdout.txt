@@ -1,0 +1,17 @@
+Starting StoreNewPatientInfo {
+  name: "John Doe",
+  condition: "Broken Arm",
+}
+Retrying... {
+  error: {
+    type: "ServiceNotAvailable",
+  },
+  delay: 3000,
+  attempt: 1,
+}
+Completed StoreNewPatientInfo
+Starting AssignDoctor
+Completed AssignDoctor
+Starting ScheduleAppt
+Completed ScheduleAppt
+workflow completed undefined

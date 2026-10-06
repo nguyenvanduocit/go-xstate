@@ -1,0 +1,98 @@
+Received event {
+  type: "xstate.init",
+  input: {
+    customer: {
+      id: "customer123",
+      name: "John Doe",
+      SSN: 123456,
+      yearlyIncome: 50000,
+      address: "123 MyLane, MyCity, MyCountry",
+      employer: "MyCompany",
+    },
+  },
+}
+Received event {
+  type: "xstate.init",
+  input: {
+    customer: {
+      id: "customer123",
+      name: "John Doe",
+      SSN: 123456,
+      yearlyIncome: 50000,
+      address: "123 MyLane, MyCity, MyCountry",
+      employer: "MyCompany",
+    },
+  },
+}
+calling credit check microservice {
+  customer: {
+    id: "customer123",
+    name: "John Doe",
+    SSN: 123456,
+    yearlyIncome: 50000,
+    address: "123 MyLane, MyCity, MyCountry",
+    employer: "MyCompany",
+  },
+}
+Received event {
+  type: "xstate.promise.resolve",
+  data: {
+    id: "customer123",
+    score: 700,
+    decision: "Approved",
+    reason: "Good credit score",
+  },
+}
+Received event {
+  type: "xstate.done.actor.0.customercreditcheck.CheckCredit",
+  output: {
+    id: "customer123",
+    score: 700,
+    decision: "Approved",
+    reason: "Good credit score",
+  },
+  actorId: "0.customercreditcheck.CheckCredit",
+}
+Received event {
+  type: "xstate.init",
+  input: {
+    customer: {
+      id: "customer123",
+      name: "John Doe",
+      SSN: 123456,
+      yearlyIncome: 50000,
+      address: "123 MyLane, MyCity, MyCountry",
+      employer: "MyCompany",
+    },
+  },
+}
+starting application workflow {
+  customer: {
+    id: "customer123",
+    name: "John Doe",
+    SSN: 123456,
+    yearlyIncome: 50000,
+    address: "123 MyLane, MyCity, MyCountry",
+    employer: "MyCompany",
+  },
+}
+Received event {
+  type: "xstate.promise.resolve",
+  data: {
+    application: {
+      id: "application123",
+      status: "Approved",
+    },
+  },
+}
+Received event {
+  type: "xstate.done.actor.0.customercreditcheck.StartApplication",
+  output: {
+    application: {
+      id: "application123",
+      status: "Approved",
+    },
+  },
+  actorId: "0.customercreditcheck.StartApplication",
+}
+workflow completed undefined

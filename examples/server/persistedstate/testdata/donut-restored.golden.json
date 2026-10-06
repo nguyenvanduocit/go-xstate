@@ -1,0 +1,171 @@
+{
+  "name": "donut-restored",
+  "input": {
+    "status": "active",
+    "value": {
+      "directions": {
+        "mix": {
+          "mixDry": "mixed",
+          "mixWet": "mixing"
+        }
+      }
+    },
+    "historyValue": {},
+    "context": {},
+    "children": {}
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "directions": {
+            "mix": {
+              "mixDry": "mixed",
+              "mixWet": "mixing"
+            }
+          }
+        },
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "MIXED_DRY"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "directions": {
+            "mix": {
+              "mixDry": "mixed",
+              "mixWet": "mixing"
+            }
+          }
+        },
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEXT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "directions": {
+            "mix": {
+              "mixDry": "mixed",
+              "mixWet": "mixing"
+            }
+          }
+        },
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "MIXED_WET"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "fry",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEXT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "flip",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEXT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "dry",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEXT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "glaze",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "NEXT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "serve",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ANOTHER_DONUT"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ingredients",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

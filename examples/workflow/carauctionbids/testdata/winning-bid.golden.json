@@ -1,0 +1,223 @@
+{
+  "name": "winning-bid",
+  "cases": [
+    {
+      "name": "single bid",
+      "bids": [
+        {
+          "carid": "car123",
+          "amount": 3000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        }
+      ],
+      "output": {
+        "winningBid": {
+          "carid": "car123",
+          "amount": 3000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        }
+      }
+    },
+    {
+      "name": "increasing: later higher bid wins",
+      "bids": [
+        {
+          "carid": "car123",
+          "amount": 3000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        },
+        {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        }
+      ],
+      "output": {
+        "winningBid": {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        }
+      }
+    },
+    {
+      "name": "decreasing: earlier higher bid wins",
+      "bids": [
+        {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        },
+        {
+          "carid": "car123",
+          "amount": 3000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        }
+      ],
+      "output": {
+        "winningBid": {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        }
+      }
+    },
+    {
+      "name": "tie: the later bid wins",
+      "bids": [
+        {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        },
+        {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        }
+      ],
+      "output": {
+        "winningBid": {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        }
+      }
+    },
+    {
+      "name": "highest in the middle",
+      "bids": [
+        {
+          "carid": "car123",
+          "amount": 3000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        },
+        {
+          "carid": "car123",
+          "amount": 5000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        },
+        {
+          "carid": "car123",
+          "amount": 4000,
+          "bidder": {
+            "id": "c",
+            "firstName": "c",
+            "lastName": "C"
+          }
+        }
+      ],
+      "output": {
+        "winningBid": {
+          "carid": "car123",
+          "amount": 5000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        }
+      }
+    },
+    {
+      "name": "tie of the maximum among three",
+      "bids": [
+        {
+          "carid": "car123",
+          "amount": 5000,
+          "bidder": {
+            "id": "a",
+            "firstName": "a",
+            "lastName": "A"
+          }
+        },
+        {
+          "carid": "car123",
+          "amount": 1000,
+          "bidder": {
+            "id": "b",
+            "firstName": "b",
+            "lastName": "B"
+          }
+        },
+        {
+          "carid": "car123",
+          "amount": 5000,
+          "bidder": {
+            "id": "c",
+            "firstName": "c",
+            "lastName": "C"
+          }
+        }
+      ],
+      "output": {
+        "winningBid": {
+          "carid": "car123",
+          "amount": 5000,
+          "bidder": {
+            "id": "c",
+            "firstName": "c",
+            "lastName": "C"
+          }
+        }
+      }
+    },
+    {
+      "name": "no bids: reduce without initial value throws",
+      "bids": [],
+      "error": "reduce of empty array with no initial value"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "name": "timeout",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVisaStatus",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 500
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVisaStatus",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 499
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVisaStatus",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleNoVisaDecision",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleNoVisaDecision"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "visaApprovedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleNoVisaDecision",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleNoVisaDecision"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "HandleNoVisaDecision",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.eventbasedswitchstate.HandleNoVisaDecision"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true
+}

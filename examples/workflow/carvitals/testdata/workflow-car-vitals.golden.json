@@ -1,0 +1,223 @@
+{
+  "name": "workflow-car-vitals",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "WhenCarIsOn",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarTurnedOffEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WhenCarIsOn",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "UnknownEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WhenCarIsOn",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarTurnedOnEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "DoCarVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkcarvitals.DoCarVitalChecks"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarTurnedOnEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "DoCarVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkcarvitals.DoCarVitalChecks"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckContinueVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 999
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckContinueVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "DoCarVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkcarvitals.DoCarVitalChecks"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "DoCarVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkcarvitals.DoCarVitalChecks"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarTurnedOffEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WhenCarIsOn",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WhenCarIsOn",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarTurnedOnEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "DoCarVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkcarvitals.DoCarVitalChecks"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckContinueVitalChecks",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CarTurnedOffEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WhenCarIsOn",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WhenCarIsOn",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true
+}

@@ -1,0 +1,10 @@
+Starting StoreNewPatientInfo {
+  name: "John Doe",
+  condition: "Broken Arm",
+}
+Completed StoreNewPatientInfo
+Starting AssignDoctor
+Completed AssignDoctor
+Starting ScheduleAppt
+Completed ScheduleAppt
+workflow completed undefined

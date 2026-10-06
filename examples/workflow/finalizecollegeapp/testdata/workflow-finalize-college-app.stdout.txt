@@ -1,0 +1,8 @@
+FinalizeApplication
+FinalizeApplication
+FinalizeApplication
+Starting to finalize application for 123
+FinalizingApplication
+Finalized application for 123
+Finalized
+workflow completed undefined

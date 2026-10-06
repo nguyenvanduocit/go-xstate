@@ -1,0 +1,91 @@
+{
+  "name": "toggle",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "inactive",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "toggle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "active",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "toggle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "inactive",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "toggle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "active",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "active",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "toggle"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "inactive",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

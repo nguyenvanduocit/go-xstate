@@ -1,0 +1,86 @@
+{
+  "name": "counter",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "count": 0
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "increment"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "count": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "increment"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "count": 2
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "decrement"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "count": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {},
+        "context": {
+          "count": 1
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "name": "workflow-event-greeting",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Waiting",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Waiting",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "greet",
+          "greet": {
+            "name": "Jenny"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Greet",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.event-greeting.Greet"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "greet",
+          "greet": {
+            "name": "Bob"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Greet",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.event-greeting.Greet"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 300
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Greet",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.event-greeting.Greet"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 1200
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Greeted",
+        "context": {
+          "greeting": "Hello, Jenny!"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "greet",
+          "greet": {
+            "name": "Ada"
+          }
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Greeted",
+        "context": {
+          "greeting": "Hello, Jenny!"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}

@@ -1,0 +1,257 @@
+{
+  "name": "score-error",
+  "clock": true,
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": "Entering Information"
+        },
+        "context": {
+          "SSN": "",
+          "FirstName": "",
+          "LastName": "",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "Submit",
+          "SSN": "555555555",
+          "lastName": "Bauman",
+          "firstName": "Gavin"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": "Verifying Credentials"
+        },
+        "context": {
+          "SSN": "",
+          "FirstName": "",
+          "LastName": "",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.multipleCreditCheck.creditCheck.Verifying Credentials"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 20
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": {
+            "CheckingCreditScores": {
+              "CheckingEquiGavin": "CheckingForExistingReport",
+              "CheckingGavUnion": "CheckingForExistingReport",
+              "CheckingGavperian": "CheckingForExistingReport"
+            }
+          }
+        },
+        "context": {
+          "SSN": "555555555",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "equiGavinDBActor",
+          "gavUnionDBActor",
+          "gavperianCheckActor"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 40
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": {
+            "CheckingCreditScores": {
+              "CheckingEquiGavin": "FetchingReport",
+              "CheckingGavUnion": "FetchingReport",
+              "CheckingGavperian": "FetchingReport"
+            }
+          }
+        },
+        "context": {
+          "SSN": "555555555",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "checkGavPerianActor",
+          "equiGavinFetchActor",
+          "gavUnionFetchActor"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": {
+            "CheckingCreditScores": {
+              "CheckingEquiGavin": "FetchingComplete",
+              "CheckingGavUnion": "FetchingReport",
+              "CheckingGavperian": "FetchingReport"
+            }
+          }
+        },
+        "context": {
+          "SSN": "555555555",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 555,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "checkGavPerianActor",
+          "gavUnionFetchActor"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": {
+            "CheckingCreditScores": {
+              "CheckingEquiGavin": "FetchingComplete",
+              "CheckingGavUnion": "FetchingComplete",
+              "CheckingGavperian": "FetchingReport"
+            }
+          }
+        },
+        "context": {
+          "SSN": "555555555",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 555,
+          "EquiGavinScore": 555,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "checkGavPerianActor"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": {
+            "DeterminingInterestRateOptions": "DeterminingMiddleScore"
+          }
+        },
+        "context": {
+          "SSN": "555555555",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 555,
+          "EquiGavinScore": 555,
+          "GavperianScore": 555,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scoreDeterminationActor"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 40
+      },
+      "snapshot": {
+        "status": "error",
+        "value": {
+          "creditCheck": {
+            "DeterminingInterestRateOptions": "DeterminingMiddleScore"
+          }
+        },
+        "context": {
+          "SSN": "555555555",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 555,
+          "EquiGavinScore": 555,
+          "GavperianScore": 555,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scoreDeterminationActor"
+        ],
+        "error": "score service unavailable"
+      }
+    }
+  ]
+}

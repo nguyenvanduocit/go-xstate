@@ -1,0 +1,101 @@
+{
+  "name": "deadline-start",
+  "clock": true,
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "StartNewOrder",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "OrderFinishedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StartNewOrder",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 14999
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StartNewOrder",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CancelOrder",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.order.CancelOrder"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderCancelled",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ShipmentSentEvent"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderCancelled",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 15000
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderCancelled",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

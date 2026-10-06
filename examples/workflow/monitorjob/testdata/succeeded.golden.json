@@ -1,0 +1,241 @@
+{
+  "name": "workflow-monitor-job/succeeded",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "SubmitJob",
+        "context": {
+          "job": {
+            "name": "job1"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.SubmitJob"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "SubmitJob",
+        "context": {
+          "job": {
+            "name": "job1"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.SubmitJob"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "SubmitJob",
+        "context": {
+          "job": {
+            "name": "job1"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.SubmitJob"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WaitForCompletion",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 4999
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WaitForCompletion",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "GetJobStatus",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.GetJobStatus"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "GetJobStatus",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.GetJobStatus"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WaitForCompletion",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 5000
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "GetJobStatus",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.GetJobStatus"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "JobSucceeded",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123",
+          "jobStatus": "SUCCEEDED"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.jobmonitoring.JobSucceeded"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123",
+          "jobStatus": "SUCCEEDED"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 5000
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "job": {
+            "name": "job1"
+          },
+          "jobuid": "123",
+          "jobStatus": "SUCCEEDED"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true,
+  "input": {
+    "job": {
+      "name": "job1"
+    }
+  }
+}

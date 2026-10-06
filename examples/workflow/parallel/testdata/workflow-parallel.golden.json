@@ -1,0 +1,117 @@
+{
+  "name": "workflow-parallel",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "ParallelExec": {
+            "ShortDelayBranch": "active",
+            "LongDelayBranch": "active"
+          }
+        },
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.parallel-execution.ParallelExec.LongDelayBranch.active",
+          "0.parallel-execution.ParallelExec.ShortDelayBranch.active"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "ParallelExec": {
+            "ShortDelayBranch": "active",
+            "LongDelayBranch": "active"
+          }
+        },
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.parallel-execution.ParallelExec.LongDelayBranch.active",
+          "0.parallel-execution.ParallelExec.ShortDelayBranch.active"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "ParallelExec": {
+            "ShortDelayBranch": "active",
+            "LongDelayBranch": "active"
+          }
+        },
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.parallel-execution.ParallelExec.LongDelayBranch.active",
+          "0.parallel-execution.ParallelExec.ShortDelayBranch.active"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "ParallelExec": {
+            "ShortDelayBranch": "done",
+            "LongDelayBranch": "active"
+          }
+        },
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.parallel-execution.ParallelExec.LongDelayBranch.active"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 250
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Success",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Success",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}

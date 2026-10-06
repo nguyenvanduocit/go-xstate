@@ -1,0 +1,32 @@
+{
+  "name": "workflow-hello",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "done",
+        "value": "Hello State",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Hello State",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}

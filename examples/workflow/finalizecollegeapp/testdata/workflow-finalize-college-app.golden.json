@@ -1,0 +1,187 @@
+{
+  "name": "workflow-finalize-college-app",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizeApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": false,
+          "satScoresReceived": false,
+          "recommendationLetterReceived": false
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizeApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": false,
+          "satScoresReceived": false,
+          "recommendationLetterReceived": false
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SATScoresReceived"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizeApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": false,
+          "satScoresReceived": true,
+          "recommendationLetterReceived": false
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "SATScoresReceived"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizeApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": false,
+          "satScoresReceived": true,
+          "recommendationLetterReceived": false
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ApplicationSubmitted"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizeApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": true,
+          "satScoresReceived": true,
+          "recommendationLetterReceived": false
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RecommendationLetterReceived"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizingApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": true,
+          "satScoresReceived": true,
+          "recommendationLetterReceived": true
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.finalizeCollegeApplication.FinalizingApplication"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizingApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": true,
+          "satScoresReceived": true,
+          "recommendationLetterReceived": true
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.finalizeCollegeApplication.FinalizingApplication"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "FinalizingApplication",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": true,
+          "satScoresReceived": true,
+          "recommendationLetterReceived": true
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.finalizeCollegeApplication.FinalizingApplication"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Finalized",
+        "context": {
+          "applicantId": "123",
+          "applicationSubmitted": true,
+          "satScoresReceived": true,
+          "recommendationLetterReceived": true
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "applicantId": "123"
+  }
+}

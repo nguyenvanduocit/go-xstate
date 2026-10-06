@@ -1,0 +1,177 @@
+{
+  "name": "workflow-credit-check/approved",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "CheckCredit",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.customercreditcheck.CheckCredit"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckCredit",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.customercreditcheck.CheckCredit"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckCredit",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.customercreditcheck.CheckCredit"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StartApplication",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": {
+            "id": "customer123",
+            "score": 700,
+            "decision": "Approved",
+            "reason": "Good credit score"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.customercreditcheck.StartApplication"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 120
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": {
+            "id": "customer123",
+            "score": 700,
+            "decision": "Approved",
+            "reason": "Good credit score"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 900000
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "customer": {
+            "id": "customer123",
+            "name": "John Doe",
+            "SSN": 123456,
+            "yearlyIncome": 50000,
+            "address": "123 MyLane, MyCity, MyCountry",
+            "employer": "MyCompany"
+          },
+          "creditCheck": {
+            "id": "customer123",
+            "score": 700,
+            "decision": "Approved",
+            "reason": "Good credit score"
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": true,
+  "input": {
+    "customer": {
+      "id": "customer123",
+      "name": "John Doe",
+      "SSN": 123456,
+      "yearlyIncome": 50000,
+      "address": "123 MyLane, MyCity, MyCountry",
+      "employer": "MyCompany"
+    }
+  }
+}

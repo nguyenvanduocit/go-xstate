@@ -1,0 +1,25 @@
+{"status":"active","value":"Pending","context":{"customer":null,"payment":null,"funds":null,"accountId":null},"output":null,"tags":[],"children":[]}
+Running checkfunds
+{"status":"active","value":"PaymentReceived","context":{"customer":{"name":"John Doe"},"payment":{"amount":100},"funds":{"available":true},"accountId":null},"output":null,"tags":[],"children":["0.paymentconfirmation.PaymentReceived"]}
+checkfunds done
+{
+  input: {
+    applicant: {
+      name: "John Doe",
+    },
+  },
+}
+Running sendSuccessEmail
+{"status":"active","value":"SendPaymentSuccess","context":{"customer":{"name":"John Doe"},"payment":{"amount":100},"funds":{"available":true},"accountId":null},"output":null,"tags":[],"children":["0.paymentconfirmation.SendPaymentSuccess"]}
+sendSuccessEmail done
+Received event {
+  type: "ConfirmationCompletedEvent",
+  payment: {
+    amount: 100,
+  },
+}
+Received event {
+  type: "xstate.done.actor.paymentconfirmation",
+  output: undefined,
+  actorId: "paymentconfirmation",
+}

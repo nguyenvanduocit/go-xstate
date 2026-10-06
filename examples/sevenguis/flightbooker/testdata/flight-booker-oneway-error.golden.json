@@ -1,0 +1,138 @@
+{
+  "name": "7guis-flight-booker-react/flight-booker-oneway-error",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_DEPART"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "booking",
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.flightBookerMachine.booking"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_DEPART_DATE",
+          "value": "2024-03-20"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "booking",
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.flightBookerMachine.booking"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "CHANGE_TRIP_TYPE"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "booking",
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.flightBookerMachine.booking"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 300
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "BOOK_DEPART"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "booking",
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.flightBookerMachine.booking"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 300
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "scheduling": "oneWay"
+        },
+        "context": {
+          "departDate": "2024-03-10",
+          "returnDate": "2024-03-11"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

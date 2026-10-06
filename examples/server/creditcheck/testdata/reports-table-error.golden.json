@@ -1,0 +1,148 @@
+{
+  "name": "reports-table-error",
+  "clock": true,
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": "Entering Information"
+        },
+        "context": {
+          "SSN": "",
+          "FirstName": "",
+          "LastName": "",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "Submit",
+          "SSN": "777777777",
+          "lastName": "Bauman",
+          "firstName": "Gavin"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": "Verifying Credentials"
+        },
+        "context": {
+          "SSN": "",
+          "FirstName": "",
+          "LastName": "",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.multipleCreditCheck.creditCheck.Verifying Credentials"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 20
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": {
+            "CheckingCreditScores": {
+              "CheckingEquiGavin": "CheckingForExistingReport",
+              "CheckingGavUnion": "CheckingForExistingReport",
+              "CheckingGavperian": "CheckingForExistingReport"
+            }
+          }
+        },
+        "context": {
+          "SSN": "777777777",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "equiGavinDBActor",
+          "gavUnionDBActor",
+          "gavperianCheckActor"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 40
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": "Entering Information"
+        },
+        "context": {
+          "SSN": "777777777",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "Failed to retrieve credit scores.",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": {
+          "creditCheck": "Entering Information"
+        },
+        "context": {
+          "SSN": "777777777",
+          "FirstName": "Gavin",
+          "LastName": "Bauman",
+          "GavUnionScore": 0,
+          "EquiGavinScore": 0,
+          "GavperianScore": 0,
+          "ErrorMessage": "Failed to retrieve credit scores.",
+          "MiddleScore": 0,
+          "InterestRateOptions": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

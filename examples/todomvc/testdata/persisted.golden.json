@@ -1,0 +1,473 @@
+{
+  "name": "todomvc-react/persisted",
+  "sessions": [
+    {
+      "restoredFrom": null,
+      "steps": [
+        {
+          "step": "start",
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "children": {}
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "newTodo.change",
+              "value": "Second"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "Second",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "Second",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "children": {}
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "newTodo.commit",
+              "value": "Second"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": false
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": false
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "children": {}
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "todo.mark",
+              "id": "1",
+              "mark": "completed"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": true
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": true
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "children": {}
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "filter.change",
+              "filter": "completed"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": true
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": true
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "children": {}
+          }
+        }
+      ]
+    },
+    {
+      "restoredFrom": {
+        "status": "active",
+        "value": {},
+        "historyValue": {},
+        "context": {
+          "todo": "",
+          "todos": [
+            {
+              "id": "1",
+              "title": "Learn state machines",
+              "completed": true
+            },
+            {
+              "id": "xkxayr",
+              "title": "Second",
+              "completed": false
+            }
+          ],
+          "filter": "completed"
+        },
+        "children": {}
+      },
+      "steps": [
+        {
+          "step": "start",
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": true
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "1",
+                  "title": "Learn state machines",
+                  "completed": true
+                },
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "children": {}
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "todos.clearCompleted"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "children": {}
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "newTodo.commit",
+              "value": "Third"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                },
+                {
+                  "id": "bta69r",
+                  "title": "Third",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                },
+                {
+                  "id": "bta69r",
+                  "title": "Third",
+                  "completed": false
+                }
+              ],
+              "filter": "completed"
+            },
+            "children": {}
+          }
+        },
+        {
+          "step": {
+            "send": {
+              "type": "filter.change",
+              "filter": "all"
+            }
+          },
+          "snapshot": {
+            "status": "active",
+            "value": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                },
+                {
+                  "id": "bta69r",
+                  "title": "Third",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "output": null,
+            "tags": [],
+            "children": []
+          },
+          "persisted": {
+            "status": "active",
+            "value": {},
+            "historyValue": {},
+            "context": {
+              "todo": "",
+              "todos": [
+                {
+                  "id": "xkxayr",
+                  "title": "Second",
+                  "completed": false
+                },
+                {
+                  "id": "bta69r",
+                  "title": "Third",
+                  "completed": false
+                }
+              ],
+              "filter": "all"
+            },
+            "children": {}
+          }
+        }
+      ]
+    }
+  ]
+}

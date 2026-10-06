@@ -1,0 +1,8 @@
+Starting submitJob {
+  name: "job1",
+}
+Starting checkJobStatus {
+  name: "123",
+}
+Starting reportJobSucceeded undefined
+workflow completed undefined

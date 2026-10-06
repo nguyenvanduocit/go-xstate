@@ -1,0 +1,472 @@
+{
+  "name": "workflow-media-scanner/partial-move",
+  "clock": true,
+  "input": {
+    "basePath": "/library",
+    "destinationPath": "/archive"
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "UNKNOWN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "START_SCAN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Scanning",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scanLibrary"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "START_SCAN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Scanning",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scanLibrary"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckingFilePermissions",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [
+            "/library/movie",
+            "/library/denied"
+          ],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "checkFilePermissions"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "EvaluatingFiles",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [
+            "/library/movie",
+            "/library/denied"
+          ],
+          "dirsToEvaluate": [
+            "/library/movie"
+          ],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [
+            "/library/denied"
+          ],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "evaluatingFiles"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "MovingFiles",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [
+            "/library/movie",
+            "/library/denied"
+          ],
+          "dirsToEvaluate": [
+            "/library/movie"
+          ],
+          "dirsToMove": [
+            "/library/movie/video.mkv"
+          ],
+          "filesToEmail": [],
+          "dirsToReport": [
+            "/library/denied"
+          ],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "moveFiles"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [
+            "/library/movie",
+            "/library/denied"
+          ],
+          "dirsToEvaluate": [
+            "/library/movie"
+          ],
+          "dirsToMove": [
+            "/library/movie/video.mkv"
+          ],
+          "filesToEmail": [],
+          "dirsToReport": [
+            "/library/denied"
+          ],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RESTART"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [
+            "/library/movie",
+            "/library/denied"
+          ],
+          "dirsToEvaluate": [
+            "/library/movie"
+          ],
+          "dirsToMove": [
+            "/library/movie/video.mkv"
+          ],
+          "filesToEmail": [],
+          "dirsToReport": [
+            "/library/denied"
+          ],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "START_SCAN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Scanning",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [
+            "/library/movie",
+            "/library/denied"
+          ],
+          "dirsToEvaluate": [
+            "/library/movie"
+          ],
+          "dirsToMove": [
+            "/library/movie/video.mkv"
+          ],
+          "filesToEmail": [],
+          "dirsToReport": [
+            "/library/denied"
+          ],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scanLibrary"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckingFilePermissions",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [
+            "/library/movie",
+            "/library/denied"
+          ],
+          "dirsToEvaluate": [
+            "/library/movie"
+          ],
+          "dirsToMove": [
+            "/library/movie/video.mkv"
+          ],
+          "filesToEmail": [],
+          "dirsToReport": [
+            "/library/denied"
+          ],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "checkFilePermissions"
+        ]
+      }
+    }
+  ]
+}

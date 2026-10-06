@@ -1,0 +1,54 @@
+{
+  "name": "workflow-greeting",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Greet",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.greeting.Greet"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 30
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Greet",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.greeting.Greet"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Greeted",
+        "context": {
+          "greeting": "Hello, Jenny!"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "person": {
+      "name": "Jenny"
+    }
+  }
+}

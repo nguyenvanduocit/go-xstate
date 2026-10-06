@@ -1,0 +1,57 @@
+{
+  "name": "empty",
+  "input": {
+    "orders": []
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "ProvisionOrdersState",
+        "context": {
+          "orders": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.sendcloudeventonprovision.ProvisionOrdersState"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "orders": [],
+          "provisionedOrders": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ignored"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "End",
+        "context": {
+          "orders": [],
+          "provisionedOrders": []
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

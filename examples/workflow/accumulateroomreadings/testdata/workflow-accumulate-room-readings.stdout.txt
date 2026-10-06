@@ -1,0 +1,10 @@
+Starting ProduceReport {
+  temperature: 20,
+  humidity: 50,
+}
+ProduceReport done
+Starting ProduceReport {
+  temperature: 10,
+  humidity: 30,
+}
+ProduceReport done

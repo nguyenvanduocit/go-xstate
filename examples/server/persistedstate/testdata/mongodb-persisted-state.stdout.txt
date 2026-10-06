@@ -1,0 +1,80 @@
+--- session 1 ---
+no persisted state found in db. starting from scratch.
+restored state:  null
+persisted state saved to db.  {"acknowledged":true,"matchedCount":0,"modifiedCount":0,"upsertedCount":1,"upsertedId":"doc-1"}
+Current state: [1m"ingredients"[0m
+ Next events: 
+  [1mNEXT[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m{"directions":"makeDough"}[0m
+ Next events: 
+  [1mxstate.done.state.donut.directions[0m
+  [1mNEXT[0m 
+Enter the next event to send:
+Current state: [1m{"directions":"makeDough"}[0m
+ Next events: 
+  [1mxstate.done.state.donut.directions[0m
+  [1mNEXT[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m{"directions":{"mix":{"mixDry":"mixing","mixWet":"mixing"}}}[0m
+ Next events: 
+  [1mxstate.done.state.donut.directions[0m
+  [1mxstate.done.state.donut.directions.mix[0m
+  [1mMIXED_DRY[0m
+  [1mMIXED_WET[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m{"directions":{"mix":{"mixDry":"mixed","mixWet":"mixing"}}}[0m
+ Next events: 
+  [1mxstate.done.state.donut.directions[0m
+  [1mxstate.done.state.donut.directions.mix[0m
+  [1mMIXED_WET[0m 
+Enter the next event to send:
+Current state: [1m{"directions":{"mix":{"mixDry":"mixed","mixWet":"mixing"}}}[0m
+ Next events: 
+  [1mxstate.done.state.donut.directions[0m
+  [1mxstate.done.state.donut.directions.mix[0m
+  [1mMIXED_WET[0m 
+Enter the next event to send:
+--- session 2 ---
+restored state:  {"_id":"doc-1","persistedState":{"children":{},"context":{},"error":null,"historyValue":{},"output":null,"status":"active","value":{"directions":{"mix":{"mixDry":"mixed","mixWet":"mixing"}}}}}
+Current state: [1m{"directions":{"mix":{"mixDry":"mixed","mixWet":"mixing"}}}[0m
+ Next events: 
+  [1mxstate.done.state.donut.directions[0m
+  [1mxstate.done.state.donut.directions.mix[0m
+  [1mMIXED_WET[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m"fry"[0m
+ Next events: 
+  [1mNEXT[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m"flip"[0m
+ Next events: 
+  [1mNEXT[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m"dry"[0m
+ Next events: 
+  [1mNEXT[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m"glaze"[0m
+ Next events: 
+  [1mNEXT[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m"serve"[0m
+ Next events: 
+  [1mANOTHER_DONUT[0m 
+Enter the next event to send:
+persisted state saved to db.  {"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null}
+Current state: [1m"ingredients"[0m
+ Next events: 
+  [1mNEXT[0m 
+Enter the next event to send:
+--- session 3 ---
+error details:  Error: connect ECONNREFUSED

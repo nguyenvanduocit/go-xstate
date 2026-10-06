@@ -1,0 +1,62 @@
+{
+  "name": "workflow-math-problem",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Solve",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.math-problem.Solve"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 20
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Solve",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.math-problem.Solve"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Solved",
+        "context": {
+          "results": [
+            "Solved 2+2",
+            "Solved 4-1",
+            "Solved 10x3",
+            "Solved 20/2"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false,
+  "input": {
+    "expressions": [
+      "2+2",
+      "4-1",
+      "10x3",
+      "20/2"
+    ]
+  }
+}

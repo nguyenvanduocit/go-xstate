@@ -1,0 +1,3 @@
+Executing callPulmonologist for patient: patient42
+Executing sendTylenolOrder for patient: patient42
+Executing callNurse for patient: patient42

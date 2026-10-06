@@ -1,0 +1,218 @@
+{
+  "name": "workflow-check-inbox/manual",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "messages": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reminder"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckInbox",
+        "context": {
+          "messages": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox",
+          "0.checkInbox.CheckInbox"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reminder"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckInbox",
+        "context": {
+          "messages": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox",
+          "0.checkInbox.CheckInbox"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 50
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckInbox",
+        "context": {
+          "messages": []
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox",
+          "0.checkInbox.CheckInbox"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "SendTextForHighPriority",
+        "context": {
+          "messages": [
+            {
+              "subject": "Hello",
+              "priority": "high"
+            },
+            {
+              "subject": "Hi",
+              "priority": "low"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox",
+          "0.checkInbox.SendTextForHighPriority"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reminder"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "SendTextForHighPriority",
+        "context": {
+          "messages": [
+            {
+              "subject": "Hello",
+              "priority": "high"
+            },
+            {
+              "subject": "Hi",
+              "priority": "low"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox",
+          "0.checkInbox.SendTextForHighPriority"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "messages": [
+            {
+              "subject": "Hello",
+              "priority": "high"
+            },
+            {
+              "subject": "Hi",
+              "priority": "low"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Idle",
+        "context": {
+          "messages": [
+            {
+              "subject": "Hello",
+              "priority": "high"
+            },
+            {
+              "subject": "Hi",
+              "priority": "low"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "reminder"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckInbox",
+        "context": {
+          "messages": [
+            {
+              "subject": "Hello",
+              "priority": "high"
+            },
+            {
+              "subject": "Hi",
+              "priority": "low"
+            }
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.checkInbox",
+          "0.checkInbox.CheckInbox"
+        ]
+      }
+    }
+  ],
+  "clock": false
+}

@@ -1,0 +1,5 @@
+solving 2+2
+solving 4-1
+solving 10x3
+solving 20/2
+workflow completed undefined

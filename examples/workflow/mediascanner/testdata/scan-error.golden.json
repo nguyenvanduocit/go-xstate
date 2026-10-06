@@ -1,0 +1,409 @@
+{
+  "name": "workflow-media-scanner/scan-error",
+  "clock": true,
+  "input": {
+    "basePath": "/library",
+    "destinationPath": "/archive"
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "UNKNOWN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "START_SCAN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Scanning",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scanLibrary"
+        ]
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "START_SCAN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Scanning",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scanLibrary"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ReportingErrors",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ReportingErrors",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ReportingErrors",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ReportingErrors",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "RESTART"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "idle",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "START_SCAN"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Scanning",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "scanLibrary"
+        ]
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "ReportingErrors",
+        "context": {
+          "basePath": "/library",
+          "destinationPath": "/archive",
+          "directoriesToCheck": [],
+          "dirsToEvaluate": [],
+          "dirsToMove": [],
+          "filesToEmail": [],
+          "dirsToReport": [],
+          "processedFiles": [],
+          "acceptedFileTypes": [
+            "mp4",
+            "mkv",
+            "avi",
+            "mov",
+            "m4v",
+            "mpg",
+            "mpeg",
+            "wmv",
+            "flv",
+            "ts",
+            "mts"
+          ]
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

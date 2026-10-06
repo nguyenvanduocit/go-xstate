@@ -1,0 +1,302 @@
+{
+  "name": "todomvc-react/todo",
+  "clock": false,
+  "input": {
+    "todo": {
+      "id": "1",
+      "title": "Learn state machines",
+      "completed": false
+    }
+  },
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "change",
+          "value": "ignored in reading"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "cancel"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "blur"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "change",
+          "value": "Learn XState"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn XState"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "change",
+          "value": "Learn XState v5"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn XState v5"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "cancel"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Learn state machines"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "change",
+          "value": "Kept"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Kept"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "blur"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Learn state machines",
+          "title": "Kept"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "edit"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Kept",
+          "title": "Kept"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "change",
+          "value": ""
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "editing",
+        "context": {
+          "initialTitle": "Kept",
+          "title": ""
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "cancel"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Kept",
+          "title": "Kept"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "unknown"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "reading",
+        "context": {
+          "initialTitle": "Kept",
+          "title": "Kept"
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

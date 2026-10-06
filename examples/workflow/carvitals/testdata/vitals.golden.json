@@ -1,0 +1,134 @@
+{
+  "name": "vitals",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVitals",
+        "context": {
+          "tirePressure": null,
+          "oilPressure": null,
+          "coolantLevel": null,
+          "battery": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.vitalscheck.CheckVitals",
+          "1.vitalscheck.CheckVitals",
+          "2.vitalscheck.CheckVitals",
+          "3.vitalscheck.CheckVitals"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 150
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVitals",
+        "context": {
+          "tirePressure": null,
+          "oilPressure": null,
+          "coolantLevel": {
+            "value": 90
+          },
+          "battery": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.vitalscheck.CheckVitals",
+          "1.vitalscheck.CheckVitals",
+          "2.vitalscheck.CheckVitals",
+          "3.vitalscheck.CheckVitals"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVitals",
+        "context": {
+          "tirePressure": {
+            "value": 32
+          },
+          "oilPressure": null,
+          "coolantLevel": {
+            "value": 90
+          },
+          "battery": null
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.vitalscheck.CheckVitals",
+          "1.vitalscheck.CheckVitals",
+          "2.vitalscheck.CheckVitals",
+          "3.vitalscheck.CheckVitals"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "CheckVitals",
+        "context": {
+          "tirePressure": {
+            "value": 32
+          },
+          "oilPressure": null,
+          "coolantLevel": {
+            "value": 90
+          },
+          "battery": {
+            "value": 12
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.vitalscheck.CheckVitals",
+          "1.vitalscheck.CheckVitals",
+          "2.vitalscheck.CheckVitals",
+          "3.vitalscheck.CheckVitals"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 100
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "VitalsChecked",
+        "context": {
+          "tirePressure": {
+            "value": 32
+          },
+          "oilPressure": {
+            "value": 45
+          },
+          "coolantLevel": {
+            "value": 90
+          },
+          "battery": {
+            "value": 12
+          }
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}

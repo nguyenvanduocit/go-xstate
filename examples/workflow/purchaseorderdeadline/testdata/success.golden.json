@@ -1,0 +1,131 @@
+{
+  "name": "success",
+  "clock": true,
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "StartNewOrder",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "OrderFinishedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "StartNewOrder",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "OrderCreatedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WaitForOrderConfirmation",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "OrderConfirmedEvent"
+        }
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "WaitOrderShipped",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ShipmentSentEvent"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderFinished",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 14999
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderFinished",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 1
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderFinished",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "send": {
+          "type": "ShipmentSentEvent"
+        }
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderFinished",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    },
+    {
+      "step": {
+        "advance": 15000
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "OrderFinished",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ]
+}

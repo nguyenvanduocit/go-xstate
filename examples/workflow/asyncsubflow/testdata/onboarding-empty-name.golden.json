@@ -1,0 +1,51 @@
+{
+  "name": "onboarding-empty-name",
+  "steps": [
+    {
+      "step": "start",
+      "snapshot": {
+        "status": "active",
+        "value": "Welcome",
+        "context": {},
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.onboarding.Welcome"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 70
+      },
+      "snapshot": {
+        "status": "active",
+        "value": "Personalize",
+        "context": {
+          "name": ""
+        },
+        "output": null,
+        "tags": [],
+        "children": [
+          "0.onboarding.Personalize"
+        ]
+      }
+    },
+    {
+      "step": {
+        "wait": 60
+      },
+      "snapshot": {
+        "status": "done",
+        "value": "Completed",
+        "context": {
+          "name": ""
+        },
+        "output": null,
+        "tags": [],
+        "children": []
+      }
+    }
+  ],
+  "clock": false
+}
