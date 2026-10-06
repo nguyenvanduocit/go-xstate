@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-06",
+  "games": 10,
+  "starting_position": "standard chess starting position, no preset moves",
+  "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "models": [
+    "cloudflare/clef",
+    "typesafe/jev-1.13"
+  ],
+  "white_games_per_model": 5,
+  "max_plies": 1000,
+  "match_timeout": "30m",
+  "request_timeout": "45s",
+  "execution": "sequential; alternate colors after each game",
+  "legal_move_choices": "all legal UCI moves, with SAN descriptions",
+  "state": "FEN, board, side to move, last eight SAN moves",
+  "retries": 0,
+  "fallback_moves": false,
+  "temperature_or_seed": "not specified",
+  "cost": "sum of accepted decision response usage.cost; logs round per-move and per-game costs to six decimals",
+  "code_commit": "83c76397962fa0ee7ac20f887aa3507ed6168e44"
+}

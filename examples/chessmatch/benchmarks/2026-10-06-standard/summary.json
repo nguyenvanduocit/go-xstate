@@ -1,0 +1,37 @@
+{
+  "games": 10,
+  "total_plies": 839,
+  "total_reported_cost_usd": 0.098732,
+  "unique_move_sequences": 8,
+  "duplicate_groups": [
+    [
+      "01-standard-pair-1-clef-white",
+      "03-standard-pair-2-clef-white",
+      "09-standard-pair-5-clef-white"
+    ]
+  ],
+  "models": {
+    "cloudflare/clef": {
+      "wins": 3,
+      "losses": 1,
+      "draws": 6,
+      "unfinished": 0,
+      "decisions": 421,
+      "median_latency_ms": 708,
+      "mean_latency_ms": 787.0,
+      "accepted_cost_usd_rounded": 0.082586,
+      "mean_cost_usd_rounded": 0.00019617
+    },
+    "typesafe/jev-1.13": {
+      "wins": 1,
+      "losses": 3,
+      "draws": 6,
+      "unfinished": 0,
+      "decisions": 418,
+      "median_latency_ms": 399.0,
+      "mean_latency_ms": 421.6,
+      "accepted_cost_usd_rounded": 0.016148,
+      "mean_cost_usd_rounded": 3.863e-05
+    }
+  }
+}

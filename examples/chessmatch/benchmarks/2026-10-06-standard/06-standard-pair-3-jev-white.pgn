@@ -1,0 +1,5 @@
+[White "typesafe/jev-1.13"]
+[Black "cloudflare/clef"]
+[Result "1-0"]
+
+1. e4 d5 2. exd5 Qxd5 3. Bb5+ Qxb5 4. Nc3 Qe5+ 5. Ne4 Qxe4+ 6. Ne2 Qxe2+ 7. Kxe2 Nf6 8. Kf1 e5 9. d4 exd4 10. Qxd4 Be7 11. Qxf6 Bxf6 12. Bf4 O-O 13. Bxc7 Nc6 14. Rd1 Bd7 15. Rxd7 Rfd8 16. Rxd8+ Rxd8 17. Bxd8 Bxd8 18. Ke2 Nd4+ 19. Kd3 Nb3 20. cxb3 Bb6 21. Rb1 Bxf2 22. Rg1 Bxg1 23. Kc4 b5+ 24. Kxb5 a6+ 25. Kxa6 Bxh2 26. Kb5 Be5 27. Kc6 Bxb2 28. Kd7 Bf6 29. b4 Be5 30. b5 Bd6 31. Kxd6 Kf8 32. b6 Kg8 33. b7 Kh8 34. b8=Q# 1-0

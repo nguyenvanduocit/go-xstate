@@ -1,0 +1,85 @@
+White: typesafe/jev-1.13
+Black: cloudflare/clef
+Limit: 1000 plies
+  1 white typesafe/jev-1.13      e4      e2e4 confidence=0.870 cost=$0.000042 latency=513ms
+  2 black cloudflare/clef        d5      d7d5 confidence=0.139 cost=$0.000219 latency=559ms
+  3 white typesafe/jev-1.13      exd5    e4d5 confidence=0.620 cost=$0.000055 latency=460ms
+  4 black cloudflare/clef        Qxd5    d8d5 confidence=0.434 cost=$0.000279 latency=748ms
+  5 white typesafe/jev-1.13      Bb5+    f1b5 confidence=0.260 cost=$0.000053 latency=368ms
+  6 black cloudflare/clef        Qxb5    d5b5 confidence=0.828 cost=$0.000137 latency=561ms
+  7 white typesafe/jev-1.13      Nc3     b1c3 confidence=0.170 cost=$0.000047 latency=387ms
+  8 black cloudflare/clef        Qe5+    b5e5 confidence=0.022 cost=$0.000404 latency=629ms
+  9 white typesafe/jev-1.13      Ne4     c3e4 confidence=0.340 cost=$0.000029 latency=429ms
+ 10 black cloudflare/clef        Qxe4+   e5e4 confidence=0.065 cost=$0.000390 latency=899ms
+ 11 white typesafe/jev-1.13      Ne2     g1e2 confidence=0.040 cost=$0.000027 latency=534ms
+ 12 black cloudflare/clef        Qxe2+   e4e2 confidence=0.022 cost=$0.000411 latency=717ms
+ 13 white typesafe/jev-1.13      Kxe2    e1e2 confidence=0.120 cost=$0.000025 latency=347ms
+ 14 black cloudflare/clef        Nf6     g8f6 confidence=0.036 cost=$0.000268 latency=785ms
+ 15 white typesafe/jev-1.13      d4      d2d4 confidence=0.070 cost=$0.000051 latency=390ms
+ 16 black cloudflare/clef        e5      e7e5 confidence=0.034 cost=$0.000291 latency=825ms
+ 17 white typesafe/jev-1.13      dxe5    d4e5 confidence=0.220 cost=$0.000060 latency=416ms
+ 18 black cloudflare/clef        Nc6     b8c6 confidence=0.025 cost=$0.000305 latency=676ms
+ 19 white typesafe/jev-1.13      exf6    e5f6 confidence=0.140 cost=$0.000065 latency=416ms
+ 20 black cloudflare/clef        gxf6    g7f6 confidence=0.484 cost=$0.000283 latency=718ms
+ 21 white typesafe/jev-1.13      Qd7+    d1d7 confidence=0.170 cost=$0.000063 latency=438ms
+ 22 black cloudflare/clef        Kxd7    e8d7 confidence=0.070 cost=$0.000096 latency=897ms
+ 23 white typesafe/jev-1.13      Rd1+    h1d1 confidence=0.250 cost=$0.000054 latency=387ms
+ 24 black cloudflare/clef        Nd4+    c6d4 confidence=0.058 cost=$0.000116 latency=1415ms
+ 25 white typesafe/jev-1.13      Rxd4+   d1d4 confidence=0.620 cost=$0.000030 latency=432ms
+ 26 black cloudflare/clef        Bd6     f8d6 confidence=0.014 cost=$0.000117 latency=1229ms
+ 27 white typesafe/jev-1.13      Rxd6+   d4d6 confidence=0.690 cost=$0.000062 latency=371ms
+ 28 black cloudflare/clef        Kxd6    d7d6 confidence=0.400 cost=$0.000109 latency=857ms
+ 29 white typesafe/jev-1.13      Bf4+    c1f4 confidence=0.160 cost=$0.000050 latency=405ms
+ 30 black cloudflare/clef        Ke6     d6e6 confidence=0.005 cost=$0.000124 latency=482ms
+ 31 white typesafe/jev-1.13      Bxc7    f4c7 confidence=0.240 cost=$0.000059 latency=394ms
+ 32 black cloudflare/clef        Bd7     c8d7 confidence=0.022 cost=$0.000201 latency=721ms
+ 33 white typesafe/jev-1.13      Bd6     c7d6 confidence=0.060 cost=$0.000059 latency=431ms
+ 34 black cloudflare/clef        Kxd6    e6d6 confidence=0.684 cost=$0.000274 latency=827ms
+ 35 white typesafe/jev-1.13      Rd1+    a1d1 confidence=0.300 cost=$0.000050 latency=392ms
+ 36 black cloudflare/clef        Ke6     d6e6 confidence=0.003 cost=$0.000122 latency=556ms
+ 37 white typesafe/jev-1.13      Rxd7    d1d7 confidence=0.320 cost=$0.000055 latency=377ms
+ 38 black cloudflare/clef        Kxd7    e6d7 confidence=0.741 cost=$0.000236 latency=826ms
+ 39 white typesafe/jev-1.13      Ke3     e2e3 confidence=0.120 cost=$0.000043 latency=408ms
+ 40 black cloudflare/clef        Rhe8+   h8e8 confidence=0.040 cost=$0.000273 latency=1119ms
+ 41 white typesafe/jev-1.13      Kd4     e3d4 confidence=0.150 cost=$0.000028 latency=438ms
+ 42 black cloudflare/clef        Re4+    e8e4 confidence=0.024 cost=$0.000294 latency=669ms
+ 43 white typesafe/jev-1.13      Kxe4    d4e4 confidence=0.470 cost=$0.000028 latency=376ms
+ 44 black cloudflare/clef        Re8+    a8e8 confidence=0.042 cost=$0.000236 latency=659ms
+ 45 white typesafe/jev-1.13      Kd5     e4d5 confidence=0.080 cost=$0.000029 latency=368ms
+ 46 black cloudflare/clef        Re5+    e8e5 confidence=0.037 cost=$0.000257 latency=558ms
+ 47 white typesafe/jev-1.13      Kc4     d5c4 confidence=0.090 cost=$0.000025 latency=398ms
+ 48 black cloudflare/clef        Re4+    e5e4 confidence=0.026 cost=$0.000287 latency=707ms
+ 49 white typesafe/jev-1.13      Kd5     c4d5 confidence=0.290 cost=$0.000029 latency=392ms
+ 50 black cloudflare/clef        Re5+    e4e5 confidence=0.050 cost=$0.000265 latency=825ms
+ 51 white typesafe/jev-1.13      Kc4     d5c4 confidence=0.100 cost=$0.000025 latency=617ms
+ 52 black cloudflare/clef        Re4+    e5e4 confidence=0.038 cost=$0.000287 latency=428ms
+ 53 white typesafe/jev-1.13      Kd5     c4d5 confidence=0.380 cost=$0.000029 latency=359ms
+ 54 black cloudflare/clef        Re5+    e4e5 confidence=0.051 cost=$0.000265 latency=618ms
+ 55 white typesafe/jev-1.13      Kc4     d5c4 confidence=0.240 cost=$0.000025 latency=388ms
+ 56 black cloudflare/clef        Re4+    e5e4 confidence=0.039 cost=$0.000287 latency=798ms
+ 57 white typesafe/jev-1.13      Kd5     c4d5 confidence=0.400 cost=$0.000029 latency=418ms
+ 58 black cloudflare/clef        Re5+    e4e5 confidence=0.052 cost=$0.000265 latency=637ms
+ 59 white typesafe/jev-1.13      Kc4     d5c4 confidence=0.130 cost=$0.000025 latency=388ms
+ 60 black cloudflare/clef        Re4+    e5e4 confidence=0.038 cost=$0.000287 latency=828ms
+ 61 white typesafe/jev-1.13      Kd5     c4d5 confidence=0.420 cost=$0.000029 latency=378ms
+ 62 black cloudflare/clef        Re5+    e4e5 confidence=0.049 cost=$0.000265 latency=1079ms
+
+
+ A B C D E F G H
+8- - - - - - - - 
+7♟ ♟ - ♚ - ♟ - ♟ 
+6- - - - - ♟ - - 
+5- - - ♔ ♜ - - - 
+4- - - - - - - - 
+3- - - - - - - - 
+2♙ ♙ ♙ - - ♙ ♙ ♙ 
+1- - - - - - - - 
+
+Result: 1/2-1/2 (FivefoldRepetition), 62 plies, reported cost $0.008929
+FEN: 8/pp1k1p1p/5p2/3Kr3/8/8/PPP2PPP/8 w - - 19 32
+
+[White "typesafe/jev-1.13"]
+[Black "cloudflare/clef"]
+[Result "1/2-1/2"]
+
+1. e4 d5 2. exd5 Qxd5 3. Bb5+ Qxb5 4. Nc3 Qe5+ 5. Ne4 Qxe4+ 6. Ne2 Qxe2+ 7. Kxe2 Nf6 8. d4 e5 9. dxe5 Nc6 10. exf6 gxf6 11. Qd7+ Kxd7 12. Rd1+ Nd4+ 13. Rxd4+ Bd6 14. Rxd6+ Kxd6 15. Bf4+ Ke6 16. Bxc7 Bd7 17. Bd6 Kxd6 18. Rd1+ Ke6 19. Rxd7 Kxd7 20. Ke3 Rhe8+ 21. Kd4 Re4+ 22. Kxe4 Re8+ 23. Kd5 Re5+ 24. Kc4 Re4+ 25. Kd5 Re5+ 26. Kc4 Re4+ 27. Kd5 Re5+ 28. Kc4 Re4+ 29. Kd5 Re5+ 30. Kc4 Re4+ 31. Kd5 Re5+ 1/2-1/2

@@ -1,0 +1,77 @@
+{
+  "python_chess_version": "1.11.2",
+  "completed_games_checked": 10,
+  "total_plies_checked": 839,
+  "games": [
+    {
+      "game": "01-standard-pair-1-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "02-standard-pair-1-jev-white",
+      "plies": 164,
+      "result": "1/2-1/2",
+      "reason": "InsufficientMaterial",
+      "validation": "PASS"
+    },
+    {
+      "game": "03-standard-pair-2-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "04-standard-pair-2-jev-white",
+      "plies": 63,
+      "result": "1/2-1/2",
+      "reason": "FivefoldRepetition",
+      "validation": "PASS"
+    },
+    {
+      "game": "05-standard-pair-3-clef-white",
+      "plies": 191,
+      "result": "1/2-1/2",
+      "reason": "InsufficientMaterial",
+      "validation": "PASS"
+    },
+    {
+      "game": "06-standard-pair-3-jev-white",
+      "plies": 67,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "07-standard-pair-4-clef-white",
+      "plies": 137,
+      "result": "1/2-1/2",
+      "reason": "FivefoldRepetition",
+      "validation": "PASS"
+    },
+    {
+      "game": "08-standard-pair-4-jev-white",
+      "plies": 62,
+      "result": "1/2-1/2",
+      "reason": "FivefoldRepetition",
+      "validation": "PASS"
+    },
+    {
+      "game": "09-standard-pair-5-clef-white",
+      "plies": 15,
+      "result": "1-0",
+      "reason": "Checkmate",
+      "validation": "PASS"
+    },
+    {
+      "game": "10-standard-pair-5-jev-white",
+      "plies": 110,
+      "result": "1/2-1/2",
+      "reason": "InsufficientMaterial",
+      "validation": "PASS"
+    }
+  ]
+}

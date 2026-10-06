@@ -1,0 +1,5 @@
+[White "typesafe/jev-1.13"]
+[Black "cloudflare/clef"]
+[Result "1/2-1/2"]
+
+1. e4 d5 2. exd5 Qxd5 3. Bb5+ Qxb5 4. Nc3 Qe5+ 5. Ne4 Qxe4+ 6. Ne2 Qxe2+ 7. Kxe2 Nf6 8. d4 e5 9. dxe5 Nc6 10. exf6 gxf6 11. Qd7+ Kxd7 12. Rd1+ Nd4+ 13. Rxd4+ Bd6 14. Rxd6+ Kxd6 15. Bf4+ Ke7 16. Bxc7 Bg4+ 17. Kd3 Bf5+ 18. Kd4 Rhd8+ 19. Bxd8+ Kxd8 20. Rd1 Kc7 21. Rc1 Rd8+ 22. Kc5 Rd5+ 23. Kxd5 Be6+ 24. Kc5 b6+ 25. Kb5 Bd7+ 26. Kc4 Bb5+ 27. Kxb5 a6+ 28. Kxa6 Kd6 29. Rd1+ Kc5 30. Rd5+ Kxd5 31. c4+ Kxc4 32. b3+ Kb4 33. Kxb6 Kc3 34. Kc5 Kd3 35. b4 Ke4 36. f3+ Ke5 37. f4+ Kxf4 38. g3+ Ke3 39. Kd6 f5 40. b5 f4 41. gxf4 Kxf4 42. b6 f5 43. b7 Kg5 44. b8=Q Kf4 45. Qb4+ Kf3 46. Qf4+ Kxf4 47. Kc5 Ke5 48. Kc6 f4 49. Kd7 f3 50. Kc6 f2 51. Kd7 f1=Q 52. Kc8 Qf8+ 53. Kd7 Qd8+ 54. Kxd8 Kd4 55. Kd7 Kd5 56. Kc8 Kc6 57. Kd8 Kd5 58. Kc7 Ke6 59. Kd8 Kd5 60. Ke7 Kc6 61. Kf6 Kd5 62. Kf7 Kc6 63. Ke6 h5 64. Kf5 h4 65. Kg4 h3 66. Kxh3 Kd5 67. Kg4 Ke4 68. Kg5 Kd3 69. Kf4 Kd4 70. Kf5 Kc3 71. Ke4 Kb4 72. a3+ Kxa3 73. Kd5 Kb4 74. Kc6 Kc3 75. Kd5 Kd3 76. h3 Kc3 77. Kc5 Kd3 78. Kd6 Kd4 79. h4 Ke4 80. h5 Kf5 81. h6 Kg6 82. h7 Kxh7 1/2-1/2
