@@ -21,7 +21,7 @@ const (
 type Config struct {
 	WhiteModel string
 	BlackModel string
-	MaxPlies   int // Half-moves; zero defaults to 80.
+	MaxPlies   int // Half-moves; zero defaults to 1000.
 	FEN        string
 }
 
@@ -83,7 +83,7 @@ func NewMachine(cfg Config, choose ChooseMove) (*xs.StateMachine[Match], error) 
 		return nil, errors.New("max plies must be positive")
 	}
 	if cfg.MaxPlies == 0 {
-		cfg.MaxPlies = 80
+		cfg.MaxPlies = 1000
 	}
 	if cfg.WhiteModel == "" {
 		cfg.WhiteModel = Clef
@@ -116,9 +116,12 @@ func NewMachine(cfg Config, choose ChooseMove) (*xs.StateMachine[Match], error) 
 		return choose(ctx, a.Input.(Turn))
 	})
 	machine := xs.CreateMachine(xs.MachineConfig[Match]{
-		ID: "chess-match", Initial: "checking", Context: initial,
+		ID: "chess-match", Initial: "setup",
 		On: map[string]xs.Transitions{"cancel": {{Target: ".cancelled"}}},
 		States: xs.States{
+			{Key: "setup", Entry: xs.Actions{xs.Assign(func(xs.AssignArgs[Match]) Match {
+				return initial
+			})}, Always: xs.Transitions{{Target: "checking"}}},
 			{Key: "checking", Always: xs.Transitions{
 				{Target: "failed", Guard: xs.GuardFunc(func(a xs.GuardArgs[Match]) bool { return a.Context.Error != "" })},
 				{Target: "finished", Guard: xs.GuardFunc(func(a xs.GuardArgs[Match]) bool { return a.Context.Result != "*" })},

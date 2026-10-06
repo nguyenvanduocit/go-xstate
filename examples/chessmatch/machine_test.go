@@ -165,3 +165,28 @@ func TestInvalidConfiguration(t *testing.T) {
 	_, err = NewMachine(Config{}, nil)
 	require.Error(t, err)
 }
+
+func TestSetupUsesSameInitialBoardWhenPlayersSwap(t *testing.T) {
+	for _, white := range []string{Clef, Jev} {
+		ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+		black := Jev
+		if white == Jev {
+			black = Clef
+		}
+		var first Turn
+		match, err := Play(ctx, Config{WhiteModel: white, BlackModel: black, MaxPlies: 1},
+			func(_ context.Context, turn Turn) (Decision, error) {
+				first = turn
+				return Decision{Move: "e2e4"}, nil
+			}, nil)
+		cancel()
+		require.NoError(t, err)
+		require.Equal(t, chess.NewGame().FEN(), first.FEN)
+		require.Equal(t, first.FEN, match.InitialFEN)
+		require.Equal(t, "white", first.Side)
+		require.Equal(t, white, first.Model)
+		require.Len(t, first.LegalMoves, 20)
+		require.Empty(t, first.RecentMoves)
+		require.Len(t, match.Moves, 1)
+	}
+}

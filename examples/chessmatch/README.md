@@ -18,7 +18,7 @@ From the repository's `examples/` directory, with Go 1.26 or later:
 ```sh
 read -r -s OPENROUTER_KEY
 export OPENROUTER_KEY
-go run ./chessmatch/cmd/chess -max-plies 80 -pgn /tmp/clef-vs-jev.pgn
+go run ./chessmatch/cmd/chess -max-plies 1000 -pgn /tmp/clef-vs-jev.pgn
 unset OPENROUTER_KEY
 ```
 
@@ -31,9 +31,9 @@ The PGN path must not already exist; it is reserved before model requests begin.
 | --- | --- | --- |
 | `-white` | `cloudflare/clef` | White's decision model |
 | `-black` | `typesafe/jev-1.13` | Black's decision model |
-| `-max-plies` | `80` | Maximum half-moves, one move by either side per ply |
+| `-max-plies` | `1000` | Maximum half-moves, one move by either side per ply |
 | `-request-timeout` | `45s` | Deadline for each HTTP request |
-| `-timeout` | `10m` | Deadline for the whole match |
+| `-timeout` | `30m` | Deadline for the whole match |
 | `-fen` | Standard starting position | Start from a supplied FEN |
 | `-pgn` | No file | Save the final or interrupted game |
 
@@ -41,7 +41,7 @@ Swap the players with:
 
 ```sh
 go run ./chessmatch/cmd/chess \
-  -white typesafe/jev-1.13 -black cloudflare/clef -max-plies 40
+  -white typesafe/jev-1.13 -black cloudflare/clef
 ```
 
 The CLI prints the player, SAN and UCI move, model confidence, request latency,
@@ -52,7 +52,8 @@ end. Ctrl+C cancels the active request and preserves the moves already played.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> checking
+    [*] --> setup
+    setup --> checking: initialize the board and legal moves
     checking --> thinking: game active and under limit
     thinking --> applying: decision received
     applying --> checking: validate and apply move
@@ -67,8 +68,10 @@ stateDiagram-v2
     cancelled --> [*]
 ```
 
-`thinking` invokes a promise actor. Its context cancellation reaches the HTTP
-request when the state exits. `applying` checks the selected move against the
+`setup` initializes a fresh standard board with no moves played, unless an
+explicit `-fen` is supplied. Switching model colors leaves that starting board
+unchanged. `thinking` invokes a promise actor. Its context cancellation reaches
+the HTTP request when the state exits. `applying` checks the selected move against the
 current legal moves before updating the snapshot. Move history is replayed
 into a fresh chess game on each turn, preserving repetition detection while
 keeping mutable chess objects out of shared snapshots.

@@ -23,10 +23,10 @@ func run(args []string) error {
 	flags := flag.NewFlagSet("chess", flag.ContinueOnError)
 	white := flags.String("white", chessmatch.Clef, "White's OpenRouter decision model")
 	black := flags.String("black", chessmatch.Jev, "Black's OpenRouter decision model")
-	plies := flags.Int("max-plies", 80, "maximum half-moves (must be positive)")
+	plies := flags.Int("max-plies", 1000, "maximum half-moves (must be positive)")
 	fen := flags.String("fen", "", "starting FEN; empty uses the standard position")
 	timeout := flags.Duration("request-timeout", 45*time.Second, "timeout for each model request")
-	deadline := flags.Duration("timeout", 10*time.Minute, "timeout for the entire match")
+	deadline := flags.Duration("timeout", 30*time.Minute, "timeout for the entire match")
 	pgn := flags.String("pgn", "", "optional output PGN file (must not already exist)")
 	if err := flags.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
