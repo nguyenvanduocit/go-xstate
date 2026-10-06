@@ -1,5 +1,13 @@
 # Examples
 
+## Original examples
+
+[Clef vs Jev chess](chessmatch) runs a chess match between two OpenRouter
+decision models inside a state machine. It includes a CLI, PGN output, and
+offline tests. Live play reads `OPENROUTER_KEY` from the environment.
+
+## XState ports
+
 This nested Go module ports the logic from the 49 apps in
 [XState examples](https://github.com/statelyai/xstate/tree/38dcaffb20ec7f3cbb10e6161d8f0ebacca33701/examples). The
 [`manifest.tsv`](manifest.tsv) maps upstream names to Go package directories and

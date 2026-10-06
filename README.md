@@ -9,7 +9,8 @@ snapshots. Use it to express workflow transitions, coordinate asynchronous
 work, or model application state.
 
 The repository also includes stores and atoms, graph-based test models, an
-SCXML loader, and **49 example ports**. It follows the
+SCXML loader, **49 example ports**, and an original
+[Clef vs Jev chess match](examples/chessmatch). It follows the
 [XState 5.33.2 source](https://github.com/statelyai/xstate/tree/38dcaffb20ec7f3cbb10e6161d8f0ebacca33701/packages/core).
 Compatibility and Go-specific behavior are described [below](#compatibility-and-concurrency).
 
@@ -100,6 +101,7 @@ packages exercised through tests; HTTP examples also provide runnable commands.
 
 | Start here | What it demonstrates |
 | --- | --- |
+| [Clef vs Jev chess](examples/chessmatch) | Two decision models playing legal chess through a state machine |
 | [Counter](examples/counter/machine.go) | Typed context and increment/decrement actions |
 | [Toggle](examples/toggle/machine.go) | Switching between states |
 | [Fetch](examples/fetch/machine.go) | Asynchronous work and actor completion |

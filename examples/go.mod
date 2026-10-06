@@ -3,6 +3,7 @@ module github.com/nguyenvanduocit/go-xstate/examples
 go 1.26
 
 require (
+	github.com/corentings/chess/v2 v2.6.0
 	github.com/nguyenvanduocit/go-xstate v0.0.0
 	github.com/stretchr/testify v1.12.1
 	go.mongodb.org/mongo-driver/v2 v2.9.1
