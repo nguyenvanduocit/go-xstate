@@ -1,0 +1,37 @@
+Black: typesafe/jev-1.13
+White: cloudflare/clef
+Board: 9x9, komi 7.5
+Limit: 1000 moves
+  1 black typesafe/jev-1.13      E5    confidence=0.520 cost=$0.000093 latency=1212ms
+  2 white cloudflare/clef        E6    confidence=0.004 cost=$0.000549 latency=748ms
+  3 black typesafe/jev-1.13      E4    confidence=0.260 cost=$0.000091 latency=383ms
+  4 white cloudflare/clef        E7    confidence=0.029 cost=$0.000540 latency=976ms
+  5 black typesafe/jev-1.13      D5    confidence=0.290 cost=$0.000090 latency=422ms
+  6 white cloudflare/clef        D6    confidence=0.016 cost=$0.000531 latency=955ms
+  7 black typesafe/jev-1.13      D7    confidence=0.190 cost=$0.000089 latency=389ms
+  8 white cloudflare/clef        F7    confidence=0.011 cost=$0.000522 latency=739ms
+  9 black typesafe/jev-1.13      F6    confidence=0.280 cost=$0.000088 latency=404ms
+ 10 white cloudflare/clef        G7    confidence=0.013 cost=$0.000512 latency=849ms
+ 11 black typesafe/jev-1.13      G6    confidence=0.200 cost=$0.000087 latency=374ms
+ 12 white cloudflare/clef        H7    confidence=0.017 cost=$0.000501 latency=758ms
+ 13 black typesafe/jev-1.13      H6    confidence=0.300 cost=$0.000085 latency=458ms
+ 14 white cloudflare/clef        J7    confidence=0.007 cost=$0.000490 latency=918ms
+ 15 black typesafe/jev-1.13      J6    confidence=0.160 cost=$0.000083 latency=423ms
+ 16 white cloudflare/clef        pass  confidence=0.008 cost=$0.000479 latency=749ms
+ 17 black typesafe/jev-1.13      pass  confidence=0.290 cost=$0.000083 latency=424ms
+
+X = black, O = white, . = empty
+   A B C D E F G H J 
+ 9 . . . . . . . . . 
+ 8 . . . . . . . . . 
+ 7 . . . X O O O O O 
+ 6 . . . O O X X X X 
+ 5 . . . X X . . . . 
+ 4 . . . . X . . . . 
+ 3 . . . . . . . . . 
+ 2 . . . . . . . . . 
+ 1 . . . . . . . . . 
+
+Result: W+6.5 (two consecutive passes), 17 moves, reported cost $0.004914
+
+(;GM[1]FF[4]CA[UTF-8]SZ[9]KM[7.5]RU[Tromp-Taylor]PB[typesafe/jev-1.13]PW[cloudflare/clef]RE[W+6.5];B[ee];W[ed];B[ef];W[ec];B[de];W[dd];B[dc];W[fc];B[fd];W[gc];B[gd];W[hc];B[hd];W[ic];B[id];W[];B[])

@@ -1,0 +1,35 @@
+Black: cloudflare/clef
+White: typesafe/jev-1.13
+Board: 9x9, komi 7.5
+Limit: 1000 moves
+  1 black cloudflare/clef        E5    confidence=0.008 cost=$0.000554 latency=1676ms
+  2 white typesafe/jev-1.13      D5    confidence=0.210 cost=$0.000092 latency=376ms
+  3 black cloudflare/clef        E6    confidence=0.012 cost=$0.000545 latency=1801ms
+  4 white typesafe/jev-1.13      D6    confidence=0.350 cost=$0.000091 latency=397ms
+  5 black cloudflare/clef        E4    confidence=0.010 cost=$0.000536 latency=1171ms
+  6 white typesafe/jev-1.13      D4    confidence=0.240 cost=$0.000090 latency=446ms
+  7 black cloudflare/clef        E7    confidence=0.012 cost=$0.000527 latency=852ms
+  8 white typesafe/jev-1.13      D7    confidence=0.420 cost=$0.000089 latency=378ms
+  9 black cloudflare/clef        F5    confidence=0.011 cost=$0.000517 latency=956ms
+ 10 white typesafe/jev-1.13      E3    confidence=0.210 cost=$0.000087 latency=366ms
+ 11 black cloudflare/clef        D3    confidence=0.007 cost=$0.000507 latency=1049ms
+ 12 white typesafe/jev-1.13      F4    confidence=0.200 cost=$0.000086 latency=370ms
+ 13 black cloudflare/clef        C4    confidence=0.009 cost=$0.000496 latency=888ms
+ 14 white typesafe/jev-1.13      pass  confidence=0.130 cost=$0.000084 latency=377ms
+ 15 black cloudflare/clef        pass  confidence=0.042 cost=$0.000490 latency=852ms
+
+X = black, O = white, . = empty
+   A B C D E F G H J 
+ 9 . . . . . . . . . 
+ 8 . . . . . . . . . 
+ 7 . . . O X . . . . 
+ 6 . . . O X . . . . 
+ 5 . . . O X X . . . 
+ 4 . . X O X O . . . 
+ 3 . . . X O . . . . 
+ 2 . . . . . . . . . 
+ 1 . . . . . . . . . 
+
+Result: W+6.5 (two consecutive passes), 15 moves, reported cost $0.004789
+
+(;GM[1]FF[4]CA[UTF-8]SZ[9]KM[7.5]RU[Tromp-Taylor]PB[cloudflare/clef]PW[typesafe/jev-1.13]RE[W+6.5];B[ee];W[de];B[ed];W[dd];B[ef];W[df];B[ec];W[dc];B[fe];W[eg];B[dg];W[ff];B[cf];W[];B[])
